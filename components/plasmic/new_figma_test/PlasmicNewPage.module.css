@@ -1,0 +1,570 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.section1 {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  overflow: hidden;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 40px 40px 115px;
+}
+.featureSectionContent {
+  height: auto;
+  display: flex;
+  position: relative;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-right: 40px;
+}
+.featureSectionContent > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.featureSectionContent > :global(.__wab_flex-container) > *,
+.featureSectionContent
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > * {
+  margin-top: 20px;
+}
+.contentTop {
+  height: auto;
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-direction: column;
+}
+.contentTop > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.contentTop > :global(.__wab_flex-container) > *,
+.contentTop > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 20px;
+}
+.badge {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.small {
+  background: rgba(255, 146, 48, 1);
+  width: auto;
+  height: 24px;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  border-radius: 4px;
+  padding: 4px 10px;
+}
+.small > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.small > :global(.__wab_flex-container) > *,
+.small > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 10px;
+}
+.label {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0em;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.eyebrow {
+  display: block;
+  font-size: 16px;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  position: relative;
+}
+.headline {
+  display: block;
+  font-size: 48px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 60px;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  position: relative;
+}
+.contentMiddle {
+  display: flex;
+  position: relative;
+  align-self: stretch;
+  flex-grow: 1;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+.contentMiddle > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.contentMiddle > :global(.__wab_flex-container) > *,
+.contentMiddle > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 20px;
+}
+.bodyContent {
+  display: block;
+  font-size: 20px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+  align-self: stretch;
+  position: relative;
+}
+.tooltip {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+}
+.tooltip > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 10px);
+  width: calc(100% + 10px);
+}
+.tooltip > :global(.__wab_flex-container) > *,
+.tooltip > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 10px;
+}
+.freeBox {
+  display: block;
+  font-size: 20px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+}
+.svg__mgkMv {
+  position: relative;
+  object-fit: cover;
+  width: 20px;
+  height: 20px;
+  color: #6b6c72;
+  display: block;
+  flex-shrink: 0;
+}
+.ctaBlock {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.ctaBlockDesktop {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+.ctaBlockDesktop > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.ctaBlockDesktop > :global(.__wab_flex-container) > *,
+.ctaBlockDesktop > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 20px;
+}
+.ctaGroup {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+}
+.ctaGroup > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.ctaGroup > :global(.__wab_flex-container) > *,
+.ctaGroup > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 20px;
+}
+._02PrimaryAltBlue {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.smallPrimaryDefault {
+  background: rgba(12, 50, 62, 1);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+}
+.minWidth100WidthShimTop {
+  background: rgba(255, 255, 255, 0);
+  width: 60px;
+  height: 12px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.textLabel {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.minWidth100ShimBottom {
+  background: rgba(255, 255, 255, 0);
+  width: 60px;
+  height: 12px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+._05SecondaryAltBlue {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.smallSecondaryDefault {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+}
+.minWidth100WidthShimTop2 {
+  background: rgba(255, 255, 255, 0);
+  width: 60px;
+  height: 12px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.textLabel2 {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(12, 50, 62, 1);
+  position: relative;
+}
+.minWidth100ShimBottom2 {
+  background: rgba(255, 255, 255, 0);
+  width: 60px;
+  height: 12px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.textCta {
+  display: block;
+  font-size: 16px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(12, 50, 62, 1);
+  position: relative;
+}
+.videoLink {
+  width: 212px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+._01Blue {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+._02Body0201Blue01Default {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: row;
+}
+._02Body0201Blue01Default > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: calc(0px - 7px);
+  width: calc(100% + 7px);
+}
+._02Body0201Blue01Default > :global(.__wab_flex-container) > *,
+._02Body0201Blue01Default
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > * {
+  margin-left: 7px;
+}
+.playIcon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.play {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.play2 {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.svg__utLbk {
+  position: absolute;
+  object-fit: cover;
+  width: 24px;
+  height: 24px;
+  color: #0077c5;
+  display: block;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+}
+.videoLink2 {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+.videoLink2 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.videoLink2 > :global(.__wab_flex-container) > *,
+.videoLink2 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 10px;
+}
+.body02 {
+  display: block;
+  font-size: 16px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(0, 118, 196, 1);
+  position: relative;
+}
+.duration {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+.duration > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: calc(0px - 10px);
+  height: calc(100% + 10px);
+}
+.duration > :global(.__wab_flex-container) > *,
+.duration > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 10px;
+}
+.body022 {
+  display: block;
+  font-size: 16px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 24px;
+  color: rgba(106, 107, 113, 1);
+  position: relative;
+}
+.overlay34Tall {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+}
+.mediaPlaceholderOverlay {
+  width: 680px;
+  height: 620px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.imagePlaceholder {
+  width: 620px;
+  height: 620px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  -webkit-mask-image: var(--image-7ZSMrvCm0zv);
+  -webkit-mask-size: 620px 620px;
+  -webkit-mask-repeat: no-repeat;
+}
+.exportThisFrameAsJpg {
+  transform: translate(-0.3810000000000002px, 0px);
+  width: 668px;
+  height: 668px;
+  display: block;
+  position: absolute;
+  top: -26px;
+  left: -24px;
+}
+.rectangle136 {
+  background: url("/plasmic/new_figma_test/images/rectangle138.png") center center / cover no-repeat;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  transition-property: all;
+  transition-duration: 1s;
+}
+.widgetPlaceholder {
+  width: 100px;
+  height: 100px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.card {
+  background: rgba(14, 211, 107, 1);
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.titleCentered {
+  position: absolute;
+  top: 4%;
+  left: 10%;
+  width: 80%;
+  height: 93%;
+  transform: translate(0px, -0.25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.titleCentered2 {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(56, 57, 60, 1);
+}
+.left {
+  background: rgba(106, 107, 113, 1);
+  width: 4%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.right {
+  background: rgba(106, 107, 113, 1);
+  width: 4%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0%;
+  left: 96%;
+}
