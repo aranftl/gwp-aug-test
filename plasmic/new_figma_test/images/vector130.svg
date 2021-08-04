@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 685 5">
+  <path d="M684.994 4.247a.31.31 0 01-.314.314H.314A.315.315 0 010 4.247V.314C0 .144.144 0 .314 0h684.372c.176 0 .314.144.314.314v3.933h-.006z" fill="url(#UTviNaoIOla)"/>
+  <defs>
+    <linearGradient id="UTviNaoIOla" x1="-.002" y1="2.282" x2="684.996" y2="2.282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#CFD0D0"/>
+      <stop offset=".01" stop-color="#EFEFEF"/>
+      <stop offset=".99" stop-color="#EFEFEF"/>
+      <stop offset="1" stop-color="#CFD0D0"/>
+    </linearGradient>
+  </defs>
+</svg>
