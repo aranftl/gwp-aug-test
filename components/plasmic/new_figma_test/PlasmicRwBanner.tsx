@@ -51,6 +51,8 @@ export const PlasmicRwBanner__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicRwBanner__OverridesType = {
   root?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultRwBannerProps {
@@ -74,12 +76,18 @@ function PlasmicRwBanner__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div className={classNames(defaultcss.all, sty.freeBox__mq7Lx)}>
+      <div
+        data-plasmic-name={"freeBox"}
+        data-plasmic-override={overrides.freeBox}
+        className={classNames(defaultcss.all, sty.freeBox)}
+      >
         <div
+          data-plasmic-name={"text"}
+          data-plasmic-override={overrides.text}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__g6FN
+            sty.text
           )}
         >
           {"Most popular"}
@@ -90,13 +98,17 @@ function PlasmicRwBanner__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: ["root", "freeBox", "text"],
+  freeBox: ["freeBox", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  freeBox: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -160,6 +172,8 @@ export const PlasmicRwBanner = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicRwBanner
     internalVariantProps: PlasmicRwBanner__VariantProps,

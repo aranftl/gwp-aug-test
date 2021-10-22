@@ -256,16 +256,7 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -404,7 +395,7 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__ugl9R
+                          sty.text__ugl9R
                         )}
                       >
                         {"Lorem ipsum dolar"}
@@ -860,7 +851,7 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__svO55
+                          sty.text__svO55
                         )}
                       >
                         {"Lorem ipsum dolar"}
@@ -1235,7 +1226,7 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___1InnS
+                          sty.text___1InnS
                         )}
                       >
                         {"Lorem ipsum dolar"}
@@ -1537,11 +1528,21 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                       />
                     </div>
 
-                    <img
+                    <p.PlasmicImg
                       alt={""}
-                      className={classNames(defaultcss.img, sty.img__wseKh)}
-                      role={"img"}
-                      src={"/plasmic/new_figma_test/images/playIcon5.svg"}
+                      className={classNames(sty.img__wseKh)}
+                      displayHeight={"120px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"none" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"120px" as const}
+                      src={{
+                        src: "/plasmic/new_figma_test/images/playIcon5.svg",
+                        fullWidth: 120,
+                        fullHeight: 120,
+                        aspectRatio: 1
+                      }}
                     />
                   </div>
 
@@ -1674,11 +1675,21 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                       />
                     </div>
 
-                    <img
+                    <p.PlasmicImg
                       alt={""}
-                      className={classNames(defaultcss.img, sty.img__xxeW8)}
-                      role={"img"}
-                      src={"/plasmic/new_figma_test/images/playIcon6.svg"}
+                      className={classNames(sty.img__xxeW8)}
+                      displayHeight={"120px" as const}
+                      displayMaxHeight={"none" as const}
+                      displayMaxWidth={"none" as const}
+                      displayMinHeight={"0" as const}
+                      displayMinWidth={"0" as const}
+                      displayWidth={"120px" as const}
+                      src={{
+                        src: "/plasmic/new_figma_test/images/playIcon6.svg",
+                        fullWidth: 120,
+                        fullHeight: 120,
+                        aspectRatio: 1
+                      }}
                     />
                   </div>
 
@@ -1870,7 +1881,7 @@ function PlasmicFigmaAutolayoutTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__u2Tpj
+                          sty.text__u2Tpj
                         )}
                       >
                         {"Lorem ipsum dolar"}

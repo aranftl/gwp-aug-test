@@ -63,11 +63,13 @@ export type PlasmicProductHero__OverridesType = {
   subhead?: p.Flex<"div">;
   rwButton?: p.Flex<typeof RwButton>;
   heroImage?: p.Flex<"div">;
+  freeBox?: p.Flex<"div">;
   videoBg?: p.Flex<"div">;
   backgroundImage?: p.Flex<"div">;
   productCut22?: p.Flex<"div">;
-  img?: p.Flex<"img">;
+  img?: p.Flex<typeof p.PlasmicImg>;
   playLink?: p.Flex<"div">;
+  text?: p.Flex<"div">;
 };
 
 export interface DefaultProductHeroProps {
@@ -174,7 +176,11 @@ function PlasmicProductHero__RenderFunc(props: {
           data-plasmic-override={overrides.heroImage}
           className={classNames(defaultcss.all, sty.heroImage)}
         >
-          <div className={classNames(defaultcss.all, sty.freeBox___27MOo)} />
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(defaultcss.all, sty.freeBox)}
+          />
 
           <p.Stack
             as={"div"}
@@ -194,13 +200,23 @@ function PlasmicProductHero__RenderFunc(props: {
                 className={classNames(defaultcss.all, sty.productCut22)}
               />
 
-              <img
+              <p.PlasmicImg
                 data-plasmic-name={"img"}
                 data-plasmic-override={overrides.img}
                 alt={""}
-                className={classNames(defaultcss.img, sty.img)}
-                role={"img"}
-                src={"/plasmic/new_figma_test/images/playIcon2.svg"}
+                className={classNames(sty.img)}
+                displayHeight={"72px" as const}
+                displayMaxHeight={"none" as const}
+                displayMaxWidth={"none" as const}
+                displayMinHeight={"0" as const}
+                displayMinWidth={"0" as const}
+                displayWidth={"72px" as const}
+                src={{
+                  src: "/plasmic/new_figma_test/images/playIcon2.svg",
+                  fullWidth: 73,
+                  fullHeight: 73,
+                  aspectRatio: 1
+                }}
               />
 
               <div
@@ -209,10 +225,12 @@ function PlasmicProductHero__RenderFunc(props: {
                 className={classNames(defaultcss.all, sty.playLink)}
               >
                 <div
+                  data-plasmic-name={"text"}
+                  data-plasmic-override={overrides.text}
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__zFd5F
+                    sty.text
                   )}
                 >
                   {"See how it works (1:31)"}
@@ -238,11 +256,13 @@ const PlasmicDescendants = {
     "subhead",
     "rwButton",
     "heroImage",
+    "freeBox",
     "videoBg",
     "backgroundImage",
     "productCut22",
     "img",
-    "playLink"
+    "playLink",
+    "text"
   ],
   productHero: [
     "productHero",
@@ -254,11 +274,13 @@ const PlasmicDescendants = {
     "subhead",
     "rwButton",
     "heroImage",
+    "freeBox",
     "videoBg",
     "backgroundImage",
     "productCut22",
     "img",
-    "playLink"
+    "playLink",
+    "text"
   ],
   headSubCta: [
     "headSubCta",
@@ -277,17 +299,34 @@ const PlasmicDescendants = {
   rwButton: ["rwButton"],
   heroImage: [
     "heroImage",
+    "freeBox",
     "videoBg",
     "backgroundImage",
     "productCut22",
     "img",
-    "playLink"
+    "playLink",
+    "text"
   ],
-  videoBg: ["videoBg", "backgroundImage", "productCut22", "img", "playLink"],
-  backgroundImage: ["backgroundImage", "productCut22", "img", "playLink"],
+  freeBox: ["freeBox"],
+  videoBg: [
+    "videoBg",
+    "backgroundImage",
+    "productCut22",
+    "img",
+    "playLink",
+    "text"
+  ],
+  backgroundImage: [
+    "backgroundImage",
+    "productCut22",
+    "img",
+    "playLink",
+    "text"
+  ],
   productCut22: ["productCut22"],
   img: ["img"],
-  playLink: ["playLink"]
+  playLink: ["playLink", "text"],
+  text: ["text"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -303,11 +342,13 @@ type NodeDefaultElementType = {
   subhead: "div";
   rwButton: typeof RwButton;
   heroImage: "div";
+  freeBox: "div";
   videoBg: "div";
   backgroundImage: "div";
   productCut22: "div";
-  img: "img";
+  img: typeof p.PlasmicImg;
   playLink: "div";
+  text: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -380,11 +421,13 @@ export const PlasmicProductHero = Object.assign(
     subhead: makeNodeComponent("subhead"),
     rwButton: makeNodeComponent("rwButton"),
     heroImage: makeNodeComponent("heroImage"),
+    freeBox: makeNodeComponent("freeBox"),
     videoBg: makeNodeComponent("videoBg"),
     backgroundImage: makeNodeComponent("backgroundImage"),
     productCut22: makeNodeComponent("productCut22"),
     img: makeNodeComponent("img"),
     playLink: makeNodeComponent("playLink"),
+    text: makeNodeComponent("text"),
 
     // Metadata about props expected for PlasmicProductHero
     internalVariantProps: PlasmicProductHero__VariantProps,

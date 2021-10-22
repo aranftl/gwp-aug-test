@@ -234,6 +234,45 @@
           "cssFilePath": "plasmic/new_figma_test/PlasmicInvoicingTest.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "fWs9zOC_5L",
+          "name": "NewPage3",
+          "type": "managed",
+          "projectId": "x8ztdr6NwjtFcF6gdhDwfr",
+          "renderModuleFilePath": "plasmic/new_figma_test/PlasmicNewPage3.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-5.tsx"
+          },
+          "cssFilePath": "plasmic/new_figma_test/PlasmicNewPage3.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "qQIqchRrdz",
+          "name": "NewPage4",
+          "type": "managed",
+          "projectId": "x8ztdr6NwjtFcF6gdhDwfr",
+          "renderModuleFilePath": "plasmic/new_figma_test/PlasmicNewPage4.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-6.tsx"
+          },
+          "cssFilePath": "plasmic/new_figma_test/PlasmicNewPage4.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "HB0qhNT5GF",
+          "name": "FranciscoDemo",
+          "type": "managed",
+          "projectId": "x8ztdr6NwjtFcF6gdhDwfr",
+          "renderModuleFilePath": "plasmic/new_figma_test/PlasmicFranciscoDemo.tsx",
+          "importSpec": {
+            "modulePath": "../pages/new-page-7.tsx"
+          },
+          "cssFilePath": "plasmic/new_figma_test/PlasmicFranciscoDemo.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -2576,6 +2615,26 @@
           "id": "qmq90EwamI",
           "name": "GroupsvgIcon",
           "moduleFilePath": "plasmic/new_figma_test/icons/PlasmicIcon__Groupsvg.tsx"
+        },
+        {
+          "id": "lMLYhm-aQ8",
+          "name": "Ellipse18Icon",
+          "moduleFilePath": "plasmic/new_figma_test/icons/PlasmicIcon__Ellipse18.tsx"
+        },
+        {
+          "id": "n4hkezQ3PM5",
+          "name": "Mask76Icon",
+          "moduleFilePath": "plasmic/new_figma_test/icons/PlasmicIcon__Mask76.tsx"
+        },
+        {
+          "id": "scsMxhn9t",
+          "name": "Mask77Icon",
+          "moduleFilePath": "plasmic/new_figma_test/icons/PlasmicIcon__Mask77.tsx"
+        },
+        {
+          "id": "86YEVfU2s76",
+          "name": "Rectangle613Icon",
+          "moduleFilePath": "plasmic/new_figma_test/icons/PlasmicIcon__Rectangle613.tsx"
         }
       ],
       "images": [
@@ -3718,6 +3777,31 @@
           "id": "r-oCxaDOM",
           "name": "image 3",
           "filePath": "../public/plasmic/new_figma_test/images/image3.png"
+        },
+        {
+          "id": "B0fzHFpX7",
+          "name": "QB_LiveBookkeeper_Jon_Pace 1",
+          "filePath": "../public/plasmic/new_figma_test/images/qbLiveBookkeeperJonPace1.jpeg"
+        },
+        {
+          "id": "JsMifOHXXy",
+          "name": "Screen Shot 2021-03-04 at 5.24 1",
+          "filePath": "../public/plasmic/new_figma_test/images/screenShot20210304At5241.jpeg"
+        },
+        {
+          "id": "SZBdNFl3mP",
+          "name": "QuickBooks-190530-0656-Boise-Adam-John-Group-Seamless_tb_R6 3",
+          "filePath": "../public/plasmic/new_figma_test/images/quickBooks1905300656BoiseAdamJohnGroupSeamlessTbR63.jpeg"
+        },
+        {
+          "id": "uW00YkC4Y",
+          "name": "quickbooks-dashboard-product-qbo-us-desktop 1",
+          "filePath": "../public/plasmic/new_figma_test/images/quickbooksDashboardProductQboUsDesktop1.png"
+        },
+        {
+          "id": "1YLW9nsbb",
+          "name": "quickbooks-dashboard-product-qbo-us-desktop 2",
+          "filePath": "../public/plasmic/new_figma_test/images/quickbooksDashboardProductQboUsDesktop2.png"
         }
       ],
       "codeComponents": [],
@@ -3737,6 +3821,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.158",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.158/dist/plasmic.schema.json"
+  "cliVersion": "0.1.164",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.164/dist/plasmic.schema.json"
 }

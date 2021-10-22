@@ -62,7 +62,7 @@ export type PlasmicTest__OverridesType = {
   rectangle449?: p.Flex<"div">;
   group306?: p.Flex<"div">;
   group294?: p.Flex<"div">;
-  img?: p.Flex<"img">;
+  img?: p.Flex<typeof p.PlasmicImg>;
   choosePlan?: p.Flex<"div">;
   group960?: p.Flex<"div">;
   group998?: p.Flex<"div">;
@@ -137,7 +137,7 @@ function PlasmicTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__soGk
+                    sty.text__soGk
                   )}
                 >
                   {"Or try it free for 30 days"}
@@ -148,13 +148,23 @@ function PlasmicTest__RenderFunc(props: {
                   data-plasmic-override={overrides.group294}
                   className={classNames(defaultcss.all, sty.group294)}
                 >
-                  <img
+                  <p.PlasmicImg
                     data-plasmic-name={"img"}
                     data-plasmic-override={overrides.img}
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img)}
-                    role={"img"}
-                    src={"/plasmic/new_figma_test/images/vector2.svg"}
+                    className={classNames(sty.img)}
+                    displayHeight={"52px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"160px" as const}
+                    src={{
+                      src: "/plasmic/new_figma_test/images/vector2.svg",
+                      fullWidth: 160,
+                      fullHeight: 52,
+                      aspectRatio: 3.076923
+                    }}
                   />
 
                   <div
@@ -166,7 +176,7 @@ function PlasmicTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__vPohd
+                        sty.text__vPohd
                       )}
                     >
                       {"Choose plan"}
@@ -180,7 +190,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox__fSe6H
+                sty.text__fSe6H
               )}
             >
               {"Feature highlights"}
@@ -190,7 +200,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox__jE9Pm
+                sty.text__jE9Pm
               )}
             >
               {"Start off on the right foot with basic bookkeeping tools."}
@@ -205,7 +215,7 @@ function PlasmicTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__eiVkj
+                  sty.text__eiVkj
                 )}
               >
                 {"Simple Start"}
@@ -240,7 +250,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox__x5Otd
+                sty.text__x5Otd
               )}
             >
               {"$"}
@@ -250,7 +260,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox__cSfVh
+                sty.text__cSfVh
               )}
             >
               {"/mo"}
@@ -262,7 +272,7 @@ function PlasmicTest__RenderFunc(props: {
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__cn8VX
+            sty.text__cn8VX
           )}
         >
           {"For the first 3 months then $25 /mo*"}
@@ -284,7 +294,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox___0ElBv
+                sty.text___0ElBv
               )}
             >
               {"Send invoices and accept Payments"}
@@ -305,7 +315,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox___6D8Ir
+                sty.text___6D8Ir
               )}
             >
               {"Track income and expenses"}
@@ -356,7 +366,7 @@ function PlasmicTest__RenderFunc(props: {
               className={classNames(
                 defaultcss.all,
                 defaultcss.__wab_text,
-                sty.freeBox__oXnFk
+                sty.text__oXnFk
               )}
             >
               {"Maximize Tax deductions"}
@@ -478,7 +488,7 @@ type NodeDefaultElementType = {
   rectangle449: "div";
   group306: "div";
   group294: "div";
-  img: "img";
+  img: typeof p.PlasmicImg;
   choosePlan: "div";
   group960: "div";
   group998: "div";

@@ -65,7 +65,7 @@ export type PlasmicNewPage__OverridesType = {
   contentMiddle?: p.Flex<"div">;
   bodyContent?: p.Flex<"div">;
   tooltip?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
   ctaBlock?: p.Flex<"div">;
   ctaBlockDesktop?: p.Flex<"div">;
   ctaGroup?: p.Flex<"div">;
@@ -118,16 +118,7 @@ function PlasmicNewPage__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -246,12 +237,12 @@ function PlasmicNewPage__RenderFunc(props: {
                   className={classNames(defaultcss.all, sty.tooltip)}
                 >
                   <div
-                    data-plasmic-name={"freeBox"}
-                    data-plasmic-override={overrides.freeBox}
+                    data-plasmic-name={"text"}
+                    data-plasmic-override={overrides.text}
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox
+                      sty.text
                     )}
                   >
                     {"Lorem ipsum dolar"}
@@ -598,7 +589,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -647,7 +638,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -695,7 +686,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -727,10 +718,10 @@ const PlasmicDescendants = {
   label: ["label"],
   eyebrow: ["eyebrow"],
   headline: ["headline"],
-  contentMiddle: ["contentMiddle", "bodyContent", "tooltip", "freeBox"],
+  contentMiddle: ["contentMiddle", "bodyContent", "tooltip", "text"],
   bodyContent: ["bodyContent"],
-  tooltip: ["tooltip", "freeBox"],
-  freeBox: ["freeBox"],
+  tooltip: ["tooltip", "text"],
+  text: ["text"],
   ctaBlock: [
     "ctaBlock",
     "ctaBlockDesktop",
@@ -925,7 +916,7 @@ type NodeDefaultElementType = {
   contentMiddle: "div";
   bodyContent: "div";
   tooltip: "div";
-  freeBox: "div";
+  text: "div";
   ctaBlock: "div";
   ctaBlockDesktop: "div";
   ctaGroup: "div";
@@ -1035,7 +1026,7 @@ export const PlasmicNewPage = Object.assign(
     contentMiddle: makeNodeComponent("contentMiddle"),
     bodyContent: makeNodeComponent("bodyContent"),
     tooltip: makeNodeComponent("tooltip"),
-    freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
     ctaBlock: makeNodeComponent("ctaBlock"),
     ctaBlockDesktop: makeNodeComponent("ctaBlockDesktop"),
     ctaGroup: makeNodeComponent("ctaGroup"),

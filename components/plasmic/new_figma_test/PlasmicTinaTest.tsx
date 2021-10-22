@@ -559,16 +559,7 @@ function PlasmicTinaTest__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -621,7 +612,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__cIgbk
+                        sty.text__cIgbk
                       )}
                     >
                       {"All-in-one"}
@@ -631,7 +622,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__qzFwi
+                        sty.text__qzFwi
                       )}
                     >
                       {hasVariant(globalVariants, "screen", "mobile")
@@ -734,7 +725,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__gcGrn
+                        sty.text__gcGrn
                       )}
                     >
                       {"See how it works (1:31)"}
@@ -742,11 +733,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                   </div>
                 </p.Stack>
 
-                <img
+                <p.PlasmicImg
                   alt={""}
-                  className={classNames(defaultcss.img, sty.img__jyPk)}
-                  role={"img"}
-                  src={"/plasmic/new_figma_test/images/playIcon4.svg"}
+                  className={classNames(sty.img__jyPk)}
+                  displayHeight={"73px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"73px" as const}
+                  src={{
+                    src: "/plasmic/new_figma_test/images/playIcon4.svg",
+                    fullWidth: 73,
+                    fullHeight: 73,
+                    aspectRatio: 1
+                  }}
                 />
               </div>
             </div>
@@ -762,7 +763,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__repSv
+                  sty.text__repSv
                 )}
               >
                 {"Features that fit your business"}
@@ -848,7 +849,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__dziFi
+                              sty.text__dziFi
                             )}
                           >
                             {"Job costing"}
@@ -877,7 +878,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           data-plasmic-name={"link"}
                           data-plasmic-override={overrides.link}
                           className={classNames(
-                            defaultcss.all,
+                            defaultcss.a,
                             defaultcss.__wab_text,
                             sty.link
                           )}
@@ -923,7 +924,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__aAndb
+                              sty.text__aAndb
                             )}
                           >
                             {"Expenses"}
@@ -950,7 +951,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__ccFnE
+                            sty.text__ccFnE
                           )}
                         >
                           {"Learn about tracking expenses"}
@@ -1022,7 +1023,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__jB3S
+                            sty.text__jB3S
                           )}
                         >
                           {"Invoicing"}
@@ -1051,7 +1052,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__iwvg0
+                          sty.text__iwvg0
                         )}
                       >
                         {"Learn about invoicing"}
@@ -1101,16 +1102,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                                 sty.group1921
                               )}
                             >
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__dbzie
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group1922.svg"
-                                }
+                                className={classNames(sty.img__dbzie)}
+                                displayHeight={"30.114px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"24.346px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group1922.svg",
+                                  fullWidth: 24.346,
+                                  fullHeight: 30.114,
+                                  aspectRatio: 0.823529
+                                }}
                               />
                             </div>
                           </div>
@@ -1150,7 +1156,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__y9JEp
+                            sty.text__y9JEp
                           )}
                         >
                           {"Manage bills"}
@@ -1179,7 +1185,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__xIfsJ
+                          sty.text__xIfsJ
                         )}
                       >
                         {"Learn about managing bills"}
@@ -1263,7 +1269,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__maOnP
+                            sty.text__maOnP
                           )}
                         >
                           {"Inventory"}
@@ -1292,7 +1298,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__joVqc
+                          sty.text__joVqc
                         )}
                       >
                         {"Learn about inventory"}
@@ -1348,7 +1354,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___7U3W
+                            sty.text___7U3W
                           )}
                         >
                           {"1099’s for contractors"}
@@ -1377,7 +1383,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__lFcrb
+                          sty.text__lFcrb
                         )}
                       >
                         {"Learn about 1099s"}
@@ -1437,16 +1443,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                                   sty.group1924
                                 )}
                               >
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__iw0Qe
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/group1923.svg"
-                                  }
+                                  className={classNames(sty.img__iw0Qe)}
+                                  displayHeight={"30.114px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"24.346px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/group1923.svg",
+                                    fullWidth: 24.346,
+                                    fullHeight: 30.114,
+                                    aspectRatio: 0.823529
+                                  }}
                                 />
                               </div>
                             </div>
@@ -1461,7 +1472,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pIdmZ
+                                sty.text__pIdmZ
                               )}
                             >
                               {"1099"}
@@ -1605,7 +1616,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___3DaVj
+                              sty.text___3DaVj
                             )}
                           >
                             {"Learn about invoicing"}
@@ -1642,7 +1653,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___95Egs
+                                sty.text___95Egs
                               )}
                             >
                               {"QuickBooks Cash bank account"}
@@ -1652,7 +1663,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__seM2I
+                                sty.text__seM2I
                               )}
                             >
                               {
@@ -1665,7 +1676,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__jFqX7
+                              sty.text__jFqX7
                             )}
                           >
                             {"Learn about QuickBooks Cash"}
@@ -1904,7 +1915,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__f2O4O
+                      sty.text__f2O4O
                     )}
                   >
                     {"Less features"}
@@ -2015,7 +2026,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__pIpPa
+                          sty.text__pIpPa
                         )}
                       >
                         {"Track your money"}
@@ -2059,7 +2070,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__gr6FI
+                          sty.text__gr6FI
                         )}
                       >
                         {"Stay ready for tax time"}
@@ -2089,7 +2100,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__wvQ4C
+                          sty.text__wvQ4C
                         )}
                       >
                         {"Discover deeper insights"}
@@ -2372,14 +2383,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                             role={"img"}
                           />
 
-                          <img
+                          <p.PlasmicImg
                             alt={""}
-                            className={classNames(
-                              defaultcss.img,
-                              sty.img__vQQnh
-                            )}
-                            role={"img"}
-                            src={"/plasmic/new_figma_test/images/group15.svg"}
+                            className={classNames(sty.img__vQQnh)}
+                            displayHeight={"130.93px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"none" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"130.927px" as const}
+                            src={{
+                              src: "/plasmic/new_figma_test/images/group15.svg",
+                              fullWidth: 130.927,
+                              fullHeight: 130.93,
+                              aspectRatio: 1
+                            }}
                           />
                         </div>
                       </div>
@@ -2870,7 +2888,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__t60Uc
+                          sty.text__t60Uc
                         )}
                       >
                         {"See story"}
@@ -2944,7 +2962,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__gCsJ4
+                            sty.text__gCsJ4
                           )}
                         >
                           {"Ariana Makau, owner of Nzilani Glass Conservatory"}
@@ -3024,16 +3042,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                                 role={"img"}
                               />
 
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img___3Bi2V
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector28.svg"
-                                }
+                                className={classNames(sty.img___3Bi2V)}
+                                displayHeight={"13px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"15px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector28.svg",
+                                  fullWidth: 15,
+                                  fullHeight: 13,
+                                  aspectRatio: 1.153846
+                                }}
                               />
                             </div>
                           </div>
@@ -3209,7 +3232,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___4WtJl
+                          sty.text___4WtJl
                         )}
                       >
                         {
@@ -3245,7 +3268,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__vl7Qt
+                            sty.text__vl7Qt
                           )}
                         >
                           {"Loren Ipsum"}
@@ -3457,7 +3480,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__pXItZ
+                            sty.text__pXItZ
                           )}
                         >
                           {"Feature"}
@@ -3479,7 +3502,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__enkaR
+                            sty.text__enkaR
                           )}
                         >
                           {"Blog"}
@@ -3577,7 +3600,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__znBSo
+                            sty.text__znBSo
                           )}
                         >
                           {"Deeper insights await"}
@@ -3689,7 +3712,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__gz3Yw
+                            sty.text__gz3Yw
                           )}
                         >
                           {"Feature"}
@@ -3711,7 +3734,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__bpbzP
+                            sty.text__bpbzP
                           )}
                         >
                           {"Blog"}
@@ -3755,7 +3778,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__xw50B
+                        sty.text__xw50B
                       )}
                     >
                       {"Plans for every kind of business"}
@@ -3826,7 +3849,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__t45UO
+                        sty.text__t45UO
                       )}
                     >
                       {"Important pricing details and product information"}
@@ -3893,7 +3916,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__sje9F
+                          sty.text__sje9F
                         )}
                       >
                         {"Essentials"}
@@ -3903,7 +3926,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__wrl2T
+                          sty.text__wrl2T
                         )}
                       >
                         {"(Includes Simple Start)"}
@@ -3938,7 +3961,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__adtGe
+                        sty.text__adtGe
                       )}
                     >
                       {
@@ -3955,7 +3978,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___9F5Fw
+                          sty.text___9F5Fw
                         )}
                       >
                         {"Advanced"}
@@ -3965,7 +3988,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__bjeMs
+                          sty.text__bjeMs
                         )}
                       >
                         {"(includes Plus)"}
@@ -4000,7 +4023,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__x34XG
+                        sty.text__x34XG
                       )}
                     >
                       {
@@ -4017,7 +4040,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__ar06K
+                          sty.text__ar06K
                         )}
                       >
                         {"Plus"}
@@ -4027,7 +4050,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__dYwgA
+                          sty.text__dYwgA
                         )}
                       >
                         {"(includes Essentials)"}
@@ -4051,7 +4074,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox___6LYYq
+                      sty.text___6LYYq
                     )}
                   >
                     {"Most popular"}
@@ -4072,7 +4095,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__j70E0
+                        sty.text__j70E0
                       )}
                     >
                       {"20"}
@@ -4082,7 +4105,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__mzqbq
+                        sty.text__mzqbq
                       )}
                     >
                       {"$"}
@@ -4092,7 +4115,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__qTpfO
+                        sty.text__qTpfO
                       )}
                     >
                       {"/mo"}
@@ -4104,7 +4127,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__bmadm
+                    sty.text__bmadm
                   )}
                 >
                   {"For the first 3 months then $40 /mo*"}
@@ -4124,7 +4147,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__dejD
+                        sty.text__dejD
                       )}
                     >
                       {"75"}
@@ -4134,7 +4157,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__osYoj
+                        sty.text__osYoj
                       )}
                     >
                       {"$"}
@@ -4144,7 +4167,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__vSvDs
+                        sty.text__vSvDs
                       )}
                     >
                       {"/mo"}
@@ -4156,7 +4179,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__osLtn
+                    sty.text__osLtn
                   )}
                 >
                   {"For the first 3 months then $150 /mo*"}
@@ -4219,7 +4242,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__eucu1
+                            sty.text__eucu1
                           )}
                         >
                           {"Simple Start"}
@@ -4254,7 +4277,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__hSOeB
+                          sty.text__hSOeB
                         )}
                       >
                         {"$"}
@@ -4264,7 +4287,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__sUbpr
+                          sty.text__sUbpr
                         )}
                       >
                         {"/mo"}
@@ -4276,7 +4299,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__yoaTn
+                      sty.text__yoaTn
                     )}
                   >
                     {"For the first 3 months then $25 /mo*"}
@@ -4297,7 +4320,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__c5ZK
+                        sty.text__c5ZK
                       )}
                     >
                       {"35"}
@@ -4307,7 +4330,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__tqRqN
+                        sty.text__tqRqN
                       )}
                     >
                       {"$"}
@@ -4317,7 +4340,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__jVj83
+                        sty.text__jVj83
                       )}
                     >
                       {"/mo"}
@@ -4329,7 +4352,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__jxW8W
+                    sty.text__jxW8W
                   )}
                 >
                   {"For the first 3 months then $70 /mo*"}
@@ -4447,7 +4470,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__fUaX6
+                                sty.text__fUaX6
                               )}
                             >
                               {"NEW"}
@@ -4472,7 +4495,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__qk8Sp
+                                sty.text__qk8Sp
                               )}
                             >
                               {"QUICKBOOKS COMMERCE"}
@@ -4507,7 +4530,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__qwQuZ
+                                  sty.text__qwQuZ
                                 )}
                               >
                                 {"Paid bills recorded for you"}
@@ -4517,7 +4540,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__keKjE
+                                  sty.text__keKjE
                                 )}
                               >
                                 {
@@ -4665,7 +4688,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__rgvHe
+                          sty.text__rgvHe
                         )}
                       >
                         {"See how it works (1:31)"}
@@ -4689,11 +4712,21 @@ function PlasmicTinaTest__RenderFunc(props: {
                   data-plasmic-override={overrides.group4484}
                   className={classNames(defaultcss.all, sty.group4484)}
                 >
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__bZrJs)}
-                    role={"img"}
-                    src={"/plasmic/new_figma_test/images/frame3759.svg"}
+                    className={classNames(sty.img__bZrJs)}
+                    displayHeight={"620px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"686px" as const}
+                    src={{
+                      src: "/plasmic/new_figma_test/images/frame3759.svg",
+                      fullWidth: 686,
+                      fullHeight: 620,
+                      aspectRatio: 1.106452
+                    }}
                   />
                 </div>
               </div>
@@ -4875,7 +4908,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___97WHz
+                              sty.text___97WHz
                             )}
                           >
                             {"See how it works (1:31)"}
@@ -4951,7 +4984,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__doxQr
+                        sty.text__doxQr
                       )}
                     >
                       {"More ways to learn"}
@@ -4961,7 +4994,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox___2FBi
+                        sty.text___2FBi
                       )}
                     >
                       {
@@ -5098,7 +5131,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__cs5As
+                                sty.text__cs5As
                               )}
                             >
                               {
@@ -5110,7 +5143,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__kRjQr
+                                sty.text__kRjQr
                               )}
                             >
                               {
@@ -5128,7 +5161,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__fRcth
+                                sty.text__fRcth
                               )}
                             >
                               {"Read more"}
@@ -5205,7 +5238,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pkH3M
+                                sty.text__pkH3M
                               )}
                             >
                               {
@@ -5217,7 +5250,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___2MlGc
+                                sty.text___2MlGc
                               )}
                             >
                               {
@@ -5238,7 +5271,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__l0Fy
+                                sty.text__l0Fy
                               )}
                             >
                               {"Read more"}
@@ -5558,7 +5591,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___3QLy
+                            sty.text___3QLy
                           )}
                         >
                           {"Talk to sales"}
@@ -5568,7 +5601,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__pty7V
+                            sty.text__pty7V
                           )}
                         >
                           {
@@ -5580,7 +5613,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__rssFf
+                            sty.text__rssFf
                           )}
                         >
                           {
@@ -5676,7 +5709,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__n0DFn
+                            sty.text__n0DFn
                           )}
                         >
                           {
@@ -5838,7 +5871,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox___6G2Tu
+                    sty.text___6G2Tu
                   )}
                 >
                   {"Run your business your way"}
@@ -5906,7 +5939,7 @@ function PlasmicTinaTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__o4QYf
+                  sty.text__o4QYf
                 )}
               >
                 {"Important offers, pricing details and disclaimers"}

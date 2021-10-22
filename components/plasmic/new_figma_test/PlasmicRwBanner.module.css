@@ -6,7 +6,7 @@
   height: auto;
   min-width: 0;
 }
-.freeBox__mq7Lx {
+.freeBox {
   display: flex;
   position: relative;
   flex-direction: row;
@@ -20,7 +20,7 @@
   background: #0a8543;
   border-radius: 8px 8px 0px 0px;
 }
-.freeBox__g6FN {
+.text {
   position: relative;
   left: auto;
   top: auto;

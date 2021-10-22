@@ -74,12 +74,6 @@ function PlasmicProductHeroPage__RenderFunc(props: {
       <Head>
         <title key="title">{"Product Hero"}</title>
         <meta key="og:title" property="og:title" content={"Product Hero"} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
       </Head>
 
       <style>{`

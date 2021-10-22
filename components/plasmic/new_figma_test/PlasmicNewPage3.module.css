@@ -1,0 +1,476 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+.option2 {
+  width: 1440px;
+  height: 766px;
+  display: block;
+  flex-shrink: 0;
+}
+.dHeroHeaderSubheadPrimaryButtonCtaSecondaryButtonCtaAndImage {
+  background: rgba(255, 255, 255, 1);
+  width: 1440px;
+  height: 766px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+}
+.rectangle598 {
+  background: rgba(242, 241, 238, 1);
+  width: 1440px;
+  height: 850px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.maskGroup {
+  width: 764px;
+  height: 764px;
+  display: block;
+  position: absolute;
+  top: 155px;
+  left: 777px;
+  -webkit-mask-image: var(--image-lMLYhm-aQ8);
+  -webkit-mask-size: 764px 764px;
+  -webkit-mask-repeat: no-repeat;
+}
+.qbLiveBookkeeperJonPace1 {
+  background: url("/plasmic/new_figma_test/images/qbLiveBookkeeperJonPace1.jpeg") center center / cover no-repeat;
+  width: 1088px;
+  height: 611px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: -215px;
+}
+.heroHeader {
+  width: 549px;
+  height: 677px;
+  display: block;
+  position: absolute;
+  top: 89px;
+  left: 135px;
+}
+.frame265 {
+  width: 549px;
+  height: 677px;
+  display: flex;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  flex-direction: column;
+}
+.frame265 > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 40px);
+  height: calc(100% + 40px);
+}
+.frame265 > :global(.__wab_flex-container) > *,
+.frame265 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.frame265 > :global(.__wab_flex-container) > picture > img,
+.frame265
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 40px;
+}
+.headerAndSubhead {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+}
+.headerAndSubhead > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.headerAndSubhead > :global(.__wab_flex-container) > *,
+.headerAndSubhead > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.headerAndSubhead > :global(.__wab_flex-container) > picture > img,
+.headerAndSubhead
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-top: 20px;
+}
+.text__sBvS {
+  display: block;
+  font-size: 72px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 92px;
+  color: rgba(0, 0, 0, 1);
+  position: relative;
+  width: 510px;
+}
+.text__fS98B {
+  display: block;
+  font-size: 20px;
+  font-family: Avenir Next;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 28px;
+  position: relative;
+  width: 390px;
+}
+.group3776 {
+  width: 460px;
+  height: 96px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.rwButton:global(.__wab_instance) {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+.optionalHeroFootnote {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: rgba(56, 57, 60, 1);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 460px;
+}
+.playLink {
+  width: 310px;
+  height: 22px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.text__mnSsb {
+  display: block;
+  font-size: 16px;
+  font-family: Avenir Next;
+  font-weight: 500;
+  letter-spacing: 0em;
+  line-height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 9.35%;
+  width: 90.64%;
+}
+.svg__yPsvH {
+  position: absolute;
+  object-fit: cover;
+  width: 22px;
+  height: 22px;
+  color: #0077c5;
+  display: block;
+  top: 0%;
+  left: 0%;
+}
+.svg__oo7Z5 {
+  position: absolute;
+  object-fit: cover;
+  width: 12px;
+  height: 9px;
+  color: #0077c5;
+  transform: scale(1.000000499999875, 1.0000004999998748)
+    rotate(90.0572957604145deg);
+  display: block;
+  transform-origin: top left;
+  top: 22.72%;
+  left: 5.16%;
+}
+.bkChat {
+  width: 323px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  top: 442px;
+  left: 615px;
+}
+.card {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 0px 0.796px rgba(227, 227, 227, 1);
+  background: rgba(255, 255, 255, 1);
+  width: 323px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5.387px;
+}
+.hiBenLooksLike {
+  display: block;
+  font-size: 14px;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: rgba(56, 57, 60, 1);
+  position: absolute;
+  top: 24px;
+  left: 27.86%;
+  width: 64.08%;
+}
+.bookkeeperPhoto {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  -webkit-mask-image: var(--image-scsMxhn9t);
+  -webkit-mask-size: 50px 50px;
+  -webkit-mask-repeat: no-repeat;
+}
+.svg__qEqMz {
+  position: absolute;
+  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  color: #d8d8d8;
+  display: block;
+  top: 0%;
+  left: 0%;
+}
+.quickBooks1905300656BoiseAdamJohnGroupSeamlessTbR63 {
+  background: url("/plasmic/new_figma_test/images/quickBooks1905300656BoiseAdamJohnGroupSeamlessTbR63.jpeg") center center / cover no-repeat;
+  width: 289px;
+  height: 388px;
+  display: block;
+  position: absolute;
+  top: -57px;
+  left: -95px;
+}
+.secondaryNav {
+  width: 1171px;
+  height: 46px;
+  display: block;
+  position: absolute;
+  top: 29px;
+  left: 134px;
+}
+.leftButtons {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  flex-direction: row;
+}
+.leftButtons > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-left: calc(0px - 40px);
+  width: calc(100% + 40px);
+}
+.leftButtons > :global(.__wab_flex-container) > *,
+.leftButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.leftButtons > :global(.__wab_flex-container) > picture > img,
+.leftButtons
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
+  margin-left: 40px;
+}
+.button {
+  background: rgba(9, 132, 66, 1);
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+}
+.frame5 {
+  width: auto;
+  height: auto;
+  display: inline-flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.minWidth120WidthShimTop3 {
+  background: rgba(255, 255, 255, 0);
+  width: 64px;
+  height: 9px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.lorenIpsum3 {
+  display: block;
+  font-size: 16px;
+  text-align: center;
+  font-family: Avenir Next;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 28px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+}
+.minWidth120ShimBottom3 {
+  background: rgba(255, 255, 255, 0);
+  width: 64px;
+  height: 9px;
+  display: block;
+  position: relative;
+  flex-shrink: 0;
+}
+.text__oEc5O {
+  display: block;
+  font-size: 24px;
+  font-family: AvenirNext forINTUIT;
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 1);
+  position: absolute;
+  top: 13.04%;
+  left: 0%;
+}
+.text__wx7OC {
+  display: block;
+  font-size: 16px;
+  font-family: Avenir Next;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(12, 50, 62, 1);
+  position: absolute;
+  top: 30.43%;
+  left: 67.46%;
+}
+.svg__qr2Im {
+  position: absolute;
+  object-fit: cover;
+  width: 17px;
+  height: 11px;
+  color: #0d333f;
+  transform: translate(0px, 0.18299999999999983px);
+  display: block;
+  top: 47.82%;
+  left: 77.54%;
+}
+.text__kDer3 {
+  display: block;
+  font-size: 16px;
+  font-family: Avenir Next;
+  font-weight: 600;
+  letter-spacing: 0em;
+  line-height: 100%;
+  color: rgba(9, 132, 66, 1);
+  position: absolute;
+  top: 30.43%;
+  left: 57.89%;
+}
+.rectangle390 {
+  background: rgba(12, 50, 62, 1);
+  width: 4.09%;
+  height: 6.52%;
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 57.89%;
+  border-radius: 10px;
+}
+.smbChat {
+  width: 342px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  top: 543px;
+  left: 685px;
+}
+.card2 {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25),
+    inset 0px 0px 0px 0.796px rgba(227, 227, 227, 1);
+  background: rgba(255, 255, 255, 1);
+  width: 342px;
+  height: 88px;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 5.387px;
+}
+.hiBenLooksLike2 {
+  display: block;
+  font-size: 14px;
+  font-family: AvenirNext forINTUIT;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: rgba(56, 57, 60, 1);
+  position: absolute;
+  top: 24px;
+  left: 28.36%;
+}
+.smbPhoto {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: absolute;
+  top: 20px;
+  left: 26px;
+  -webkit-mask-image: var(--image-scsMxhn9t);
+  -webkit-mask-size: 50px 50px;
+  -webkit-mask-repeat: no-repeat;
+}
+.svg__bhWhc {
+  position: absolute;
+  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  color: #d8d8d8;
+  display: block;
+  top: 0%;
+  left: 0%;
+}
+.screenShot20210304At5241 {
+  background: url("/plasmic/new_figma_test/images/screenShot20210304At5241.jpeg") center center / cover no-repeat;
+  width: 95px;
+  height: 62px;
+  display: block;
+  position: absolute;
+  top: -1px;
+  left: -20px;
+}
+.svg__p2Z8U {
+  position: absolute;
+  object-fit: cover;
+  width: 52px;
+  height: 52px;
+  color: #f3f2ef;
+  transform: scale(1.0005563452399868, 0.9998487389133986)
+    rotate(-45.040491710229254deg) skew(-0.04046307398010047deg, 0deg)
+    translate(0px, -0.23099999999999454px);
+  display: block;
+  transform-origin: top left;
+  top: 766px;
+  left: 692px;
+}

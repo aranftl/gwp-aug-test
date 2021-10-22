@@ -31,7 +31,7 @@
   align-self: center;
   flex-direction: column;
 }
-.slotChildren {
+.slotTargetChildren {
   font-family: AvenirNext forINTUIT;
   font-size: 28px;
   font-weight: 500;
@@ -50,7 +50,7 @@
   align-self: center;
   flex-direction: column;
 }
-.slotSlot {
+.slotTargetSlot {
   font-family: AvenirNext forINTUIT;
   font-size: 14px;
   font-weight: 500;
@@ -87,14 +87,14 @@
   top: 0px;
   left: 21px;
 }
-.slotWholePrice {
+.slotTargetWholePrice {
   font-family: AvenirNext forINTUIT;
   font-size: 60px;
   font-weight: 700;
   color: #0d333f;
   line-height: 76px;
 }
-.freeBox___3Ih8O {
+.text___3Ih8O {
   display: block;
   font-size: 24px;
   font-family: AvenirNext forINTUIT;
@@ -106,7 +106,7 @@
   top: 29px;
   left: 0px;
 }
-.freeBox__xiVVy {
+.text__xiVVy {
   display: block;
   font-size: 24px;
   font-family: AvenirNext forINTUIT;
@@ -125,7 +125,7 @@
   width: 137px;
   align-self: center;
 }
-.slotDuration {
+.slotTargetDuration {
   font-family: AvenirNext forINTUIT;
   font-size: 12px;
   font-weight: 400;
@@ -181,7 +181,7 @@
   background: #92787833;
   flex-shrink: 0;
 }
-.freeBox__d0LrT {
+.text__d0LrT {
   display: block;
   font-size: 16px;
   font-family: AvenirNext forINTUIT;
@@ -214,7 +214,13 @@
   height: calc(100% + 20px);
 }
 .featureBlock > :global(.__wab_flex-container) > *,
-.featureBlock > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.featureBlock > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.featureBlock > :global(.__wab_flex-container) > picture > img,
+.featureBlock
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 20px;
 }
 .featureItem {
@@ -224,7 +230,7 @@
   position: relative;
   flex-shrink: 0;
 }
-.freeBox__n5ZV {
+.text__n5ZV {
   display: block;
   font-size: 14px;
   font-family: AvenirNext forINTUIT;
@@ -258,7 +264,7 @@
   position: relative;
   flex-shrink: 0;
 }
-.freeBox__x5G92 {
+.text__x5G92 {
   display: block;
   font-size: 14px;
   font-family: AvenirNext forINTUIT;
@@ -292,7 +298,7 @@
   position: relative;
   flex-shrink: 0;
 }
-.freeBox__pzaUi {
+.text__pzaUi {
   display: block;
   font-size: 14px;
   font-family: AvenirNext forINTUIT;
@@ -326,7 +332,7 @@
   position: relative;
   flex-shrink: 0;
 }
-.freeBox__pLisO {
+.text__pLisO {
   display: block;
   font-size: 14px;
   font-family: AvenirNext forINTUIT;

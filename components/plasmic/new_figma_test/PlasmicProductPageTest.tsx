@@ -514,16 +514,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -581,7 +572,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__p2Vs
+                          sty.text__p2Vs
                         )}
                       >
                         {"All-in-one"}
@@ -596,7 +587,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__k5ZL9
+                          sty.text__k5ZL9
                         )}
                       >
                         {"accounting"}
@@ -650,7 +641,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__dreGr
+                          sty.text__dreGr
                         )}
                       >
                         {"All-in-one"}
@@ -665,7 +656,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__yutRt
+                          sty.text__yutRt
                         )}
                       >
                         {"accounting"}
@@ -742,7 +733,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__yho4M
+                        sty.text__yho4M
                       )}
                     >
                       {"See how it works (1:31)"}
@@ -750,11 +741,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                   </div>
                 </p.Stack>
 
-                <img
+                <p.PlasmicImg
                   alt={""}
-                  className={classNames(defaultcss.img, sty.img__dqO4V)}
-                  role={"img"}
-                  src={"/plasmic/new_figma_test/images/playIcon3.svg"}
+                  className={classNames(sty.img__dqO4V)}
+                  displayHeight={"73px" as const}
+                  displayMaxHeight={"none" as const}
+                  displayMaxWidth={"none" as const}
+                  displayMinHeight={"0" as const}
+                  displayMinWidth={"0" as const}
+                  displayWidth={"73px" as const}
+                  src={{
+                    src: "/plasmic/new_figma_test/images/playIcon3.svg",
+                    fullWidth: 73,
+                    fullHeight: 73,
+                    aspectRatio: 1
+                  }}
                 />
               </div>
             </div>
@@ -770,7 +771,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__vsRg9
+                  sty.text__vsRg9
                 )}
               >
                 {"Features that fit your business"}
@@ -856,7 +857,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__h4Wfk
+                              sty.text__h4Wfk
                             )}
                           >
                             {"Job costing"}
@@ -885,7 +886,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___7YIkv
+                            sty.text___7YIkv
                           )}
                         >
                           {"Learn about job costing"}
@@ -922,7 +923,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__qsb7R
+                              sty.text__qsb7R
                             )}
                           >
                             {"Expenses"}
@@ -949,7 +950,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__su0Xc
+                            sty.text__su0Xc
                           )}
                         >
                           {"Learn about tracking expenses"}
@@ -1021,7 +1022,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__r86Lr
+                            sty.text__r86Lr
                           )}
                         >
                           {"Invoicing"}
@@ -1050,7 +1051,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__lu68Z
+                          sty.text__lu68Z
                         )}
                       >
                         {"Learn about invoicing"}
@@ -1100,16 +1101,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                                 sty.group1921
                               )}
                             >
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img___8ZNgt
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group1920.svg"
-                                }
+                                className={classNames(sty.img___8ZNgt)}
+                                displayHeight={"30.114px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"24.346px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group1920.svg",
+                                  fullWidth: 24.346,
+                                  fullHeight: 30.114,
+                                  aspectRatio: 0.823529
+                                }}
                               />
                             </div>
                           </div>
@@ -1149,7 +1155,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___3XXyh
+                            sty.text___3XXyh
                           )}
                         >
                           {"Manage bills"}
@@ -1178,7 +1184,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__gyUVa
+                          sty.text__gyUVa
                         )}
                       >
                         {"Learn about managing bills"}
@@ -1262,7 +1268,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__xwJaQ
+                            sty.text__xwJaQ
                           )}
                         >
                           {"Inventory"}
@@ -1291,7 +1297,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__sbaFi
+                          sty.text__sbaFi
                         )}
                       >
                         {"Learn about inventory"}
@@ -1350,7 +1356,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__e8PjD
+                            sty.text__e8PjD
                           )}
                         >
                           {"1099’s for contractors"}
@@ -1379,7 +1385,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__iVp7K
+                          sty.text__iVp7K
                         )}
                       >
                         {"Learn about 1099s"}
@@ -1439,16 +1445,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                                   sty.group1924
                                 )}
                               >
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__tF68F
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/group1921.svg"
-                                  }
+                                  className={classNames(sty.img__tF68F)}
+                                  displayHeight={"30.114px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"24.346px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/group1921.svg",
+                                    fullWidth: 24.346,
+                                    fullHeight: 30.114,
+                                    aspectRatio: 0.823529
+                                  }}
                                 />
                               </div>
                             </div>
@@ -1463,7 +1474,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__jUh9N
+                                sty.text__jUh9N
                               )}
                             >
                               {"1099"}
@@ -1607,7 +1618,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__jfCh9
+                              sty.text__jfCh9
                             )}
                           >
                             {"Learn about invoicing"}
@@ -1644,7 +1655,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__a9DhC
+                                sty.text__a9DhC
                               )}
                             >
                               {"QuickBooks Cash bank account"}
@@ -1654,7 +1665,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__hjqez
+                                sty.text__hjqez
                               )}
                             >
                               {
@@ -1667,7 +1678,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__fAnnz
+                              sty.text__fAnnz
                             )}
                           >
                             {"Learn about QuickBooks Cash"}
@@ -1906,7 +1917,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__uvCiQ
+                      sty.text__uvCiQ
                     )}
                   >
                     {"Less features"}
@@ -2017,7 +2028,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__fxAe4
+                          sty.text__fxAe4
                         )}
                       >
                         {"Track your money"}
@@ -2061,7 +2072,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___2IbIn
+                          sty.text___2IbIn
                         )}
                       >
                         {"Stay ready for tax time"}
@@ -2091,7 +2102,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__tcmxk
+                          sty.text__tcmxk
                         )}
                       >
                         {"Discover deeper insights"}
@@ -2374,14 +2385,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             role={"img"}
                           />
 
-                          <img
+                          <p.PlasmicImg
                             alt={""}
-                            className={classNames(
-                              defaultcss.img,
-                              sty.img__gVfF0
-                            )}
-                            role={"img"}
-                            src={"/plasmic/new_figma_test/images/group12.svg"}
+                            className={classNames(sty.img__gVfF0)}
+                            displayHeight={"130.93px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"none" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"130.927px" as const}
+                            src={{
+                              src: "/plasmic/new_figma_test/images/group12.svg",
+                              fullWidth: 130.927,
+                              fullHeight: 130.93,
+                              aspectRatio: 1
+                            }}
                           />
                         </div>
                       </div>
@@ -2872,7 +2890,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__n8Cm4
+                          sty.text__n8Cm4
                         )}
                       >
                         {"See story"}
@@ -2946,7 +2964,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qGbI9
+                            sty.text__qGbI9
                           )}
                         >
                           {"Ariana Makau, owner of Nzilani Glass Conservatory"}
@@ -3026,16 +3044,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                                 role={"img"}
                               />
 
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__oqKrA
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector19.svg"
-                                }
+                                className={classNames(sty.img__oqKrA)}
+                                displayHeight={"13px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"15px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector19.svg",
+                                  fullWidth: 15,
+                                  fullHeight: 13,
+                                  aspectRatio: 1.153846
+                                }}
                               />
                             </div>
                           </div>
@@ -3211,7 +3234,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___8C4W7
+                          sty.text___8C4W7
                         )}
                       >
                         {
@@ -3247,7 +3270,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__fDlRl
+                            sty.text__fDlRl
                           )}
                         >
                           {"Loren Ipsum"}
@@ -3459,7 +3482,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___4UWb2
+                            sty.text___4UWb2
                           )}
                         >
                           {"Feature"}
@@ -3481,7 +3504,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___8Glw
+                            sty.text___8Glw
                           )}
                         >
                           {"Blog"}
@@ -3579,7 +3602,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___7H01
+                            sty.text___7H01
                           )}
                         >
                           {"Deeper insights await"}
@@ -3691,7 +3714,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___6F0Jg
+                            sty.text___6F0Jg
                           )}
                         >
                           {"Feature"}
@@ -3713,7 +3736,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__iUbnz
+                            sty.text__iUbnz
                           )}
                         >
                           {"Blog"}
@@ -3736,7 +3759,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__nIcFs
+                  sty.text__nIcFs
                 )}
               >
                 {"Plans for every kind of business"}
@@ -3804,7 +3827,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__po0MM
+                      sty.text__po0MM
                     )}
                   >
                     {"Important pricing details and product information"}
@@ -3935,7 +3958,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__m3SyJ
+                                sty.text__m3SyJ
                               )}
                             >
                               {"NEW"}
@@ -3960,7 +3983,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__kCgOb
+                                sty.text__kCgOb
                               )}
                             >
                               {"QUICKBOOKS COMMERCE"}
@@ -3995,7 +4018,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___6JqKd
+                                  sty.text___6JqKd
                                 )}
                               >
                                 {"Paid bills recorded for you"}
@@ -4005,7 +4028,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__uYd9M
+                                  sty.text__uYd9M
                                 )}
                               >
                                 {
@@ -4153,7 +4176,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__vQ4Or
+                          sty.text__vQ4Or
                         )}
                       >
                         {"See how it works (1:31)"}
@@ -4177,11 +4200,21 @@ function PlasmicProductPageTest__RenderFunc(props: {
                   data-plasmic-override={overrides.group4484}
                   className={classNames(defaultcss.all, sty.group4484)}
                 >
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__t49Ff)}
-                    role={"img"}
-                    src={"/plasmic/new_figma_test/images/frame3758.svg"}
+                    className={classNames(sty.img__t49Ff)}
+                    displayHeight={"620px" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"none" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"686px" as const}
+                    src={{
+                      src: "/plasmic/new_figma_test/images/frame3758.svg",
+                      fullWidth: 686,
+                      fullHeight: 620,
+                      aspectRatio: 1.106452
+                    }}
                   />
                 </div>
               </div>
@@ -4363,7 +4396,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__ttCz
+                              sty.text__ttCz
                             )}
                           >
                             {"See how it works (1:31)"}
@@ -4439,7 +4472,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__bfAhN
+                        sty.text__bfAhN
                       )}
                     >
                       {"More ways to learn"}
@@ -4449,7 +4482,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__lFDnB
+                        sty.text__lFDnB
                       )}
                     >
                       {
@@ -4586,7 +4619,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__gHduE
+                                sty.text__gHduE
                               )}
                             >
                               {
@@ -4598,7 +4631,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__qwpbb
+                                sty.text__qwpbb
                               )}
                             >
                               {
@@ -4616,7 +4649,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pwnqK
+                                sty.text__pwnqK
                               )}
                             >
                               {"Read more"}
@@ -4693,7 +4726,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___5QNiA
+                                sty.text___5QNiA
                               )}
                             >
                               {
@@ -4705,7 +4738,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___71OSa
+                                sty.text___71OSa
                               )}
                             >
                               {
@@ -4726,7 +4759,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__bUQcw
+                                sty.text__bUQcw
                               )}
                             >
                               {"Read more"}
@@ -5048,7 +5081,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__tnOwp
+                            sty.text__tnOwp
                           )}
                         >
                           {"Talk to sales"}
@@ -5058,7 +5091,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___8MqGq
+                            sty.text___8MqGq
                           )}
                         >
                           {
@@ -5070,7 +5103,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__cAe20
+                            sty.text__cAe20
                           )}
                         >
                           {
@@ -5166,7 +5199,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__pTdya
+                            sty.text__pTdya
                           )}
                         >
                           {
@@ -5328,7 +5361,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__xSkWp
+                    sty.text__xSkWp
                   )}
                 >
                   {"Run your business your way"}
@@ -5396,7 +5429,7 @@ function PlasmicProductPageTest__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.freeBox__yuHd2
+                  sty.text__yuHd2
                 )}
               >
                 {"Important offers, pricing details and disclaimers"}

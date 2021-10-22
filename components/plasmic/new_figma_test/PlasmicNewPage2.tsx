@@ -69,7 +69,7 @@ export type PlasmicNewPage2__OverridesType = {
   contentMiddle?: p.Flex<"div">;
   bodyContent?: p.Flex<"p">;
   tooltip?: p.Flex<"div">;
-  freeBox?: p.Flex<"div">;
+  text?: p.Flex<"div">;
   ctaBlock?: p.Flex<"div">;
   ctaBlockDesktop?: p.Flex<"div">;
   ctaGroup?: p.Flex<"div">;
@@ -107,16 +107,7 @@ function PlasmicNewPage2__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -228,7 +219,7 @@ function PlasmicNewPage2__RenderFunc(props: {
                       data-plasmic-name={"bodyContent"}
                       data-plasmic-override={overrides.bodyContent}
                       className={classNames(
-                        defaultcss.all,
+                        defaultcss.p,
                         defaultcss.__wab_text,
                         sty.bodyContent
                       )}
@@ -246,12 +237,12 @@ function PlasmicNewPage2__RenderFunc(props: {
                       className={classNames(defaultcss.all, sty.tooltip)}
                     >
                       <div
-                        data-plasmic-name={"freeBox"}
-                        data-plasmic-override={overrides.freeBox}
+                        data-plasmic-name={"text"}
+                        data-plasmic-override={overrides.text}
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox
+                          sty.text
                         )}
                       >
                         {"Lorem ipsum dolar"}
@@ -420,22 +411,38 @@ function PlasmicNewPage2__RenderFunc(props: {
                   data-plasmic-override={overrides.image}
                   className={classNames(defaultcss.all, sty.image)}
                 >
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__sA8Ad)}
-                    role={"img"}
-                    src={
-                      "/plasmic/new_figma_test/images/plasmicTestImagejpg.jpeg"
-                    }
+                    className={classNames(sty.img__sA8Ad)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"620px" as const}
+                    displayMaxWidth={"620px" as const}
+                    displayMinHeight={"335px" as const}
+                    displayMinWidth={"335px" as const}
+                    displayWidth={"100%" as const}
+                    src={{
+                      src: "/plasmic/new_figma_test/images/plasmicTestImagejpg.jpeg",
+                      fullWidth: 661,
+                      fullHeight: 661,
+                      aspectRatio: undefined
+                    }}
                   />
 
-                  <img
+                  <p.PlasmicImg
                     alt={""}
-                    className={classNames(defaultcss.img, sty.img__jBsi8)}
-                    role={"img"}
-                    src={
-                      "/plasmic/new_figma_test/images/payBillsDueDatessvg.svg"
-                    }
+                    className={classNames(sty.img__jBsi8)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"320px" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"100%" as const}
+                    src={{
+                      src: "/plasmic/new_figma_test/images/payBillsDueDatessvg.svg",
+                      fullWidth: 194,
+                      fullHeight: 150,
+                      aspectRatio: 1.292
+                    }}
                   />
                 </div>
               </div>
@@ -462,7 +469,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -493,7 +500,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -523,7 +530,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -552,7 +559,7 @@ const PlasmicDescendants = {
     "contentMiddle",
     "bodyContent",
     "tooltip",
-    "freeBox",
+    "text",
     "ctaBlock",
     "ctaBlockDesktop",
     "ctaGroup",
@@ -575,10 +582,10 @@ const PlasmicDescendants = {
   label: ["label"],
   eyebrow: ["eyebrow"],
   headline: ["headline"],
-  contentMiddle: ["contentMiddle", "bodyContent", "tooltip", "freeBox"],
+  contentMiddle: ["contentMiddle", "bodyContent", "tooltip", "text"],
   bodyContent: ["bodyContent"],
-  tooltip: ["tooltip", "freeBox"],
-  freeBox: ["freeBox"],
+  tooltip: ["tooltip", "text"],
+  text: ["text"],
   ctaBlock: [
     "ctaBlock",
     "ctaBlockDesktop",
@@ -674,7 +681,7 @@ type NodeDefaultElementType = {
   contentMiddle: "div";
   bodyContent: "p";
   tooltip: "div";
-  freeBox: "div";
+  text: "div";
   ctaBlock: "div";
   ctaBlockDesktop: "div";
   ctaGroup: "div";
@@ -766,7 +773,7 @@ export const PlasmicNewPage2 = Object.assign(
     contentMiddle: makeNodeComponent("contentMiddle"),
     bodyContent: makeNodeComponent("bodyContent"),
     tooltip: makeNodeComponent("tooltip"),
-    freeBox: makeNodeComponent("freeBox"),
+    text: makeNodeComponent("text"),
     ctaBlock: makeNodeComponent("ctaBlock"),
     ctaBlockDesktop: makeNodeComponent("ctaBlockDesktop"),
     ctaGroup: makeNodeComponent("ctaGroup"),

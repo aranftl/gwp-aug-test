@@ -473,7 +473,6 @@ export type PlasmicInvoicingTest__OverridesType = {
   ωMixinsColorGray01?: p.Flex<"div">;
   ωMixinsColorGray02?: p.Flex<"div">;
   optionalSpacerForOffset?: p.Flex<"div">;
-  text?: p.Flex<"div">;
   big?: p.Flex<"div">;
   small2?: p.Flex<"div">;
   art?: p.Flex<"div">;
@@ -1979,16 +1978,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
 
   return (
     <React.Fragment>
-      <Head>
-        <title key="title">{""}</title>
-        <meta key="og:title" property="og:title" content={""} />
-        <meta
-          key="description"
-          name="description"
-          property="og:description"
-          content={""}
-        />
-      </Head>
+      <Head></Head>
 
       <style>{`
         body {
@@ -2065,7 +2055,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___0E2R2
+                                sty.text___0E2R2
                               )}
                             >
                               {"PAY-ENABLED"}
@@ -2075,7 +2065,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__vFTe1
+                                sty.text__vFTe1
                               )}
                             >
                               {"INVOICES"}
@@ -2086,7 +2076,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___5Lj7F
+                              sty.text___5Lj7F
                             )}
                           >
                             {
@@ -2122,7 +2112,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wOhfB
+                                  sty.text__wOhfB
                                 )}
                               >
                                 {"See how to enter bills (3:19)"}
@@ -2472,39 +2462,49 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       sty.bank2
                                     )}
                                   >
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__tKCr
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/cardOutline5.svg"
-                                      }
+                                      className={classNames(sty.img__tKCr)}
+                                      displayHeight={"25px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"38px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/cardOutline5.svg",
+                                        fullWidth: 38,
+                                        fullHeight: 25,
+                                        aspectRatio: 1.52
+                                      }}
                                     />
 
                                     <div
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ePz2X
+                                        sty.text__ePz2X
                                       )}
                                     >
                                       {"BANK"}
                                     </div>
                                   </div>
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__loaPr
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/amex5.svg"
-                                    }
+                                    className={classNames(sty.img__loaPr)}
+                                    displayHeight={"23.876px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"37.519px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/amex5.svg",
+                                      fullWidth: 37.519,
+                                      fullHeight: 23.876,
+                                      aspectRatio: 1.583333
+                                    }}
                                   />
 
                                   <div
@@ -2525,16 +2525,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         sty.discover4
                                       )}
                                     >
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img___270WS
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline6.svg"
-                                        }
+                                        className={classNames(sty.img___270WS)}
+                                        displayHeight={"25px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"38px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline6.svg",
+                                          fullWidth: 38,
+                                          fullHeight: 25,
+                                          aspectRatio: 1.52
+                                        }}
                                       />
 
                                       <div
@@ -2621,28 +2626,42 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             role={"img"}
                                           />
 
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__uSReP
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector133.svg"
-                                            }
+                                            displayHeight={"6px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"6px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector133.svg",
+                                              fullWidth: 6,
+                                              fullHeight: 6,
+                                              aspectRatio: 1
+                                            }}
                                           />
 
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__ogbNd
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector134.svg"
-                                            }
+                                            displayHeight={"6px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"6px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector134.svg",
+                                              fullWidth: 6,
+                                              fullHeight: 6,
+                                              aspectRatio: 1
+                                            }}
                                           />
 
                                           <div
@@ -2665,16 +2684,31 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 sty.group5
                                               )}
                                             >
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img__rkJRo
                                                 )}
-                                                role={"img"}
-                                                src={
-                                                  "/plasmic/new_figma_test/images/group68.svg"
+                                                displayHeight={
+                                                  "6.017px" as const
                                                 }
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={
+                                                  "5.938px" as const
+                                                }
+                                                src={{
+                                                  src: "/plasmic/new_figma_test/images/group68.svg",
+                                                  fullWidth: 5.938,
+                                                  fullHeight: 6.017,
+                                                  aspectRatio: 0.857143
+                                                }}
                                               />
                                             </div>
                                           </div>
@@ -2717,28 +2751,38 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         sty.mc2
                                       )}
                                     >
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__rkzRq
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline5.svg"
-                                        }
+                                        className={classNames(sty.img__rkzRq)}
+                                        displayHeight={"25px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"38px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline5.svg",
+                                          fullWidth: 38,
+                                          fullHeight: 25,
+                                          aspectRatio: 1.52
+                                        }}
                                       />
 
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__jnRka
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/brandmark5.svg"
-                                        }
+                                        className={classNames(sty.img__jnRka)}
+                                        displayHeight={"14.835px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"24.005px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/brandmark5.svg",
+                                          fullWidth: 24.005,
+                                          fullHeight: 14.835,
+                                          aspectRatio: 1.666667
+                                        }}
                                       />
                                     </div>
                                   </div>
@@ -2751,16 +2795,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       sty.visa2
                                     )}
                                   >
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__i91Jn
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/newLogo5.svg"
-                                      }
+                                      className={classNames(sty.img__i91Jn)}
+                                      displayHeight={"22.878px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"36.266px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/newLogo5.svg",
+                                        fullWidth: 36.266,
+                                        fullHeight: 22.878,
+                                        aspectRatio: 1.52
+                                      }}
                                     />
                                   </div>
 
@@ -2792,16 +2841,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.group6
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__o4K2H
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/border5.svg"
-                                          }
+                                          className={classNames(sty.img__o4K2H)}
+                                          displayHeight={"23.876px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"37.295px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/border5.svg",
+                                            fullWidth: 37.295,
+                                            fullHeight: 23.876,
+                                            aspectRatio: 1.583333
+                                          }}
                                         />
 
                                         <div
@@ -2843,7 +2897,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__pOotB
+                            sty.text__pOotB
                           )}
                         >
                           {"Create invoice"}
@@ -2932,7 +2986,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__pbwby
+                              sty.text__pbwby
                             )}
                           >
                             {"Get paid with less back-and-forth"}
@@ -2952,7 +3006,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__zmuGp
+                            sty.text__zmuGp
                           )}
                         >
                           {
@@ -2998,7 +3052,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__zbaQn
+                                  sty.text__zbaQn
                                 )}
                               >
                                 {"NEW"}
@@ -3023,7 +3077,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__pntdj
+                                  sty.text__pntdj
                                 )}
                               >
                                 {"QUICKBOOKS COMMERCE"}
@@ -3058,7 +3112,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__viOd
+                                    sty.text__viOd
                                   )}
                                 >
                                   {"Create custom invoices"}
@@ -3068,7 +3122,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__gWwC
+                                    sty.text__gWwC
                                   )}
                                 >
                                   {
@@ -3186,7 +3240,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__nx4KN
+                                        sty.text__nx4KN
                                       )}
                                     >
                                       {"Add to invoice"}
@@ -3238,7 +3292,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__c6Jl
+                                            sty.text__c6Jl
                                           )}
                                         >
                                           {"Office Rent"}
@@ -3248,19 +3302,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__iVdU4
+                                            sty.text__iVdU4
                                           )}
                                         >
                                           {"$1755.00"}
                                         </div>
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__uXlb
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img__uXlb)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/checkboxFocus.svg"
                                           }
@@ -3270,7 +3326,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__wrzxV
+                                            sty.text__wrzxV
                                           )}
                                         >
                                           {"Montly Cleaning"}
@@ -3280,19 +3336,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__xh41G
+                                            sty.text__xh41G
                                           )}
                                         >
                                           {"$820.00"}
                                         </div>
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img___4AoH
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img___4AoH)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/checkboxFocus2.svg"
                                           }
@@ -3302,7 +3360,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__wWoZ5
+                                            sty.text__wWoZ5
                                           )}
                                         >
                                           {"Description"}
@@ -3312,7 +3370,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___6ANjv
+                                            sty.text___6ANjv
                                           )}
                                         >
                                           {"Open Balance"}
@@ -3322,19 +3380,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__f7Syd
+                                            sty.text__f7Syd
                                           )}
                                         >
                                           {"Payment"}
                                         </div>
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__spK
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img__spK)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/checkboxFocus2.svg"
                                           }
@@ -3373,23 +3433,28 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.group4411
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__qfnS
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/btnPriDrkBgDefaultCopy5.svg"
-                                          }
+                                          className={classNames(sty.img__qfnS)}
+                                          displayHeight={"26px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"69px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/btnPriDrkBgDefaultCopy5.svg",
+                                            fullWidth: 69,
+                                            fullHeight: 26,
+                                            aspectRatio: 2.653846
+                                          }}
                                         />
 
                                         <div
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__gqNb
+                                            sty.text__gqNb
                                           )}
                                         >
                                           {"500.00"}
@@ -3546,12 +3611,10 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               {false ? (
                                 <p.Stack
                                   as={"div"}
-                                  data-plasmic-name={"text"}
-                                  data-plasmic-override={overrides.text}
                                   hasGap={true}
                                   className={classNames(
                                     defaultcss.all,
-                                    sty.text
+                                    sty.freeBox__uRdaw
                                   )}
                                 >
                                   <div
@@ -3863,38 +3926,48 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     />
                                   </div>
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__dnHkc
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/group70.svg"
-                                    }
+                                    className={classNames(sty.img__dnHkc)}
+                                    displayHeight={"39.023px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"39.023px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/group70.svg",
+                                      fullWidth: 39.023,
+                                      fullHeight: 39.023,
+                                      aspectRatio: 1
+                                    }}
                                   />
 
                                   <div
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__byQxs
+                                      sty.text__byQxs
                                     )}
                                   >
                                     {"Add logo"}
                                   </div>
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__xrkN
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/group71.svg"
-                                    }
+                                    className={classNames(sty.img__xrkN)}
+                                    displayHeight={"36.373px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"75.612px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/group71.svg",
+                                      fullWidth: 75.612,
+                                      fullHeight: 36.373,
+                                      aspectRatio: 2
+                                    }}
                                   />
 
                                   <Vector111Icon
@@ -3948,7 +4021,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__d7I1Y
+                                  sty.text__d7I1Y
                                 )}
                               >
                                 {"NEW"}
@@ -3975,7 +4048,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__pTMmp
+                                  sty.text__pTMmp
                                 )}
                               >
                                 {"QUICKBOOKS COMMERCE"}
@@ -4010,7 +4083,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__jyYrT
+                                    sty.text__jyYrT
                                   )}
                                 >
                                   {"Get real-time alerts"}
@@ -4020,7 +4093,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__qwiaB
+                                    sty.text__qwiaB
                                   )}
                                 >
                                   {
@@ -4074,16 +4147,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     sty.phone
                                   )}
                                 >
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__iaHke
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/shadow4.svg"
-                                    }
+                                    className={classNames(sty.img__iaHke)}
+                                    displayHeight={"41px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"366px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/shadow4.svg",
+                                      fullWidth: 366,
+                                      fullHeight: 41,
+                                      aspectRatio: 8.926829
+                                    }}
                                   />
 
                                   <div
@@ -5818,7 +5896,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___3FLax
+                                        sty.text___3FLax
                                       )}
                                     >
                                       {"2:08"}
@@ -5909,7 +5987,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___70Ma2
+                                            sty.text___70Ma2
                                           )}
                                         >
                                           {"💸"}
@@ -5920,7 +5998,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___69MxZ
+                                          sty.text___69MxZ
                                         )}
                                       >
                                         {"now"}
@@ -5936,23 +6014,28 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.group369940
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__v4Ga
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/group72.svg"
-                                          }
+                                          className={classNames(sty.img__v4Ga)}
+                                          displayHeight={"32.553px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"32.644px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/group72.svg",
+                                            fullWidth: 32.644,
+                                            fullHeight: 32.553,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
                                         <div
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__iosRs
+                                            sty.text__iosRs
                                           )}
                                         >
                                           {"QuickBooks"}
@@ -6004,7 +6087,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__jxsWd
+                                  sty.text__jxsWd
                                 )}
                               >
                                 {"NEW"}
@@ -6031,7 +6114,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___2Xo93
+                                  sty.text___2Xo93
                                 )}
                               >
                                 {"QUICKBOOKS COMMERCE"}
@@ -6066,7 +6149,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__v4Jvu
+                                    sty.text__v4Jvu
                                   )}
                                 >
                                   {"Add billable hours"}
@@ -6163,7 +6246,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___1Wjn8
+                                  sty.text___1Wjn8
                                 )}
                               >
                                 {"Add to invoice"}
@@ -6201,7 +6284,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__xg3J
+                                  sty.text__xg3J
                                 )}
                               >
                                 {"Billable time"}
@@ -6211,7 +6294,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___82788
+                                  sty.text___82788
                                 )}
                               >
                                 {"Apr 1"}
@@ -6221,7 +6304,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__mveMo
+                                  sty.text__mveMo
                                 )}
                               >
                                 {"8:00"}
@@ -6231,7 +6314,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__ndH0U
+                                  sty.text__ndH0U
                                 )}
                               >
                                 {"Window renovation"}
@@ -6241,7 +6324,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wkxHh
+                                  sty.text__wkxHh
                                 )}
                               >
                                 {"$375.00"}
@@ -6251,7 +6334,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__b9TzS
+                                  sty.text__b9TzS
                                 )}
                               >
                                 {"Add"}
@@ -6298,7 +6381,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__y3Sic
+                                  sty.text__y3Sic
                                 )}
                               >
                                 {"NEW"}
@@ -6325,7 +6408,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__ppgBw
+                                  sty.text__ppgBw
                                 )}
                               >
                                 {"QUICKBOOKS COMMERCE"}
@@ -6503,16 +6586,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   />
                                 ) : null}
 
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__jTbv
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/history3.svg"
-                                  }
+                                  className={classNames(sty.img__jTbv)}
+                                  displayHeight={"33px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"33px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/history3.svg",
+                                    fullWidth: 33,
+                                    fullHeight: 33,
+                                    aspectRatio: 1
+                                  }}
                                 />
 
                                 <div
@@ -6622,7 +6710,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__h7P5C
+                                  sty.text__h7P5C
                                 )}
                               >
                                 {"Interval"}
@@ -6650,7 +6738,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__kSlB4
+                                      sty.text__kSlB4
                                     )}
                                   >
                                     {"of every month"}
@@ -6677,7 +6765,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__t4Wlq
+                                      sty.text__t4Wlq
                                     )}
                                   >
                                     {"on"}
@@ -6717,7 +6805,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__eNctt
+                                      sty.text__eNctt
                                     )}
                                   >
                                     {"Monthly"}
@@ -6765,7 +6853,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__f4Jj5
+                                      sty.text__f4Jj5
                                     )}
                                   >
                                     {"Friday"}
@@ -6813,7 +6901,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ira4M
+                                      sty.text__ira4M
                                     )}
                                   >
                                     {"first"}
@@ -6842,7 +6930,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__hfleE
+                            sty.text__hfleE
                           )}
                         >
                           {"Send progress invoices"}
@@ -6888,7 +6976,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__hOeB
+                                sty.text__hOeB
                               )}
                             >
                               {"Just the way to get invoices paid"}
@@ -6898,7 +6986,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___5VDRo
+                                sty.text___5VDRo
                               )}
                             >
                               {
@@ -6999,16 +7087,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         sty.group1921
                                       )}
                                     >
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__lui2V
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/group1926.svg"
-                                        }
+                                        className={classNames(sty.img__lui2V)}
+                                        displayHeight={"24.091px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"19.477px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/group1926.svg",
+                                          fullWidth: 19.477,
+                                          fullHeight: 24.091,
+                                          aspectRatio: 0.821429
+                                        }}
                                       />
                                     </div>
                                   </div>
@@ -7019,7 +7112,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__cSoK3
+                                  sty.text__cSoK3
                                 )}
                               >
                                 {"Make invoices instantly payable"}
@@ -7147,7 +7240,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___9KdJh
+                                  sty.text___9KdJh
                                 )}
                               >
                                 {"Feature"}
@@ -7169,7 +7262,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__rDTsW
+                                  sty.text__rDTsW
                                 )}
                               >
                                 {"Blog"}
@@ -7384,7 +7477,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__vJlx0
+                                  sty.text__vJlx0
                                 )}
                               >
                                 {"Feature"}
@@ -7406,7 +7499,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___5WQuM
+                                  sty.text___5WQuM
                                 )}
                               >
                                 {"Blog"}
@@ -7473,13 +7566,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 )}
                               />
 
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__hyGex
-                                )}
-                                role={"img"}
+                                className={classNames(sty.img__hyGex)}
+                                displayHeight={"0px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"0px" as const}
                                 src={
                                   "/plasmic/new_figma_test/images/group1536.svg"
                                 }
@@ -7656,13 +7751,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 )}
                               />
 
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__ekw4V
-                                )}
-                                role={"img"}
+                                className={classNames(sty.img__ekw4V)}
+                                displayHeight={"0px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"0px" as const}
                                 src={
                                   "/plasmic/new_figma_test/images/group1537.svg"
                                 }
@@ -7808,25 +7905,32 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     role={"img"}
                                   />
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__ypErl
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/vector124.svg"
-                                    }
+                                    className={classNames(sty.img__ypErl)}
+                                    displayHeight={"12px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"16px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/vector124.svg",
+                                      fullWidth: 16,
+                                      fullHeight: 12,
+                                      aspectRatio: 1.333333
+                                    }}
                                   />
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__yi8Sf
-                                    )}
-                                    role={"img"}
+                                    className={classNames(sty.img__yi8Sf)}
+                                    displayHeight={"0px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"0px" as const}
                                     src={
                                       "/plasmic/new_figma_test/images/group75.svg"
                                     }
@@ -8007,13 +8111,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 )}
                               />
 
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__pe2Dd
-                                )}
-                                role={"img"}
+                                className={classNames(sty.img__pe2Dd)}
+                                displayHeight={"0px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"0px" as const}
                                 src={
                                   "/plasmic/new_figma_test/images/group1537.svg"
                                 }
@@ -8064,13 +8170,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       sty.group1925
                                     )}
                                   >
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__u0RrS
-                                      )}
-                                      role={"img"}
+                                      className={classNames(sty.img__u0RrS)}
+                                      displayHeight={"0px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"0px" as const}
                                       src={
                                         "/plasmic/new_figma_test/images/group1927.svg"
                                       }
@@ -8172,7 +8280,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__rlfyu
+                                  sty.text__rlfyu
                                 )}
                               >
                                 {"Plans for every kind of business"}
@@ -8219,7 +8327,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__yC6Ub
+                                  sty.text__yC6Ub
                                 )}
                               >
                                 {
@@ -8313,7 +8421,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ci3E
+                                    sty.text__ci3E
                                   )}
                                 >
                                   {"Essentials"}
@@ -8360,7 +8468,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wqCVt
+                                  sty.text__wqCVt
                                 )}
                               >
                                 {
@@ -8380,7 +8488,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__nMcH
+                                    sty.text__nMcH
                                   )}
                                 >
                                   {"Advanced"}
@@ -8416,7 +8524,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__a9R0W
+                                      sty.text__a9R0W
                                     )}
                                   >
                                     {"$150"}
@@ -8435,7 +8543,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__sbUwd
+                                      sty.text__sbUwd
                                     )}
                                   >
                                     {"75"}
@@ -8445,7 +8553,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__paq0Y
+                                      sty.text__paq0Y
                                     )}
                                   >
                                     {"$"}
@@ -8455,7 +8563,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__hJn8X
+                                      sty.text__hJn8X
                                     )}
                                   >
                                     {"/mo"}
@@ -8503,7 +8611,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wySrT
+                                  sty.text__wySrT
                                 )}
                               >
                                 {
@@ -8523,7 +8631,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__a4Fas
+                                    sty.text__a4Fas
                                   )}
                                 >
                                   {"Plus"}
@@ -8553,7 +8661,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__oJnQn
+                                sty.text__oJnQn
                               )}
                             >
                               {"Most popular"}
@@ -8588,7 +8696,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ueoO9
+                                    sty.text__ueoO9
                                   )}
                                 >
                                   {"$40"}
@@ -8607,7 +8715,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__cywkm
+                                    sty.text__cywkm
                                   )}
                                 >
                                   {"20"}
@@ -8617,7 +8725,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__qi0Rz
+                                    sty.text__qi0Rz
                                   )}
                                 >
                                   {"$"}
@@ -8627,7 +8735,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rn2V4
+                                    sty.text__rn2V4
                                   )}
                                 >
                                   {"/mo"}
@@ -8664,7 +8772,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__xaTs9
+                                    sty.text__xaTs9
                                   )}
                                 >
                                   {"$70"}
@@ -8683,7 +8791,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__d7CGc
+                                    sty.text__d7CGc
                                   )}
                                 >
                                   {"35"}
@@ -8693,7 +8801,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__nlq0W
+                                    sty.text__nlq0W
                                   )}
                                 >
                                   {"$"}
@@ -8703,7 +8811,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__dL0ML
+                                    sty.text__dL0ML
                                   )}
                                 >
                                   {"/mo"}
@@ -8716,7 +8824,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__hPfCa
+                              sty.text__hPfCa
                             )}
                           >
                             {"For the first 3 months*"}
@@ -8726,7 +8834,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__khqwl
+                              sty.text__khqwl
                             )}
                           >
                             {"For the first 3 months*"}
@@ -8806,7 +8914,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___0BFwM
+                                      sty.text___0BFwM
                                     )}
                                   >
                                     {"Simple Start"}
@@ -8843,7 +8951,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__eDwUd
+                                      sty.text__eDwUd
                                     )}
                                   >
                                     {"$25"}
@@ -8862,7 +8970,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___9HNrF
+                                      sty.text___9HNrF
                                     )}
                                   >
                                     {"12"}
@@ -8872,7 +8980,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___3JRbC
+                                      sty.text___3JRbC
                                     )}
                                   >
                                     {"$"}
@@ -8882,7 +8990,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__jGfWf
+                                      sty.text__jGfWf
                                     )}
                                   >
                                     {"/mo"}
@@ -8895,7 +9003,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___6LwSz
+                                sty.text___6LwSz
                               )}
                             >
                               {"For the first 3 months*"}
@@ -8906,7 +9014,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__oU1
+                              sty.text__oU1
                             )}
                           >
                             {"For the first 3 months*"}
@@ -8966,16 +9074,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 sty.laptopStraight
                               )}
                             >
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__bi1Jz
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/ellipse263.svg"
-                                }
+                                className={classNames(sty.img__bi1Jz)}
+                                displayHeight={"14px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"675px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/ellipse263.svg",
+                                  fullWidth: 675,
+                                  fullHeight: 14,
+                                  aspectRatio: 48.214286
+                                }}
                               />
 
                               <div
@@ -9098,40 +9211,55 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     sty.keyboard1
                                   )}
                                 >
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__vYaF
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/vector135.svg"
-                                    }
+                                    className={classNames(sty.img__vYaF)}
+                                    displayHeight={"13px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"343px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/vector135.svg",
+                                      fullWidth: 343,
+                                      fullHeight: 13,
+                                      aspectRatio: 26.384615
+                                    }}
                                   />
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__o4KzL
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/group91.svg"
-                                    }
+                                    className={classNames(sty.img__o4KzL)}
+                                    displayHeight={"12.076px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"684.995px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/group91.svg",
+                                      fullWidth: 684.995,
+                                      fullHeight: 12.076,
+                                      aspectRatio: 52.692308
+                                    }}
                                   />
 
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__dCRea
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/vector136.svg"
-                                    }
+                                    className={classNames(sty.img__dCRea)}
+                                    displayHeight={"5px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"685px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/vector136.svg",
+                                      fullWidth: 685,
+                                      fullHeight: 5,
+                                      aspectRatio: 137
+                                    }}
                                   />
                                 </div>
                               </div>
@@ -9260,7 +9388,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__b3DZr
+                                            sty.text__b3DZr
                                           )}
                                         >
                                           {"20px gutter"}
@@ -9270,7 +9398,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__bDzit
+                                            sty.text__bDzit
                                           )}
                                         >
                                           {"65px~\ncol"}
@@ -9681,7 +9809,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__hAZu2
+                                            sty.text__hAZu2
                                           )}
                                         >
                                           {"My experts"}
@@ -9735,7 +9863,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__lnE33
+                                              sty.text__lnE33
                                             )}
                                           >
                                             {"C"}
@@ -9836,7 +9964,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__dJg35
+                                                sty.text__dJg35
                                               )}
                                             >
                                               {"Privacy"}
@@ -10034,7 +10162,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__c69Ar
+                                                    sty.text__c69Ar
                                                   )}
                                                 >
                                                   {"LOGO"}
@@ -10045,23 +10173,38 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__ohmvn
+                                                    sty.text__ohmvn
                                                   )}
                                                 >
                                                   {"C"}
                                                 </div>
                                               ) : null}
 
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img__p0Z3K
                                                 )}
-                                                role={"img"}
-                                                src={
-                                                  "/plasmic/new_figma_test/images/frame4.svg"
+                                                displayHeight={
+                                                  "13.667px" as const
                                                 }
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={
+                                                  "10.07px" as const
+                                                }
+                                                src={{
+                                                  src: "/plasmic/new_figma_test/images/frame4.svg",
+                                                  fullWidth: 10.07,
+                                                  fullHeight: 13.667,
+                                                  aspectRatio: 0.785714
+                                                }}
                                               />
                                             </div>
                                           </div>
@@ -10427,16 +10570,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.widgetFrameworkCopy2
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__p8UVq
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/elevation035.svg"
-                                          }
+                                          className={classNames(sty.img__p8UVq)}
+                                          displayHeight={"140px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"142px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/elevation035.svg",
+                                            fullWidth: 142,
+                                            fullHeight: 140,
+                                            aspectRatio: 1.014286
+                                          }}
                                         />
 
                                         <div
@@ -10613,7 +10761,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 className={classNames(
                                                   defaultcss.all,
                                                   defaultcss.__wab_text,
-                                                  sty.freeBox___7OFWl
+                                                  sty.text___7OFWl
                                                 )}
                                               >
                                                 {"Go to registers"}
@@ -10763,7 +10911,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___0Ux6J
+                                              sty.text___0Ux6J
                                             )}
                                           >
                                             {"$157.72"}
@@ -10773,7 +10921,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__zU1CU
+                                              sty.text__zU1CU
                                             )}
                                           >
                                             {"Bank balance"}
@@ -10783,7 +10931,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__lcgaq
+                                              sty.text__lcgaq
                                             )}
                                           >
                                             {"$-3,435.65"}
@@ -10793,7 +10941,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__oOxyP
+                                              sty.text__oOxyP
                                             )}
                                           >
                                             {"Updated moments ago"}
@@ -11402,16 +11550,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         </div>
                                       </div>
 
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__akOpw
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/group81.svg"
-                                        }
+                                        className={classNames(sty.img__akOpw)}
+                                        displayHeight={"57.545px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"57.898px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/group81.svg",
+                                          fullWidth: 57.898,
+                                          fullHeight: 57.545,
+                                          aspectRatio: 1.016949
+                                        }}
                                       />
                                     </div>
 
@@ -11636,7 +11789,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__eAkOy
+                                            sty.text__eAkOy
                                           )}
                                         >
                                           {"8 TO REVIEW"}
@@ -11652,16 +11805,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             sty.group18
                                           )}
                                         >
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__ju45R
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/dasehdLines5.svg"
-                                            }
+                                            displayHeight={"10.79px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"52.832px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/dasehdLines5.svg",
+                                              fullWidth: 52.832,
+                                              fullHeight: 10.79,
+                                              aspectRatio: 4.818182
+                                            }}
                                           />
 
                                           <div
@@ -11701,16 +11861,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.group20
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__pVnVt
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/dashedLines5.svg"
-                                          }
+                                          className={classNames(sty.img__pVnVt)}
+                                          displayHeight={"10.808px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"39.679px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/dashedLines5.svg",
+                                            fullWidth: 39.679,
+                                            fullHeight: 10.808,
+                                            aspectRatio: 3.636364
+                                          }}
                                         />
 
                                         <div
@@ -11935,7 +12100,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__sClZ4
+                                                sty.text__sClZ4
                                               )}
                                             >
                                               {"Money in"}
@@ -11953,13 +12118,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 sty.legendMarkers
                                               )}
                                             >
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img___8XjCq
                                                 )}
-                                                role={"img"}
+                                                displayHeight={"0px" as const}
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={"0px" as const}
                                                 src={
                                                   "/plasmic/new_figma_test/images/legendMarkersDot7.svg"
                                                 }
@@ -12638,88 +12811,127 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           role={"img"}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__xFiw
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          className={classNames(sty.img__xFiw)}
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__wKCgg
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          className={classNames(sty.img__wKCgg)}
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__a6KaY
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          className={classNames(sty.img__a6KaY)}
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
                                           className={classNames(
-                                            defaultcss.img,
                                             sty.img___2ObKt
                                           )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__ev1SO
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          className={classNames(sty.img__ev1SO)}
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
                                           className={classNames(
-                                            defaultcss.img,
                                             sty.img___0IiWz
                                           )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
 
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__bLle3
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/circleStrokeGreen3.svg"
-                                          }
+                                          className={classNames(sty.img__bLle3)}
+                                          displayHeight={"2.629px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"2.248px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/circleStrokeGreen3.svg",
+                                            fullWidth: 2.248,
+                                            fullHeight: 2.629,
+                                            aspectRatio: 1
+                                          }}
                                         />
                                       </div>
 
@@ -12768,7 +12980,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__rocwe
+                                                sty.text__rocwe
                                               )}
                                             >
                                               {"$0K"}
@@ -12778,7 +12990,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__uzc3Q
+                                                sty.text__uzc3Q
                                               )}
                                             >
                                               {"$10K"}
@@ -12788,7 +13000,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__kbL9
+                                                sty.text__kbL9
                                               )}
                                             >
                                               {"$15K"}
@@ -12798,7 +13010,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__uOCeT
+                                                sty.text__uOCeT
                                               )}
                                             >
                                               {"$20K"}
@@ -12808,7 +13020,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__gniiN
+                                                sty.text__gniiN
                                               )}
                                             >
                                               {"$25K"}
@@ -12818,7 +13030,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__wjGIw
+                                                sty.text__wjGIw
                                               )}
                                             >
                                               {"$5K"}
@@ -12863,7 +13075,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__lSdj
+                                            sty.text__lSdj
                                           )}
                                         >
                                           {"TODAY"}
@@ -12923,7 +13135,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__fb045
+                                              sty.text__fb045
                                             )}
                                           >
                                             {"Last 30 days"}
@@ -12933,7 +13145,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__jHnW
+                                              sty.text__jHnW
                                             )}
                                           >
                                             {"$3,692.22 Paid"}
@@ -12943,7 +13155,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__cug9R
+                                              sty.text__cug9R
                                             )}
                                           >
                                             {"$2,062.52"}
@@ -12953,7 +13165,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___5NndE
+                                              sty.text___5NndE
                                             )}
                                           >
                                             {"Not deposited"}
@@ -12963,7 +13175,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__leLz
+                                              sty.text__leLz
                                             )}
                                           >
                                             {"$1,629.70"}
@@ -12973,7 +13185,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__xC5U
+                                              sty.text__xC5U
                                             )}
                                           >
                                             {"Deposited"}
@@ -13039,7 +13251,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__sBiQl
+                                              sty.text__sBiQl
                                             )}
                                           >
                                             {"$1,525.50"}
@@ -13049,7 +13261,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__bkD1
+                                              sty.text__bkD1
                                             )}
                                           >
                                             {"Overdue"}
@@ -13059,7 +13271,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__vzjE9
+                                              sty.text__vzjE9
                                             )}
                                           >
                                             {"$3,756.02"}
@@ -13069,7 +13281,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___4AdPk
+                                              sty.text___4AdPk
                                             )}
                                           >
                                             {"Not due yet"}
@@ -13122,7 +13334,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__n2PZr
+                                              sty.text__n2PZr
                                             )}
                                           >
                                             {"Last 365 days"}
@@ -13132,7 +13344,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__kEfZi
+                                              sty.text__kEfZi
                                             )}
                                           >
                                             {"$5,281.52 Unpaid"}
@@ -13339,16 +13551,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           sty.widgetFrameworkCopy3
                                         )}
                                       >
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__ihKg
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/elevation036.svg"
-                                          }
+                                          className={classNames(sty.img__ihKg)}
+                                          displayHeight={"140px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"142px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/elevation036.svg",
+                                            fullWidth: 142,
+                                            fullHeight: 140,
+                                            aspectRatio: 1.014286
+                                          }}
                                         />
 
                                         <div
@@ -13518,7 +13735,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__scdN1
+                                                sty.text__scdN1
                                               )}
                                             >
                                               {"Money in"}
@@ -13536,13 +13753,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 sty.legendMarkers2
                                               )}
                                             >
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img__nSbd5
                                                 )}
-                                                role={"img"}
+                                                displayHeight={"0px" as const}
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={"0px" as const}
                                                 src={
                                                   "/plasmic/new_figma_test/images/legendMarkersDot7.svg"
                                                 }
@@ -14227,7 +14452,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox___8HTzj
+                                                    sty.text___8HTzj
                                                   )}
                                                 >
                                                   {"$0K"}
@@ -14237,7 +14462,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__hpMr3
+                                                    sty.text__hpMr3
                                                   )}
                                                 >
                                                   {"$10K"}
@@ -14247,7 +14472,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox___0KHfi
+                                                    sty.text___0KHfi
                                                   )}
                                                 >
                                                   {"$15K"}
@@ -14257,7 +14482,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__lOyJt
+                                                    sty.text__lOyJt
                                                   )}
                                                 >
                                                   {"$20K"}
@@ -14267,7 +14492,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__qmX7D
+                                                    sty.text__qmX7D
                                                   )}
                                                 >
                                                   {"$25K"}
@@ -14277,7 +14502,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                   className={classNames(
                                                     defaultcss.all,
                                                     defaultcss.__wab_text,
-                                                    sty.freeBox__qkRw9
+                                                    sty.text__qkRw9
                                                   )}
                                                 >
                                                   {"$5K"}
@@ -14632,7 +14857,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__o86D
+                                            sty.text__o86D
                                           )}
                                         >
                                           {"Transactions"}
@@ -15712,16 +15937,31 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 role={"img"}
                                               />
 
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img__muXJs
                                                 )}
-                                                role={"img"}
-                                                src={
-                                                  "/plasmic/new_figma_test/images/group89.svg"
+                                                displayHeight={
+                                                  "10.986px" as const
                                                 }
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={
+                                                  "10.986px" as const
+                                                }
+                                                src={{
+                                                  src: "/plasmic/new_figma_test/images/group89.svg",
+                                                  fullWidth: 10.986,
+                                                  fullHeight: 10.986,
+                                                  aspectRatio: 1
+                                                }}
                                               />
 
                                               <Fill32Icon
@@ -15933,7 +16173,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__t2MNc
+                                          sty.text__t2MNc
                                         )}
                                       >
                                         {"See how it works (1:31)"}
@@ -16258,7 +16498,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ujTcU
+                                    sty.text__ujTcU
                                   )}
                                 >
                                   {"More ways to learn\nabout invoicing"}
@@ -16268,7 +16508,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wsZ1V
+                                    sty.text__wsZ1V
                                   )}
                                 >
                                   {
@@ -16378,7 +16618,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__g6GO7
+                                        sty.text__g6GO7
                                       )}
                                     >
                                       {
@@ -16390,7 +16630,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__p1TAu
+                                        sty.text__p1TAu
                                       )}
                                     >
                                       {
@@ -16411,7 +16651,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__lyn0Z
+                                        sty.text__lyn0Z
                                       )}
                                     >
                                       {"Read more"}
@@ -16503,7 +16743,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__cE1Il
+                                        sty.text__cE1Il
                                       )}
                                     >
                                       {
@@ -16515,7 +16755,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__rb971
+                                        sty.text__rb971
                                       )}
                                     >
                                       {
@@ -16536,7 +16776,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ckBj
+                                        sty.text__ckBj
                                       )}
                                     >
                                       {"Read more"}
@@ -16618,7 +16858,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__k8Pd8
+                                      sty.text__k8Pd8
                                     )}
                                   >
                                     {"Talk to sales"}
@@ -16628,7 +16868,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__yra1A
+                                      sty.text__yra1A
                                     )}
                                   >
                                     {
@@ -16640,7 +16880,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__iT5Q5
+                                      sty.text__iT5Q5
                                     )}
                                   >
                                     {
@@ -16744,7 +16984,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__wqlRd
+                                      sty.text__wqlRd
                                     )}
                                   >
                                     {"Visit our support hub"}
@@ -16754,7 +16994,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__bmFek
+                                      sty.text__bmFek
                                     )}
                                   >
                                     {
@@ -16944,7 +17184,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__pYcpV
+                              sty.text__pYcpV
                             )}
                           >
                             {"Run your business your way"}
@@ -16975,7 +17215,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___30TB
+                            sty.text___30TB
                           )}
                         >
                           {"Important offers, pricing details and disclaimers"}
@@ -17017,7 +17257,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__j6Dse
+                        sty.text__j6Dse
                       )}
                     >
                       {"Get paid with less back- and-forth"}
@@ -17027,7 +17267,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__jFqGy
+                        sty.text__jFqGy
                       )}
                     >
                       {
@@ -17056,7 +17296,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__o5YXo
+                            sty.text__o5YXo
                           )}
                         >
                           {"NEW"}
@@ -17089,7 +17329,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__joGTc
+                              sty.text__joGTc
                             )}
                           >
                             {"Create custom invoices"}
@@ -17099,7 +17339,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__cag1T
+                              sty.text__cag1T
                             )}
                           >
                             {
@@ -17182,7 +17422,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__e2WHv
+                                sty.text__e2WHv
                               )}
                             >
                               {"Customize invoice"}
@@ -17269,7 +17509,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__a9Do7
+                              sty.text__a9Do7
                             )}
                           >
                             {"Small text"}
@@ -17477,14 +17717,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               ? true
                               : false
                           ) ? (
-                            <img
+                            <p.PlasmicImg
                               alt={""}
-                              className={classNames(
-                                defaultcss.img,
-                                sty.img__nhSOa
-                              )}
-                              role={"img"}
-                              src={"/plasmic/new_figma_test/images/group16.svg"}
+                              className={classNames(sty.img__nhSOa)}
+                              displayHeight={"19.351px" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"none" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"19.351px" as const}
+                              src={{
+                                src: "/plasmic/new_figma_test/images/group16.svg",
+                                fullWidth: 19.351,
+                                fullHeight: 19.351,
+                                aspectRatio: 1
+                              }}
                             />
                           ) : null}
 
@@ -17492,7 +17739,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__y9Dqk
+                              sty.text__y9Dqk
                             )}
                           >
                             {"Add logo"}
@@ -17503,14 +17750,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               ? true
                               : false
                           ) ? (
-                            <img
+                            <p.PlasmicImg
                               alt={""}
-                              className={classNames(
-                                defaultcss.img,
-                                sty.img__un4Xx
-                              )}
-                              role={"img"}
-                              src={"/plasmic/new_figma_test/images/group17.svg"}
+                              className={classNames(sty.img__un4Xx)}
+                              displayHeight={"18.036px" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"none" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"37.495px" as const}
+                              src={{
+                                src: "/plasmic/new_figma_test/images/group17.svg",
+                                fullWidth: 37.495,
+                                fullHeight: 18.036,
+                                aspectRatio: 1.95
+                              }}
                             />
                           ) : null}
                           {(
@@ -17581,14 +17835,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               ? true
                               : false
                           ) ? (
-                            <img
+                            <p.PlasmicImg
                               alt={""}
-                              className={classNames(
-                                defaultcss.img,
-                                sty.img__pWA5
-                              )}
-                              role={"img"}
-                              src={"/plasmic/new_figma_test/images/shadow5.svg"}
+                              className={classNames(sty.img__pWA5)}
+                              displayHeight={"21px" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"none" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"184px" as const}
+                              src={{
+                                src: "/plasmic/new_figma_test/images/shadow5.svg",
+                                fullWidth: 184,
+                                fullHeight: 21,
+                                aspectRatio: 8.761905
+                              }}
                             />
                           ) : null}
 
@@ -17706,7 +17967,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__dyqC1
+                                    sty.text__dyqC1
                                   )}
                                 >
                                   {"Save"}
@@ -17778,7 +18039,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__gGLua
+                                    sty.text__gGLua
                                   )}
                                 >
                                   {"Personal"}
@@ -17865,7 +18126,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__uLqz9
+                                    sty.text__uLqz9
                                   )}
                                 >
                                   {"BUSINESS"}
@@ -18227,7 +18488,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__gxS2P
+                                  sty.text__gxS2P
                                 )}
                               >
                                 {"Thu, Oct 1, 2021"}
@@ -18392,7 +18653,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__b8NGl
+                                  sty.text__b8NGl
                                 )}
                               >
                                 {"789 Pearl Avenue, Uptown"}
@@ -18409,7 +18670,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___61EeK
+                                  sty.text___61EeK
                                 )}
                               >
                                 {"7:05 AM"}
@@ -18524,7 +18785,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__deGq
+                                  sty.text__deGq
                                 )}
                               >
                                 {"456 Broadway, Downtown"}
@@ -18541,7 +18802,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__jKoHh
+                                  sty.text__jKoHh
                                 )}
                               >
                                 {"7:15 AM"}
@@ -18680,7 +18941,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yOUb
+                                    sty.text__yOUb
                                   )}
                                 >
                                   {"More info"}
@@ -18698,7 +18959,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__pqYI
+                                  sty.text__pqYI
                                 )}
                               >
                                 {"Meeting with client"}
@@ -18715,7 +18976,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__zx7BF
+                                  sty.text__zx7BF
                                 )}
                               >
                                 {"business purpose"}
@@ -18812,7 +19073,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__a4Knq
+                                    sty.text__a4Knq
                                   )}
                                 >
                                   {"More info"}
@@ -18830,7 +19091,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__hOu9
+                                  sty.text__hOu9
                                 )}
                               >
                                 {"Truck"}
@@ -18847,7 +19108,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__lg2Mk
+                                  sty.text__lg2Mk
                                 )}
                               >
                                 {"Vehicle"}
@@ -18904,7 +19165,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__xq9Mj
+                                sty.text__xq9Mj
                               )}
                             >
                               {"2:08"}
@@ -18985,7 +19246,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tJhkb
+                                    sty.text__tJhkb
                                   )}
                                 >
                                   {"💸"}
@@ -18996,7 +19257,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___8Szf
+                                  sty.text___8Szf
                                 )}
                               >
                                 {"now"}
@@ -19015,16 +19276,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__z8QP9
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/group18.svg"
-                                    }
+                                    className={classNames(sty.img__z8QP9)}
+                                    displayHeight={"16.263px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"16.309px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/group18.svg",
+                                      fullWidth: 16.309,
+                                      fullHeight: 16.263,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
 
@@ -19032,7 +19298,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__w5Qgo
+                                    sty.text__w5Qgo
                                   )}
                                 >
                                   {"QuickBooks"}
@@ -19065,7 +19331,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__vUymH
+                            sty.text__vUymH
                           )}
                         >
                           {"NEW"}
@@ -19098,7 +19364,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__unDs
+                              sty.text__unDs
                             )}
                           >
                             {"Get real-time alerts"}
@@ -19108,7 +19374,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__xnCer
+                              sty.text__xnCer
                             )}
                           >
                             {
@@ -19140,7 +19406,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qi176
+                            sty.text__qi176
                           )}
                         >
                           {"NEW"}
@@ -19173,7 +19439,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__tcRaE
+                              sty.text__tcRaE
                             )}
                           >
                             {"Add billable hours"}
@@ -19246,7 +19512,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__eszcH
+                                  sty.text__eszcH
                                 )}
                               >
                                 {"Just the way to get invoices paid"}
@@ -19256,7 +19522,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___5D2Aj
+                                  sty.text___5D2Aj
                                 )}
                               >
                                 {
@@ -19292,7 +19558,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__hispp
+                                    sty.text__hispp
                                   )}
                                 >
                                   {"Learn about payments"}
@@ -19389,14 +19655,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               ? true
                               : false
                           ) ? (
-                            <img
+                            <p.PlasmicImg
                               alt={""}
-                              className={classNames(
-                                defaultcss.img,
-                                sty.img__gxJt
-                              )}
-                              role={"img"}
-                              src={"/plasmic/new_figma_test/images/history.svg"}
+                              className={classNames(sty.img__gxJt)}
+                              displayHeight={"18px" as const}
+                              displayMaxHeight={"none" as const}
+                              displayMaxWidth={"none" as const}
+                              displayMinHeight={"0" as const}
+                              displayMinWidth={"0" as const}
+                              displayWidth={"18px" as const}
+                              src={{
+                                src: "/plasmic/new_figma_test/images/history.svg",
+                                fullWidth: 18,
+                                fullHeight: 18,
+                                aspectRatio: 1
+                              }}
                             />
                           ) : null}
 
@@ -19410,7 +19683,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___3Re9Y
+                                sty.text___3Re9Y
                               )}
                             >
                               {"Recurring Invoice"}
@@ -19474,7 +19747,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__eXcF
+                            sty.text__eXcF
                           )}
                         >
                           {"Interval"}
@@ -19498,7 +19771,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__wijUp
+                                sty.text__wijUp
                               )}
                             >
                               {"of every month"}
@@ -19521,7 +19794,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__jSfWf
+                                sty.text__jSfWf
                               )}
                             >
                               {"on"}
@@ -19559,7 +19832,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pPqDi
+                                sty.text__pPqDi
                               )}
                             >
                               {"Monthly"}
@@ -19611,7 +19884,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__iyyDn
+                                sty.text__iyyDn
                               )}
                             >
                               {"Friday"}
@@ -19663,7 +19936,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pMLgB
+                                sty.text__pMLgB
                               )}
                             >
                               {"first"}
@@ -19697,7 +19970,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox___9Ar5P
+                        sty.text___9Ar5P
                       )}
                     >
                       {"Send progress invoices"}
@@ -19742,7 +20015,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__t49I5
+                            sty.text__t49I5
                           )}
                         >
                           {"NEW"}
@@ -19860,16 +20133,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   ? true
                                   : false
                               ) ? (
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img___4CjMj
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/group1924.svg"
-                                  }
+                                  className={classNames(sty.img___4CjMj)}
+                                  displayHeight={"34.13px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"27.592px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/group1924.svg",
+                                    fullWidth: 27.592,
+                                    fullHeight: 34.13,
+                                    aspectRatio: 0.842105
+                                  }}
                                 />
                               ) : null}
                             </div>
@@ -19889,7 +20167,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__kqOth
+                            sty.text__kqOth
                           )}
                         >
                           {"Make invoices instantly payable"}
@@ -19899,7 +20177,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__vtUpk
+                            sty.text__vtUpk
                           )}
                         >
                           {
@@ -19913,7 +20191,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___1Mv5K
+                            sty.text___1Mv5K
                           )}
                         >
                           {"Learn about job costing"}
@@ -20001,7 +20279,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___0Irq
+                            sty.text___0Irq
                           )}
                         >
                           {"Stay up to date, down to the last detail "}
@@ -20011,7 +20289,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__bK5Xe
+                            sty.text__bK5Xe
                           )}
                         >
                           {
@@ -20025,7 +20303,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__u5Wws
+                            sty.text__u5Wws
                           )}
                         >
                           {"Learn about job costing"}
@@ -20086,7 +20364,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__kMw9
+                          sty.text__kMw9
                         )}
                       >
                         {"Add to invoice"}
@@ -20125,7 +20403,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__gpSkl
+                          sty.text__gpSkl
                         )}
                       >
                         {"Billable time"}
@@ -20135,7 +20413,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__rNj67
+                          sty.text__rNj67
                         )}
                       >
                         {"Apr 1"}
@@ -20145,7 +20423,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__d2SAo
+                          sty.text__d2SAo
                         )}
                       >
                         {"8:00"}
@@ -20155,7 +20433,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__yk1Qx
+                          sty.text__yk1Qx
                         )}
                       >
                         {"Window renovation"}
@@ -20165,7 +20443,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__qtdZv
+                          sty.text__qtdZv
                         )}
                       >
                         {"$375.00"}
@@ -20175,7 +20453,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__i97WE
+                          sty.text__i97WE
                         )}
                       >
                         {"Add"}
@@ -20236,7 +20514,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qHeBa
+                            sty.text__qHeBa
                           )}
                         >
                           {"Plans for every kind of business"}
@@ -20272,7 +20550,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rI25Q
+                                    sty.text__rI25Q
                                   )}
                                 >
                                   {"Simple Start"}
@@ -20297,7 +20575,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__z5ThG
+                                  sty.text__z5ThG
                                 )}
                               >
                                 {"Essentials"}
@@ -20307,7 +20585,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__qtE9W
+                                  sty.text__qtE9W
                                 )}
                               >
                                 {"Plus"}
@@ -20317,7 +20595,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__l9QeP
+                                  sty.text__l9QeP
                                 )}
                               >
                                 {"Advanced"}
@@ -20414,7 +20692,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__knaut
+                                          sty.text__knaut
                                         )}
                                       >
                                         {"Simple Start"}
@@ -20425,7 +20703,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__rlBr2
+                                            sty.text__rlBr2
                                           )}
                                         >
                                           {"(Includes Simple Start)"}
@@ -20437,7 +20715,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__q1WVx
+                                        sty.text__q1WVx
                                       )}
                                     >
                                       {
@@ -20504,7 +20782,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox___720Eu
+                                                sty.text___720Eu
                                               )}
                                             >
                                               {"$25"}
@@ -20525,7 +20803,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__zcxmQ
+                                                sty.text__zcxmQ
                                               )}
                                             >
                                               {"12"}
@@ -20535,7 +20813,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__udu1
+                                                sty.text__udu1
                                               )}
                                             >
                                               {"$"}
@@ -20545,7 +20823,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__hup01
+                                                sty.text__hup01
                                               )}
                                             >
                                               {"/mo"}
@@ -20557,7 +20835,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__zfWYx
+                                            sty.text__zfWYx
                                           )}
                                         >
                                           {"For the first 3 months *"}
@@ -20596,7 +20874,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__pnMnx
+                                              sty.text__pnMnx
                                             )}
                                           >
                                             {"$"}
@@ -20607,7 +20885,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__pZjFd
+                                              sty.text__pZjFd
                                             )}
                                           >
                                             {"200"}
@@ -20618,7 +20896,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__fWawp
+                                              sty.text__fWawp
                                             )}
                                           >
                                             {"/mo"}
@@ -20629,7 +20907,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__m6V4L
+                                            sty.text__m6V4L
                                           )}
                                         >
                                           {"30 day free trial"}
@@ -20640,7 +20918,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__iMwnf
+                                          sty.text__iMwnf
                                         )}
                                       >
                                         {
@@ -20695,7 +20973,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__qBk1
+                                            sty.text__qBk1
                                           )}
                                         >
                                           {"Choose plan"}
@@ -20720,7 +20998,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___6XuWh
+                                        sty.text___6XuWh
                                       )}
                                     >
                                       {"Or try it free for 30 days"}
@@ -20731,7 +21009,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___1VgTs
+                                          sty.text___1VgTs
                                         )}
                                       >
                                         {
@@ -20801,7 +21079,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__ehJ45
+                                            sty.text__ehJ45
                                           )}
                                         >
                                           {"Simple Start"}
@@ -20812,7 +21090,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__hwm6K
+                                              sty.text__hwm6K
                                             )}
                                           >
                                             {"(Includes Simple Start)"}
@@ -20824,7 +21102,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__lc2Db
+                                          sty.text__lc2Db
                                         )}
                                       >
                                         {
@@ -20861,7 +21139,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__fllPc
+                                            sty.text__fllPc
                                           )}
                                         >
                                           {"$"}
@@ -20871,7 +21149,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__wsGbK
+                                            sty.text__wsGbK
                                           )}
                                         >
                                           {"12"}
@@ -20881,7 +21159,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__a61Y7
+                                            sty.text__a61Y7
                                           )}
                                         >
                                           {"/mo"}
@@ -20908,7 +21186,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___8Tzxo
+                                          sty.text___8Tzxo
                                         )}
                                       >
                                         {
@@ -20947,7 +21225,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__bs3Li
+                                                sty.text__bs3Li
                                               )}
                                             >
                                               {"$"}
@@ -20958,7 +21236,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox___1G7Fo
+                                                sty.text___1G7Fo
                                               )}
                                             >
                                               {"200"}
@@ -20969,7 +21247,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox___7WZgd
+                                                sty.text___7WZgd
                                               )}
                                             >
                                               {"/mo"}
@@ -20995,7 +21273,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___6Vmhl
+                                            sty.text___6Vmhl
                                           )}
                                         >
                                           {
@@ -21047,7 +21325,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__qWhdE
+                                            sty.text__qWhdE
                                           )}
                                         >
                                           {"Choose plan"}
@@ -21072,7 +21350,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__jppf3
+                                        sty.text__jppf3
                                       )}
                                     >
                                       {"Or try it free for 30 days"}
@@ -21083,7 +21361,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__hPtjT
+                                          sty.text__hPtjT
                                         )}
                                       >
                                         {
@@ -21130,7 +21408,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__cissg
+                                        sty.text__cissg
                                       )}
                                     >
                                       {"Feature highlights"}
@@ -21141,7 +21419,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__erm9Z
+                                          sty.text__erm9Z
                                         )}
                                       >
                                         {"All Simple Start features and:"}
@@ -21195,7 +21473,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__kMpkh
+                                          sty.text__kMpkh
                                         )}
                                       >
                                         {"Pay bills all in one place"}
@@ -21252,7 +21530,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__eLzRt
+                                          sty.text__eLzRt
                                         )}
                                       >
                                         {"Track time for employees or clients"}
@@ -21309,7 +21587,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__sMSwD
+                                          sty.text__sMSwD
                                         )}
                                       >
                                         {
@@ -21368,7 +21646,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__c1Znf
+                                          sty.text__c1Znf
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -21426,7 +21704,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__zWlBf
+                                            sty.text__zWlBf
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -21484,7 +21762,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__h7Ub
+                                            sty.text__h7Ub
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -21568,7 +21846,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__v4I8Q
+                                          sty.text__v4I8Q
                                         )}
                                       >
                                         {"Simple Start"}
@@ -21579,7 +21857,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___8NQfj
+                                            sty.text___8NQfj
                                           )}
                                         >
                                           {"(Includes Simple Start)"}
@@ -21591,7 +21869,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___0C6RU
+                                        sty.text___0C6RU
                                       )}
                                     >
                                       {
@@ -21626,7 +21904,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___3VtYg
+                                          sty.text___3VtYg
                                         )}
                                       >
                                         {"$"}
@@ -21636,7 +21914,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__do2TA
+                                          sty.text__do2TA
                                         )}
                                       >
                                         {"12"}
@@ -21646,7 +21924,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__loorV
+                                          sty.text__loorV
                                         )}
                                       >
                                         {"/mo"}
@@ -21673,7 +21951,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___40WQ1
+                                        sty.text___40WQ1
                                       )}
                                     >
                                       {"For the first 3 months \nthen $40 /mo*"}
@@ -21710,7 +21988,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__nqz5O
+                                              sty.text__nqz5O
                                             )}
                                           >
                                             {"$"}
@@ -21721,7 +21999,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__zfsXs
+                                              sty.text__zfsXs
                                             )}
                                           >
                                             {"200"}
@@ -21732,7 +22010,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___3GmCa
+                                              sty.text___3GmCa
                                             )}
                                           >
                                             {"/mo"}
@@ -21758,7 +22036,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__evZvm
+                                          sty.text__evZvm
                                         )}
                                       >
                                         {
@@ -21813,7 +22091,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__w4Dy1
+                                            sty.text__w4Dy1
                                           )}
                                         >
                                           {"Choose plan"}
@@ -21838,7 +22116,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__dox6W
+                                        sty.text__dox6W
                                       )}
                                     >
                                       {"Or try it free for 30 days"}
@@ -21849,7 +22127,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__tnd5C
+                                          sty.text__tnd5C
                                         )}
                                       >
                                         {
@@ -21897,7 +22175,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__uo35D
+                                      sty.text__uo35D
                                     )}
                                   >
                                     {"Feature highlights"}
@@ -21908,7 +22186,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__erim7
+                                        sty.text__erim7
                                       )}
                                     >
                                       {"All Simple Start features and:"}
@@ -21962,7 +22240,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__avfT
+                                        sty.text__avfT
                                       )}
                                     >
                                       {"Pay bills all in one place"}
@@ -22019,7 +22297,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__r1EG
+                                        sty.text__r1EG
                                       )}
                                     >
                                       {"Track time for employees or clients"}
@@ -22076,7 +22354,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__guJbu
+                                        sty.text__guJbu
                                       )}
                                     >
                                       {
@@ -22135,7 +22413,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ouW09
+                                        sty.text__ouW09
                                       )}
                                     >
                                       {"Give access to 3 users"}
@@ -22193,7 +22471,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__ygfCh
+                                          sty.text__ygfCh
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -22251,7 +22529,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__euzSe
+                                          sty.text__euzSe
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -22379,7 +22657,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__ffaT
+                                sty.text__ffaT
                               )}
                             >
                               {"See pricing details"}
@@ -22441,7 +22719,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wqKxT
+                                  sty.text__wqKxT
                                 )}
                               >
                                 {"Sign In"}
@@ -22485,7 +22763,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___5BZq
+                                  sty.text___5BZq
                                 )}
                               >
                                 {"Support"}
@@ -22495,7 +22773,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___2Bre5
+                                  sty.text___2Bre5
                                 )}
                               >
                                 {"Plans & Pricing"}
@@ -22505,7 +22783,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__mmEoA
+                                  sty.text__mmEoA
                                 )}
                               >
                                 {"Business Type"}
@@ -22515,7 +22793,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__pDvCr
+                                  sty.text__pDvCr
                                 )}
                               >
                                 {"Features"}
@@ -22525,7 +22803,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__dYqB
+                                  sty.text__dYqB
                                 )}
                               >
                                 {"Products"}
@@ -22607,7 +22885,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___11BHz
+                            sty.text___11BHz
                           )}
                         >
                           {"Important offers, pricing details and disclaimers"}
@@ -22682,7 +22960,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__hjVmF
+                            sty.text__hjVmF
                           )}
                         >
                           {"More ways to learn about invoicing"}
@@ -22692,7 +22970,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__niDZf
+                            sty.text__niDZf
                           )}
                         >
                           {
@@ -22745,7 +23023,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__tqokd
+                                  sty.text__tqokd
                                 )}
                               >
                                 {"Get started"}
@@ -22804,7 +23082,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__xsu5X
+                                  sty.text__xsu5X
                                 )}
                               >
                                 {"ARTICLE"}
@@ -22825,7 +23103,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___3Roil
+                                  sty.text___3Roil
                                 )}
                               >
                                 {
@@ -22837,7 +23115,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__t9Q
+                                  sty.text__t9Q
                                 )}
                               >
                                 {
@@ -22851,7 +23129,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___6Gtwb
+                              sty.text___6Gtwb
                             )}
                           >
                             {"Read more"}
@@ -22939,7 +23217,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__l44I4
+                                  sty.text__l44I4
                                 )}
                               >
                                 {"ARTICLE"}
@@ -22960,7 +23238,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__zOu73
+                                  sty.text__zOu73
                                 )}
                               >
                                 {
@@ -22972,7 +23250,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__wZdoh
+                                  sty.text__wZdoh
                                 )}
                               >
                                 {
@@ -22986,7 +23264,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__s9Gk8
+                              sty.text__s9Gk8
                             )}
                           >
                             {"Read more"}
@@ -23153,7 +23431,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__mScam
+                            sty.text__mScam
                           )}
                         >
                           {"Talk to sales"}
@@ -23163,7 +23441,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qZ4ZD
+                            sty.text__qZ4ZD
                           )}
                         >
                           {
@@ -23234,7 +23512,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__x2I
+                              sty.text__x2I
                             )}
                           >
                             {"Visit our support hub"}
@@ -23244,7 +23522,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__yIg3U
+                              sty.text__yIg3U
                             )}
                           >
                             {
@@ -23286,7 +23564,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__eaW1B
+                                  sty.text__eaW1B
                                 )}
                               >
                                 {"See resources"}
@@ -23328,7 +23606,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__hlJrx
+                                  sty.text__hlJrx
                                 )}
                               >
                                 {"Need help signing in?"}
@@ -23379,7 +23657,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__aBhz
+                          sty.text__aBhz
                         )}
                       >
                         {"Run your business \nyour way"}
@@ -23421,7 +23699,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__cDzwB
+                                sty.text__cDzwB
                               )}
                             >
                               {"Find your plan"}
@@ -23463,7 +23741,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__y1R0G
+                          sty.text__y1R0G
                         )}
                       >
                         {"Important pricing details and product information"}
@@ -23520,7 +23798,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__rjLD
+                                sty.text__rjLD
                               )}
                             >
                               {"DO MORE"}
@@ -23541,7 +23819,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__hzNc
+                                sty.text__hzNc
                               )}
                             >
                               {"QuickBooks Live Bookkeeping"}
@@ -23551,7 +23829,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pWlU6
+                                sty.text__pWlU6
                               )}
                             >
                               {
@@ -23591,7 +23869,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__mg5Wj
+                                    sty.text__mg5Wj
                                   )}
                                 >
                                   {"Explore this product"}
@@ -23617,7 +23895,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ckhM6
+                                    sty.text__ckhM6
                                   )}
                                 >
                                   {"See how it works (1:31)"}
@@ -23681,16 +23959,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             ? true
                             : false
                         ) ? (
-                          <img
+                          <p.PlasmicImg
                             alt={""}
-                            className={classNames(
-                              defaultcss.img,
-                              sty.img___12Tko
-                            )}
-                            role={"img"}
-                            src={
-                              "/plasmic/new_figma_test/images/ellipse264.svg"
-                            }
+                            className={classNames(sty.img___12Tko)}
+                            displayHeight={"6px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"none" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"310px" as const}
+                            src={{
+                              src: "/plasmic/new_figma_test/images/ellipse264.svg",
+                              fullWidth: 310,
+                              fullHeight: 6,
+                              aspectRatio: 51.666667
+                            }}
                           />
                         ) : null}
 
@@ -23845,16 +24128,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__wqfMc
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector137.svg"
-                                }
+                                className={classNames(sty.img__wqfMc)}
+                                displayHeight={"6px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"158px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector137.svg",
+                                  fullWidth: 158,
+                                  fullHeight: 6,
+                                  aspectRatio: 26.333333
+                                }}
                               />
                             ) : null}
                             {(
@@ -23862,16 +24150,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img___0LAg
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group93.svg"
-                                }
+                                className={classNames(sty.img___0LAg)}
+                                displayHeight={"5.553px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"314.997px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group93.svg",
+                                  fullWidth: 314.997,
+                                  fullHeight: 5.553,
+                                  aspectRatio: 52.5
+                                }}
                               />
                             ) : null}
                             {(
@@ -23879,16 +24172,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__mqvF
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector138.svg"
-                                }
+                                className={classNames(sty.img__mqvF)}
+                                displayHeight={"3px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"315px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector138.svg",
+                                  fullWidth: 315,
+                                  fullHeight: 3,
+                                  aspectRatio: 105
+                                }}
                               />
                             ) : null}
                           </div>
@@ -24008,7 +24306,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wTqvb
+                                    sty.text__wTqvb
                                   )}
                                 >
                                   {"20px gutter"}
@@ -24018,7 +24316,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__aw1Un
+                                    sty.text__aw1Un
                                   )}
                                 >
                                   {"65px~\ncol"}
@@ -24347,7 +24645,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__dg9Qg
+                                    sty.text__dg9Qg
                                   )}
                                 >
                                   {"My experts"}
@@ -24416,7 +24714,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___7Sdm6
+                                      sty.text___7Sdm6
                                     )}
                                   >
                                     {"C"}
@@ -24448,7 +24746,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___0MutN
+                                      sty.text___0MutN
                                     )}
                                   >
                                     {"Get things done"}
@@ -24526,7 +24824,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__cDwB
+                                        sty.text__cDwB
                                       )}
                                     >
                                       {"Privacy"}
@@ -24686,7 +24984,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__w4ZjH
+                                            sty.text__w4ZjH
                                           )}
                                         >
                                           {"LOGO"}
@@ -24697,7 +24995,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__bRaWb
+                                            sty.text__bRaWb
                                           )}
                                         >
                                           {"C"}
@@ -24712,16 +25010,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__mjRVp
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/frame5.svg"
-                                          }
+                                          className={classNames(sty.img__mjRVp)}
+                                          displayHeight={"6.285px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"4.631px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/frame5.svg",
+                                            fullWidth: 4.631,
+                                            fullHeight: 6.285,
+                                            aspectRatio: 0.714286
+                                          }}
                                         />
                                       ) : null}
                                     </div>
@@ -24794,7 +25097,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__fl0By
+                                            sty.text__fl0By
                                           )}
                                         >
                                           {"PAYROLL"}
@@ -24832,7 +25135,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__mlmVc
+                                                sty.text__mlmVc
                                               )}
                                             >
                                               {"SAMPLE"}
@@ -24896,7 +25199,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__r8J0B
+                                            sty.text__r8J0B
                                           )}
                                         >
                                           {
@@ -24912,7 +25215,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ylXl8
+                                    sty.text__ylXl8
                                   )}
                                 >
                                   {"$12K"}
@@ -24922,7 +25225,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yZcE
+                                    sty.text__yZcE
                                   )}
                                 >
                                   {"Amount due for Payroll"}
@@ -24938,7 +25241,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ppxbG
+                                      sty.text__ppxbG
                                     )}
                                   >
                                     {"15"}
@@ -24955,7 +25258,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___6UtGr
+                                      sty.text___6UtGr
                                     )}
                                   >
                                     {"Days before Payroll"}
@@ -24985,16 +25288,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__h3VOm
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/elevation03.svg"
-                                    }
+                                    className={classNames(sty.img__h3VOm)}
+                                    displayHeight={"65px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"65px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/elevation03.svg",
+                                      fullWidth: 65,
+                                      fullHeight: 65,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
 
@@ -25002,7 +25310,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__uoiGg
+                                    sty.text__uoiGg
                                   )}
                                 >
                                   {"Bank accounts"}
@@ -25122,7 +25430,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__ak4Ox
+                                          sty.text__ak4Ox
                                         )}
                                       >
                                         {"Go to registers"}
@@ -25167,7 +25475,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__iDp1E
+                                          sty.text__iDp1E
                                         )}
                                       >
                                         {"Connect accounts"}
@@ -25199,7 +25507,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__chkwp
+                                      sty.text__chkwp
                                     )}
                                   >
                                     {"94 to review"}
@@ -25223,7 +25531,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__fo5Pa
+                                      sty.text__fo5Pa
                                     )}
                                   >
                                     {"in QuickBooks"}
@@ -25233,7 +25541,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__vn9TI
+                                      sty.text__vn9TI
                                     )}
                                   >
                                     {"$157.72"}
@@ -25243,7 +25551,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___6KgW
+                                      sty.text___6KgW
                                     )}
                                   >
                                     {"Bank balance"}
@@ -25253,7 +25561,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ouGKe
+                                      sty.text__ouGKe
                                     )}
                                   >
                                     {"$-3,435.65"}
@@ -25263,7 +25571,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__lPg2Y
+                                      sty.text__lPg2Y
                                     )}
                                   >
                                     {"Updated moments ago"}
@@ -25294,7 +25602,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ghWv
+                                      sty.text__ghWv
                                     )}
                                   >
                                     {"94 to review"}
@@ -25318,7 +25626,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__eoxEp
+                                      sty.text__eoxEp
                                     )}
                                   >
                                     {"in QuickBooks"}
@@ -25445,7 +25753,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___4XpNo
+                                    sty.text___4XpNo
                                   )}
                                 >
                                   {"EXPENSES"}
@@ -25467,7 +25775,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__e2BZe
+                                        sty.text__e2BZe
                                       )}
                                     >
                                       {"Last month"}
@@ -25512,7 +25820,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__iTjvG
+                                        sty.text__iTjvG
                                       )}
                                     >
                                       {"$14K"}
@@ -25529,7 +25837,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__nPiCf
+                                        sty.text__nPiCf
                                       )}
                                     >
                                       {"Business spending"}
@@ -25548,7 +25856,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__eUJhj
+                                    sty.text__eUJhj
                                   )}
                                 >
                                   {"$6,500"}
@@ -25558,7 +25866,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wyYbl
+                                    sty.text__wyYbl
                                   )}
                                 >
                                   {"Rent & mortg.."}
@@ -25606,7 +25914,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__waP8K
+                                    sty.text__waP8K
                                   )}
                                 >
                                   {"$1,250"}
@@ -25616,7 +25924,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__qVlFh
+                                    sty.text__qVlFh
                                   )}
                                 >
                                   {"Meals & entert..."}
@@ -25664,7 +25972,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___9F2AO
+                                    sty.text___9F2AO
                                   )}
                                 >
                                   {"$5,250"}
@@ -25674,7 +25982,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wf8Oc
+                                    sty.text__wf8Oc
                                   )}
                                 >
                                   {"Automotive"}
@@ -25716,7 +26024,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__vxQjG
+                                    sty.text__vxQjG
                                   )}
                                 >
                                   {"$1,000"}
@@ -25726,7 +26034,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__p1BJ4
+                                    sty.text__p1BJ4
                                   )}
                                 >
                                   {"Others"}
@@ -25767,16 +26075,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   ? true
                                   : false
                               ) ? (
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__bnS5V
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/group24.svg"
-                                  }
+                                  className={classNames(sty.img__bnS5V)}
+                                  displayHeight={"26.465px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"26.624px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/group24.svg",
+                                    fullWidth: 26.624,
+                                    fullHeight: 26.465,
+                                    aspectRatio: 1
+                                  }}
                                 />
                               ) : null}
                             </div>
@@ -25823,7 +26136,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__wmhEc
+                                        sty.text__wmhEc
                                       )}
                                     >
                                       {"PROFIT AND LOSS"}
@@ -25861,7 +26174,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__s5Uhn
+                                            sty.text__s5Uhn
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -25887,7 +26200,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ew9E
+                                        sty.text__ew9E
                                       )}
                                     >
                                       {"Last month"}
@@ -25920,7 +26233,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___3BJD
+                                    sty.text___3BJD
                                   )}
                                 >
                                   {"8 TO REVIEW"}
@@ -25941,16 +26254,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__iqke
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/dasehdLines6.svg"
-                                      }
+                                      className={classNames(sty.img__iqke)}
+                                      displayHeight={"4.962px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"24.295px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/dasehdLines6.svg",
+                                        fullWidth: 24.295,
+                                        fullHeight: 4.962,
+                                        aspectRatio: 5
+                                      }}
                                     />
                                   ) : null}
 
@@ -25990,16 +26308,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__kwdcT
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/dashedLines6.svg"
-                                    }
+                                    className={classNames(sty.img__kwdcT)}
+                                    displayHeight={"4.97px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"18.246px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/dashedLines6.svg",
+                                      fullWidth: 18.246,
+                                      fullHeight: 4.97,
+                                      aspectRatio: 3.8
+                                    }}
                                   />
                                 ) : null}
 
@@ -26023,7 +26346,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tq9N3
+                                    sty.text__tq9N3
                                   )}
                                 >
                                   {"$22,000"}
@@ -26033,7 +26356,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yhdvg
+                                    sty.text__yhdvg
                                   )}
                                 >
                                   {"Income"}
@@ -26050,7 +26373,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__iwDBo
+                                    sty.text__iwDBo
                                   )}
                                 >
                                   {"$14,000  "}
@@ -26060,7 +26383,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__xzSoL
+                                    sty.text__xzSoL
                                   )}
                                 >
                                   {"Expenses"}
@@ -26089,7 +26412,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__eAMdL
+                                        sty.text__eAMdL
                                       )}
                                     >
                                       {"$8K"}
@@ -26106,7 +26429,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__hD2Mn
+                                        sty.text__hD2Mn
                                       )}
                                     >
                                       {"Net income for March"}
@@ -26153,7 +26476,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___5Xkw9
+                                        sty.text___5Xkw9
                                       )}
                                     >
                                       {"Money in"}
@@ -26174,13 +26497,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__aad1I
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img__aad1I)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/legendMarkersDot3.svg"
                                           }
@@ -26200,7 +26525,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__gsOq3
+                                      sty.text__gsOq3
                                     )}
                                   >
                                     {"Sales"}
@@ -26262,7 +26587,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__bCf75
+                                        sty.text__bCf75
                                       )}
                                     >
                                       {
@@ -26295,7 +26620,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__hyePp
+                                        sty.text__hyePp
                                       )}
                                     >
                                       {"SALES"}
@@ -26333,7 +26658,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__jBvmr
+                                            sty.text__jBvmr
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -26360,7 +26685,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__iwlMw
+                                      sty.text__iwlMw
                                     )}
                                   >
                                     {"This week"}
@@ -26404,7 +26729,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___6SeIi
+                                        sty.text___6SeIi
                                       )}
                                     >
                                       {"$3.5K"}
@@ -26421,7 +26746,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___9Xxr
+                                        sty.text___9Xxr
                                       )}
                                     >
                                       {"Total profit"}
@@ -26571,7 +26896,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__cr82C
+                                      sty.text__cr82C
                                     )}
                                   >
                                     {"SAT"}
@@ -26588,7 +26913,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__x8RmO
+                                      sty.text__x8RmO
                                     )}
                                   >
                                     {"FRI"}
@@ -26605,7 +26930,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__wpck8
+                                      sty.text__wpck8
                                     )}
                                   >
                                     {"THU"}
@@ -26622,7 +26947,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__a95N6
+                                      sty.text__a95N6
                                     )}
                                   >
                                     {"WED"}
@@ -26639,7 +26964,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__n3LzO
+                                      sty.text__n3LzO
                                     )}
                                   >
                                     {"TUE"}
@@ -26656,7 +26981,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__nupIg
+                                      sty.text__nupIg
                                     )}
                                   >
                                     {"MON"}
@@ -26673,7 +26998,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__bFrhp
+                                      sty.text__bFrhp
                                     )}
                                   >
                                     {"SUN"}
@@ -26734,16 +27059,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__hTa72
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img__hTa72)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26751,16 +27081,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img___84UDa
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img___84UDa)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26768,16 +27103,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img___4HluH
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img___4HluH)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26785,16 +27125,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__xo1Q
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img__xo1Q)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26802,16 +27147,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__zejGo
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img__zejGo)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26819,16 +27169,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__wkcsp
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img__wkcsp)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -26836,16 +27191,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__hiv4P
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen.svg"
-                                    }
+                                    className={classNames(sty.img__hiv4P)}
+                                    displayHeight={"1.209px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.034px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen.svg",
+                                      fullWidth: 1.034,
+                                      fullHeight: 1.209,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                               </div>
@@ -26879,7 +27239,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ovL
+                                        sty.text__ovL
                                       )}
                                     >
                                       {"$0K"}
@@ -26889,7 +27249,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__rwCgx
+                                        sty.text__rwCgx
                                       )}
                                     >
                                       {"$10K"}
@@ -26899,7 +27259,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__uo05
+                                        sty.text__uo05
                                       )}
                                     >
                                       {"$15K"}
@@ -26909,7 +27269,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__zf8P
+                                        sty.text__zf8P
                                       )}
                                     >
                                       {"$20K"}
@@ -26919,7 +27279,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__v6BEi
+                                        sty.text__v6BEi
                                       )}
                                     >
                                       {"$25K"}
@@ -26929,7 +27289,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___8LTwA
+                                        sty.text___8LTwA
                                       )}
                                     >
                                       {"$5K"}
@@ -26966,7 +27326,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ngR02
+                                    sty.text__ngR02
                                   )}
                                 >
                                   {"TODAY"}
@@ -27012,7 +27372,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__e2K6X
+                                      sty.text__e2K6X
                                     )}
                                   >
                                     {"Last 30 days"}
@@ -27022,7 +27382,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__z9NIg
+                                      sty.text__z9NIg
                                     )}
                                   >
                                     {"$3,692.22 Paid"}
@@ -27032,7 +27392,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__mGgrN
+                                      sty.text__mGgrN
                                     )}
                                   >
                                     {"$2,062.52"}
@@ -27042,7 +27402,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__qs5Ff
+                                      sty.text__qs5Ff
                                     )}
                                   >
                                     {"Not deposited"}
@@ -27052,7 +27412,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__qSWc
+                                      sty.text__qSWc
                                     )}
                                   >
                                     {"$1,629.70"}
@@ -27062,7 +27422,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___76Dz6
+                                      sty.text___76Dz6
                                     )}
                                   >
                                     {"Deposited"}
@@ -27128,7 +27488,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ldo0H
+                                      sty.text__ldo0H
                                     )}
                                   >
                                     {"$1,525.50"}
@@ -27138,7 +27498,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__qrl7N
+                                      sty.text__qrl7N
                                     )}
                                   >
                                     {"Overdue"}
@@ -27148,7 +27508,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__aHk6P
+                                      sty.text__aHk6P
                                     )}
                                   >
                                     {"$3,756.02"}
@@ -27158,7 +27518,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___3Yh4
+                                      sty.text___3Yh4
                                     )}
                                   >
                                     {"Not due yet"}
@@ -27215,7 +27575,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___8ZiZv
+                                      sty.text___8ZiZv
                                     )}
                                   >
                                     {"Last 365 days"}
@@ -27225,7 +27585,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__mxOK
+                                      sty.text__mxOK
                                     )}
                                   >
                                     {"$5,281.52 Unpaid"}
@@ -27255,7 +27615,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__rb1Ur
+                                        sty.text__rb1Ur
                                       )}
                                     >
                                       {"INVOICES"}
@@ -27293,7 +27653,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__rd84
+                                            sty.text__rd84
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -27340,7 +27700,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__n75E9
+                                        sty.text__n75E9
                                       )}
                                     >
                                       {
@@ -27369,16 +27729,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__jPcZp
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/elevation032.svg"
-                                    }
+                                    className={classNames(sty.img__jPcZp)}
+                                    displayHeight={"65px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"66px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/elevation032.svg",
+                                      fullWidth: 66,
+                                      fullHeight: 65,
+                                      aspectRatio: 1.015385
+                                    }}
                                   />
                                 ) : null}
 
@@ -27386,7 +27751,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rFvxD
+                                    sty.text__rFvxD
                                   )}
                                 >
                                   {"CASH FLOW"}
@@ -27422,7 +27787,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__tg5D
+                                          sty.text__tg5D
                                         )}
                                       >
                                         {"Last quarter"}
@@ -27468,7 +27833,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__xjH6U
+                                        sty.text__xjH6U
                                       )}
                                     >
                                       {"Money out"}
@@ -27510,7 +27875,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__ih09B
+                                        sty.text__ih09B
                                       )}
                                     >
                                       {"Money in"}
@@ -27531,13 +27896,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__hqUuv
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img__hqUuv)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/legendMarkersDot3.svg"
                                           }
@@ -28105,7 +28472,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__nL1F
+                                            sty.text__nL1F
                                           )}
                                         >
                                           {"$0K"}
@@ -28115,7 +28482,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___3Hi7V
+                                            sty.text___3Hi7V
                                           )}
                                         >
                                           {"$10K"}
@@ -28125,7 +28492,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__x6Sw0
+                                            sty.text__x6Sw0
                                           )}
                                         >
                                           {"$15K"}
@@ -28135,7 +28502,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__loh05
+                                            sty.text__loh05
                                           )}
                                         >
                                           {"$20K"}
@@ -28145,7 +28512,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__douuN
+                                            sty.text__douuN
                                           )}
                                         >
                                           {"$25K"}
@@ -28155,7 +28522,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__nfnlz
+                                            sty.text__nfnlz
                                           )}
                                         >
                                           {"$5K"}
@@ -28180,7 +28547,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__n3N64
+                                          sty.text__n3N64
                                         )}
                                       >
                                         {"MAY"}
@@ -28197,7 +28564,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__tCcbi
+                                          sty.text__tCcbi
                                         )}
                                       >
                                         {"APR"}
@@ -28214,7 +28581,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___6X9T
+                                          sty.text___6X9T
                                         )}
                                       >
                                         {"MAR"}
@@ -28231,7 +28598,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___7LMet
+                                          sty.text___7LMet
                                         )}
                                       >
                                         {"FEB"}
@@ -28256,7 +28623,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ht4Xt
+                                    sty.text__ht4Xt
                                   )}
                                 >
                                   {"$16K"}
@@ -28320,7 +28687,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__miM5M
+                                        sty.text__miM5M
                                       )}
                                     >
                                       {"New"}
@@ -28377,7 +28744,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__iaWh
+                                    sty.text__iaWh
                                   )}
                                 >
                                   {"Dashboard"}
@@ -28408,7 +28775,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tNx2
+                                    sty.text__tNx2
                                   )}
                                 >
                                   {"Transactions"}
@@ -28492,7 +28859,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___6Zbjw
+                                    sty.text___6Zbjw
                                   )}
                                 >
                                   {"Sales"}
@@ -28576,7 +28943,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__hK4Ln
+                                    sty.text__hK4Ln
                                   )}
                                 >
                                   {"Expenses"}
@@ -28660,7 +29027,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__kqxii
+                                    sty.text__kqxii
                                   )}
                                 >
                                   {"Cash Flow"}
@@ -28744,7 +29111,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ya3AP
+                                    sty.text__ya3AP
                                   )}
                                 >
                                   {"Payroll"}
@@ -28828,7 +29195,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tFzoS
+                                    sty.text__tFzoS
                                   )}
                                 >
                                   {"Accounting"}
@@ -28912,7 +29279,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ajQrb
+                                    sty.text__ajQrb
                                   )}
                                 >
                                   {"Mileage"}
@@ -28943,7 +29310,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__sTAn6
+                                    sty.text__sTAn6
                                   )}
                                 >
                                   {"Apps"}
@@ -28974,7 +29341,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__pfy8X
+                                    sty.text__pfy8X
                                   )}
                                 >
                                   {"Live Bookkeeping"}
@@ -29005,7 +29372,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rHgl
+                                    sty.text__rHgl
                                   )}
                                 >
                                   {"Taxes"}
@@ -29036,7 +29403,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__jeBt
+                                    sty.text__jeBt
                                   )}
                                 >
                                   {"Reports"}
@@ -29067,7 +29434,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__faDv2
+                                    sty.text__faDv2
                                   )}
                                 >
                                   {"Projects"}
@@ -29167,16 +29534,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__di9Ry
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/group32.svg"
-                                          }
+                                          className={classNames(sty.img__di9Ry)}
+                                          displayHeight={"5.052px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"5.052px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/group32.svg",
+                                            fullWidth: 5.052,
+                                            fullHeight: 5.052,
+                                            aspectRatio: 1
+                                          }}
                                         />
                                       ) : null}
                                       {(
@@ -29555,7 +29927,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__lIjbw
+                            sty.text__lIjbw
                           )}
                         >
                           {"Explore the features"}
@@ -29593,7 +29965,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__z2CW
+                              sty.text__z2CW
                             )}
                           >
                             {
@@ -29634,7 +30006,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___9Gqpi
+                              sty.text___9Gqpi
                             )}
                           >
                             {
@@ -29846,7 +30218,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__pmM3
+                            sty.text__pmM3
                           )}
                         >
                           {"See plans & pricing"}
@@ -29876,7 +30248,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__ohDxk
+                            sty.text__ohDxk
                           )}
                         >
                           {"Try it free for 30 days"}
@@ -29887,7 +30259,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__j0Gwt
+                          sty.text__j0Gwt
                         )}
                       >
                         {"Simplify your accounting"}
@@ -29914,7 +30286,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__du3
+                            sty.text__du3
                           )}
                         >
                           {
@@ -29931,7 +30303,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__c8D5C
+                              sty.text__c8D5C
                             )}
                           >
                             {"INVOICES"}
@@ -29962,7 +30334,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__cn1Yq
+                              sty.text__cn1Yq
                             )}
                           >
                             {"See how to enter bills (3:19)"}
@@ -30180,16 +30552,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__rX8B
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/cardOutline.svg"
-                                    }
+                                    className={classNames(sty.img__rX8B)}
+                                    displayHeight={"14px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"20px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/cardOutline.svg",
+                                      fullWidth: 20,
+                                      fullHeight: 14,
+                                      aspectRatio: 1.428571
+                                    }}
                                   />
                                 ) : null}
 
@@ -30197,7 +30574,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__m6Cno
+                                    sty.text__m6Cno
                                   )}
                                 >
                                   {"BANK"}
@@ -30209,16 +30586,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   ? true
                                   : false
                               ) ? (
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__xit27
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/amex.svg"
-                                  }
+                                  className={classNames(sty.img__xit27)}
+                                  displayHeight={"12.269px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"19.281px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/amex.svg",
+                                    fullWidth: 19.281,
+                                    fullHeight: 12.269,
+                                    aspectRatio: 1.538462
+                                  }}
                                 />
                               ) : null}
 
@@ -30243,16 +30625,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__jlxU
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/cardOutline2.svg"
-                                      }
+                                      className={classNames(sty.img__jlxU)}
+                                      displayHeight={"14px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"20px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/cardOutline2.svg",
+                                        fullWidth: 20,
+                                        fullHeight: 14,
+                                        aspectRatio: 1.428571
+                                      }}
                                     />
                                   ) : null}
 
@@ -30413,16 +30800,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__eIvPn
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/vector139.svg"
-                                          }
+                                          className={classNames(sty.img__eIvPn)}
+                                          displayHeight={"3px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"3px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/vector139.svg",
+                                            fullWidth: 3,
+                                            fullHeight: 3,
+                                            aspectRatio: 1
+                                          }}
                                         />
                                       ) : null}
                                       {(
@@ -30434,16 +30826,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
                                           className={classNames(
-                                            defaultcss.img,
                                             sty.img___5Jz4G
                                           )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/vector140.svg"
-                                          }
+                                          displayHeight={"3px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"3px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/vector140.svg",
+                                            fullWidth: 3,
+                                            fullHeight: 3,
+                                            aspectRatio: 1
+                                          }}
                                         />
                                       ) : null}
 
@@ -30468,13 +30867,17 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               ? true
                                               : false
                                           ) ? (
-                                            <img
+                                            <p.PlasmicImg
                                               alt={""}
                                               className={classNames(
-                                                defaultcss.img,
                                                 sty.img__izHz4
                                               )}
-                                              role={"img"}
+                                              displayHeight={"0px" as const}
+                                              displayMaxHeight={"none" as const}
+                                              displayMaxWidth={"none" as const}
+                                              displayMinHeight={"0" as const}
+                                              displayMinWidth={"0" as const}
+                                              displayWidth={"0px" as const}
                                               src={
                                                 "/plasmic/new_figma_test/images/group36.svg"
                                               }
@@ -30543,16 +30946,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__vmeC
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/cardOutline.svg"
-                                      }
+                                      className={classNames(sty.img__vmeC)}
+                                      displayHeight={"14px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"20px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/cardOutline.svg",
+                                        fullWidth: 20,
+                                        fullHeight: 14,
+                                        aspectRatio: 1.428571
+                                      }}
                                     />
                                   ) : null}
                                   {(
@@ -30564,13 +30972,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__jE1Y8
-                                      )}
-                                      role={"img"}
+                                      className={classNames(sty.img__jE1Y8)}
+                                      displayHeight={"0px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"0px" as const}
                                       src={
                                         "/plasmic/new_figma_test/images/brandmark.svg"
                                       }
@@ -30590,13 +31000,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__rlJbd
-                                    )}
-                                    role={"img"}
+                                    className={classNames(sty.img__rlJbd)}
+                                    displayHeight={"0px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"0px" as const}
                                     src={
                                       "/plasmic/new_figma_test/images/newLogo.svg"
                                     }
@@ -30631,13 +31043,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img___7C7Lm
-                                        )}
-                                        role={"img"}
+                                        className={classNames(sty.img___7C7Lm)}
+                                        displayHeight={"0px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"0px" as const}
                                         src={
                                           "/plasmic/new_figma_test/images/border.svg"
                                         }
@@ -30706,7 +31120,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___36Y8
+                                sty.text___36Y8
                               )}
                             >
                               {"Invoice 1001"}
@@ -30785,7 +31199,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__a25K8
+                                      sty.text__a25K8
                                     )}
                                   >
                                     {"Online payments"}
@@ -30844,7 +31258,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___8XwC6
+                                sty.text___8XwC6
                               )}
                             >
                               {"Create invoice"}
@@ -30961,7 +31375,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__aqWFr
+                                          sty.text__aqWFr
                                         )}
                                       >
                                         {"Online payments"}
@@ -31041,16 +31455,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__hyojJ
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/cardOutline.svg"
-                                      }
+                                      className={classNames(sty.img__hyojJ)}
+                                      displayHeight={"14px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"20px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/cardOutline.svg",
+                                        fullWidth: 20,
+                                        fullHeight: 14,
+                                        aspectRatio: 1.428571
+                                      }}
                                     />
                                   ) : null}
 
@@ -31058,7 +31477,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ebbHm
+                                      sty.text__ebbHm
                                     )}
                                   >
                                     {"BANK"}
@@ -31070,16 +31489,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__eyIf
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/amex2.svg"
-                                    }
+                                    className={classNames(sty.img__eyIf)}
+                                    displayHeight={"12.269px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"19.281px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/amex2.svg",
+                                      fullWidth: 19.281,
+                                      fullHeight: 12.269,
+                                      aspectRatio: 1.538462
+                                    }}
                                   />
                                 ) : null}
 
@@ -31104,16 +31528,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__qdQcW
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline2.svg"
-                                        }
+                                        className={classNames(sty.img__qdQcW)}
+                                        displayHeight={"14px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"20px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline2.svg",
+                                          fullWidth: 20,
+                                          fullHeight: 14,
+                                          aspectRatio: 1.428571
+                                        }}
                                       />
                                     ) : null}
 
@@ -31274,16 +31703,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             ? true
                                             : false
                                         ) ? (
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__unjqT
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector141.svg"
-                                            }
+                                            displayHeight={"3px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"3px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector141.svg",
+                                              fullWidth: 3,
+                                              fullHeight: 3,
+                                              aspectRatio: 1
+                                            }}
                                           />
                                         ) : null}
                                         {(
@@ -31295,16 +31731,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             ? true
                                             : false
                                         ) ? (
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__vw3Ku
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector142.svg"
-                                            }
+                                            displayHeight={"3px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"3px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector142.svg",
+                                              fullWidth: 3,
+                                              fullHeight: 3,
+                                              aspectRatio: 1
+                                            }}
                                           />
                                         ) : null}
 
@@ -31329,16 +31772,31 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 ? true
                                                 : false
                                             ) ? (
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img___6YS8
                                                 )}
-                                                role={"img"}
-                                                src={
-                                                  "/plasmic/new_figma_test/images/group39.svg"
+                                                displayHeight={
+                                                  "3.092px" as const
                                                 }
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={
+                                                  "3.051px" as const
+                                                }
+                                                src={{
+                                                  src: "/plasmic/new_figma_test/images/group39.svg",
+                                                  fullWidth: 3.051,
+                                                  fullHeight: 3.092,
+                                                  aspectRatio: 1
+                                                }}
                                               />
                                             ) : null}
                                           </div>
@@ -31404,16 +31862,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__fBFkL
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline.svg"
-                                        }
+                                        className={classNames(sty.img__fBFkL)}
+                                        displayHeight={"14px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"20px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline.svg",
+                                          fullWidth: 20,
+                                          fullHeight: 14,
+                                          aspectRatio: 1.428571
+                                        }}
                                       />
                                     ) : null}
                                     {(
@@ -31425,16 +31888,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__sa57N
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/brandmark2.svg"
-                                        }
+                                        className={classNames(sty.img__sa57N)}
+                                        displayHeight={"7.624px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"12.335px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/brandmark2.svg",
+                                          fullWidth: 12.335,
+                                          fullHeight: 7.624,
+                                          aspectRatio: 1.625
+                                        }}
                                       />
                                     ) : null}
                                   </div>
@@ -31455,16 +31923,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__hxKaB
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/newLogo2.svg"
-                                      }
+                                      className={classNames(sty.img__hxKaB)}
+                                      displayHeight={"11.757px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"18.636px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/newLogo2.svg",
+                                        fullWidth: 18.636,
+                                        fullHeight: 11.757,
+                                        aspectRatio: 1.428571
+                                      }}
                                     />
                                   ) : null}
                                 </div>
@@ -31496,16 +31969,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img___6UCw
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/border2.svg"
-                                          }
+                                          className={classNames(sty.img___6UCw)}
+                                          displayHeight={"12.269px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"19.165px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/border2.svg",
+                                            fullWidth: 19.165,
+                                            fullHeight: 12.269,
+                                            aspectRatio: 1.538462
+                                          }}
                                         />
                                       ) : null}
 
@@ -31563,7 +32041,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__kEIt
+                          sty.text__kEIt
                         )}
                       >
                         {"Create invoice"}
@@ -31975,16 +32453,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__gdbZn
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/cardOutline3.svg"
-                                      }
+                                      className={classNames(sty.img__gdbZn)}
+                                      displayHeight={"23px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"35px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/cardOutline3.svg",
+                                        fullWidth: 35,
+                                        fullHeight: 23,
+                                        aspectRatio: 1.521739
+                                      }}
                                     />
                                   ) : null}
 
@@ -31992,7 +32475,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__xPkK7
+                                      sty.text__xPkK7
                                     )}
                                   >
                                     {"BANK"}
@@ -32004,16 +32487,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__ln0Tq
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/amex3.svg"
-                                    }
+                                    className={classNames(sty.img__ln0Tq)}
+                                    displayHeight={"21.886px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"34.393px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/amex3.svg",
+                                      fullWidth: 34.393,
+                                      fullHeight: 21.886,
+                                      aspectRatio: 1.590909
+                                    }}
                                   />
                                 ) : null}
 
@@ -32038,16 +32526,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img___0YweU
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline4.svg"
-                                        }
+                                        className={classNames(sty.img___0YweU)}
+                                        displayHeight={"23px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"35px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline4.svg",
+                                          fullWidth: 35,
+                                          fullHeight: 23,
+                                          aspectRatio: 1.521739
+                                        }}
                                       />
                                     ) : null}
 
@@ -32212,16 +32705,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             ? true
                                             : false
                                         ) ? (
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__qghzi
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector143.svg"
-                                            }
+                                            displayHeight={"5px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"5px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector143.svg",
+                                              fullWidth: 5,
+                                              fullHeight: 5,
+                                              aspectRatio: 1
+                                            }}
                                           />
                                         ) : null}
                                         {(
@@ -32233,16 +32733,23 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             ? true
                                             : false
                                         ) ? (
-                                          <img
+                                          <p.PlasmicImg
                                             alt={""}
                                             className={classNames(
-                                              defaultcss.img,
                                               sty.img__xrxBd
                                             )}
-                                            role={"img"}
-                                            src={
-                                              "/plasmic/new_figma_test/images/vector144.svg"
-                                            }
+                                            displayHeight={"5px" as const}
+                                            displayMaxHeight={"none" as const}
+                                            displayMaxWidth={"none" as const}
+                                            displayMinHeight={"0" as const}
+                                            displayMinWidth={"0" as const}
+                                            displayWidth={"5px" as const}
+                                            src={{
+                                              src: "/plasmic/new_figma_test/images/vector144.svg",
+                                              fullWidth: 5,
+                                              fullHeight: 5,
+                                              aspectRatio: 1
+                                            }}
                                           />
                                         ) : null}
 
@@ -32267,16 +32774,31 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                                 ? true
                                                 : false
                                             ) ? (
-                                              <img
+                                              <p.PlasmicImg
                                                 alt={""}
                                                 className={classNames(
-                                                  defaultcss.img,
                                                   sty.img__yrrHr
                                                 )}
-                                                role={"img"}
-                                                src={
-                                                  "/plasmic/new_figma_test/images/group44.svg"
+                                                displayHeight={
+                                                  "5.515px" as const
                                                 }
+                                                displayMaxHeight={
+                                                  "none" as const
+                                                }
+                                                displayMaxWidth={
+                                                  "none" as const
+                                                }
+                                                displayMinHeight={"0" as const}
+                                                displayMinWidth={"0" as const}
+                                                displayWidth={
+                                                  "5.442px" as const
+                                                }
+                                                src={{
+                                                  src: "/plasmic/new_figma_test/images/group44.svg",
+                                                  fullWidth: 5.442,
+                                                  fullHeight: 5.515,
+                                                  aspectRatio: 1
+                                                }}
                                               />
                                             ) : null}
                                           </div>
@@ -32346,16 +32868,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__fcOxJ
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/cardOutline3.svg"
-                                        }
+                                        className={classNames(sty.img__fcOxJ)}
+                                        displayHeight={"23px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"35px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/cardOutline3.svg",
+                                          fullWidth: 35,
+                                          fullHeight: 23,
+                                          aspectRatio: 1.521739
+                                        }}
                                       />
                                     ) : null}
                                     {(
@@ -32367,16 +32894,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         ? true
                                         : false
                                     ) ? (
-                                      <img
+                                      <p.PlasmicImg
                                         alt={""}
-                                        className={classNames(
-                                          defaultcss.img,
-                                          sty.img__u3BoK
-                                        )}
-                                        role={"img"}
-                                        src={
-                                          "/plasmic/new_figma_test/images/brandmark3.svg"
-                                        }
+                                        className={classNames(sty.img__u3BoK)}
+                                        displayHeight={"13.599px" as const}
+                                        displayMaxHeight={"none" as const}
+                                        displayMaxWidth={"none" as const}
+                                        displayMinHeight={"0" as const}
+                                        displayMinWidth={"0" as const}
+                                        displayWidth={"22.005px" as const}
+                                        src={{
+                                          src: "/plasmic/new_figma_test/images/brandmark3.svg",
+                                          fullWidth: 22.005,
+                                          fullHeight: 13.599,
+                                          aspectRatio: 1.642857
+                                        }}
                                       />
                                     ) : null}
                                   </div>
@@ -32399,16 +32931,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img___7PL3Z
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/newLogo3.svg"
-                                      }
+                                      className={classNames(sty.img___7PL3Z)}
+                                      displayHeight={"20.972px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"33.243px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/newLogo3.svg",
+                                        fullWidth: 33.243,
+                                        fullHeight: 20.972,
+                                        aspectRatio: 1.521739
+                                      }}
                                     />
                                   ) : null}
                                 </div>
@@ -32446,16 +32983,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__dw6Tu
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/border3.svg"
-                                          }
+                                          className={classNames(sty.img__dw6Tu)}
+                                          displayHeight={"21.886px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"34.187px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/border3.svg",
+                                            fullWidth: 34.187,
+                                            fullHeight: 21.886,
+                                            aspectRatio: 1.590909
+                                          }}
                                         />
                                       ) : null}
 
@@ -32513,7 +33055,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__yv08B
+                          sty.text__yv08B
                         )}
                       >
                         {"Create invoice"}
@@ -32636,7 +33178,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___9LH9O
+                            sty.text___9LH9O
                           )}
                         >
                           {"PAY-ENABLED"}
@@ -32646,7 +33188,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__eRnJc
+                            sty.text__eRnJc
                           )}
                         >
                           {"INVOICES"}
@@ -32657,7 +33199,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__de6Mx
+                          sty.text__de6Mx
                         )}
                       >
                         {
@@ -32702,7 +33244,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__hsJbD
+                              sty.text__hsJbD
                             )}
                           >
                             {"See plans & pricing"}
@@ -32732,7 +33274,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__vyUl2
+                              sty.text__vyUl2
                             )}
                           >
                             {"See how to enter bills (3:19)"}
@@ -32848,7 +33390,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___8YVc0
+                                  sty.text___8YVc0
                                 )}
                               >
                                 {"Customize invoice"}
@@ -33145,16 +33687,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__ewIro
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group47.svg"
-                                }
+                                className={classNames(sty.img__ewIro)}
+                                displayHeight={"32.807px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"32.807px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group47.svg",
+                                  fullWidth: 32.807,
+                                  fullHeight: 32.807,
+                                  aspectRatio: 1
+                                }}
                               />
                             ) : null}
 
@@ -33162,7 +33709,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__rYllb
+                                sty.text__rYllb
                               )}
                             >
                               {"Add logo"}
@@ -33173,16 +33720,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__l7RPv
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group48.svg"
-                                }
+                                className={classNames(sty.img__l7RPv)}
+                                displayHeight={"30.579px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"63.568px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group48.svg",
+                                  fullWidth: 63.568,
+                                  fullHeight: 30.579,
+                                  aspectRatio: 1.941176
+                                }}
                               />
                             ) : null}
                             {(
@@ -33224,7 +33776,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__q6CfY
+                              sty.text__q6CfY
                             )}
                           >
                             {"QUICKBOOKS CASH"}
@@ -33251,7 +33803,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__gDu62
+                                sty.text__gDu62
                               )}
                             >
                               {"Create custom invoices"}
@@ -33261,7 +33813,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__itOm3
+                                sty.text__itOm3
                               )}
                             >
                               {
@@ -33302,7 +33854,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__rDoAl
+                                      sty.text__rDoAl
                                     )}
                                   >
                                     {"Take a test drive"}
@@ -33328,7 +33880,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__mo6Rj
+                                      sty.text__mo6Rj
                                     )}
                                   >
                                     {"See how it works (1:43)"}
@@ -33452,7 +34004,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__dHcCv
+                              sty.text__dHcCv
                             )}
                           >
                             {"Add to invoice"}
@@ -33494,7 +34046,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__qjhwO
+                              sty.text__qjhwO
                             )}
                           >
                             {"Billable time"}
@@ -33504,7 +34056,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__btcZo
+                              sty.text__btcZo
                             )}
                           >
                             {"Apr 1"}
@@ -33514,7 +34066,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___7DeOr
+                              sty.text___7DeOr
                             )}
                           >
                             {"8:00"}
@@ -33524,7 +34076,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__tl2Yw
+                              sty.text__tl2Yw
                             )}
                           >
                             {"Window renovation"}
@@ -33534,7 +34086,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__jbNci
+                              sty.text__jbNci
                             )}
                           >
                             {"$375.00"}
@@ -33544,7 +34096,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__lVoDy
+                              sty.text__lVoDy
                             )}
                           >
                             {"Add"}
@@ -33571,7 +34123,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__zZjDc
+                              sty.text__zZjDc
                             )}
                           >
                             {"QUICKBOOKS CASH"}
@@ -33598,7 +34150,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__qdeFx
+                                sty.text__qdeFx
                               )}
                             >
                               {"Add billable hours"}
@@ -33655,7 +34207,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__dmD3X
+                                      sty.text__dmD3X
                                     )}
                                   >
                                     {"Take a test drive"}
@@ -33681,7 +34233,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__uekvz
+                                      sty.text__uekvz
                                     )}
                                   >
                                     {"See how it works (1:43)"}
@@ -33797,16 +34349,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__jfekA
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/shadow6.svg"
-                                }
+                                className={classNames(sty.img__jfekA)}
+                                displayHeight={"33px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"291px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/shadow6.svg",
+                                  fullWidth: 291,
+                                  fullHeight: 33,
+                                  aspectRatio: 8.818182
+                                }}
                               />
                             ) : null}
 
@@ -33937,7 +34494,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___6MdWb
+                                      sty.text___6MdWb
                                     )}
                                   >
                                     {"Save"}
@@ -34011,7 +34568,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__q0Nyv
+                                      sty.text__q0Nyv
                                     )}
                                   >
                                     {"Personal"}
@@ -34102,7 +34659,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__p9Zke
+                                      sty.text__p9Zke
                                     )}
                                   >
                                     {"BUSINESS"}
@@ -34468,7 +35025,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__iD5WU
+                                    sty.text__iD5WU
                                   )}
                                 >
                                   {"Thu, Oct 1, 2021"}
@@ -34633,7 +35190,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__gEsOc
+                                    sty.text__gEsOc
                                   )}
                                 >
                                   {"789 Pearl Avenue, Uptown"}
@@ -34650,7 +35207,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yPsQx
+                                    sty.text__yPsQx
                                   )}
                                 >
                                   {"7:05 AM"}
@@ -34765,7 +35322,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__epLz7
+                                    sty.text__epLz7
                                   )}
                                 >
                                   {"456 Broadway, Downtown"}
@@ -34782,7 +35339,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rY751
+                                    sty.text__rY751
                                   )}
                                 >
                                   {"7:15 AM"}
@@ -34921,7 +35478,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__s0Onq
+                                      sty.text__s0Onq
                                     )}
                                   >
                                     {"More info"}
@@ -34939,7 +35496,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__xDhXp
+                                    sty.text__xDhXp
                                   )}
                                 >
                                   {"Meeting with client"}
@@ -34956,7 +35513,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__lxGv6
+                                    sty.text__lxGv6
                                   )}
                                 >
                                   {"business purpose"}
@@ -35053,7 +35610,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ypo4F
+                                      sty.text__ypo4F
                                     )}
                                   >
                                     {"More info"}
@@ -35071,7 +35628,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___615Wj
+                                    sty.text___615Wj
                                   )}
                                 >
                                   {"Truck"}
@@ -35088,7 +35645,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__cmWC
+                                    sty.text__cmWC
                                   )}
                                 >
                                   {"Vehicle"}
@@ -35159,7 +35716,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__voy7P
+                                      sty.text__voy7P
                                     )}
                                   >
                                     {"2:08"}
@@ -35245,7 +35802,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__j2YSm
+                                      sty.text__j2YSm
                                     )}
                                   >
                                     {"💸"}
@@ -35256,7 +35813,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__vwTs
+                                    sty.text__vwTs
                                   )}
                                 >
                                   {"now"}
@@ -35279,16 +35836,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__c25Zd
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/group49.svg"
-                                      }
+                                      className={classNames(sty.img__c25Zd)}
+                                      displayHeight={"26.981px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"27.056px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/group49.svg",
+                                        fullWidth: 27.056,
+                                        fullHeight: 26.981,
+                                        aspectRatio: 1.037037
+                                      }}
                                     />
                                   ) : null}
 
@@ -35296,7 +35858,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__jn5Hn
+                                      sty.text__jn5Hn
                                     )}
                                   >
                                     {"QuickBooks"}
@@ -35327,7 +35889,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__wvAq2
+                              sty.text__wvAq2
                             )}
                           >
                             {"QUICKBOOKS CASH"}
@@ -35354,7 +35916,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__cYstS
+                                sty.text__cYstS
                               )}
                             >
                               {"Get real-time alerts"}
@@ -35364,7 +35926,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__x8Mu
+                                sty.text__x8Mu
                               )}
                             >
                               {
@@ -35407,7 +35969,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ban7J
+                                      sty.text__ban7J
                                     )}
                                   >
                                     {"Take a test drive"}
@@ -35433,7 +35995,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__fJqpX
+                                      sty.text__fJqpX
                                     )}
                                   >
                                     {"See how it works (1:43)"}
@@ -35587,16 +36149,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img___4RTjz
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/history2.svg"
-                                    }
+                                    className={classNames(sty.img___4RTjz)}
+                                    displayHeight={"24px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"25px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/history2.svg",
+                                      fullWidth: 25,
+                                      fullHeight: 24,
+                                      aspectRatio: 1.041667
+                                    }}
                                   />
                                 ) : null}
 
@@ -35610,7 +36177,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__zV7Va
+                                      sty.text__zV7Va
                                     )}
                                   >
                                     {"Recurring Invoice"}
@@ -35674,7 +36241,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___114Ox
+                                  sty.text___114Ox
                                 )}
                               >
                                 {"Interval"}
@@ -35700,7 +36267,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__xfq3V
+                                      sty.text__xfq3V
                                     )}
                                   >
                                     {"of every month"}
@@ -35726,7 +36293,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___7VH1D
+                                      sty.text___7VH1D
                                     )}
                                   >
                                     {"on"}
@@ -35768,7 +36335,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__iawlX
+                                      sty.text__iawlX
                                     )}
                                   >
                                     {"Monthly"}
@@ -35828,7 +36395,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__xTuGl
+                                      sty.text__xTuGl
                                     )}
                                   >
                                     {"Friday"}
@@ -35888,7 +36455,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__uThaL
+                                      sty.text__uThaL
                                     )}
                                   >
                                     {"first"}
@@ -35940,7 +36507,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__nf2Q2
+                              sty.text__nf2Q2
                             )}
                           >
                             {"QUICKBOOKS CASH"}
@@ -35967,7 +36534,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__t2D42
+                                sty.text__t2D42
                               )}
                             >
                               {"Steady cash, on your schedule"}
@@ -36026,7 +36593,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___56Hil
+                                      sty.text___56Hil
                                     )}
                                   >
                                     {"Take a test drive"}
@@ -36054,7 +36621,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__fMkEo
+                                      sty.text__fMkEo
                                     )}
                                   >
                                     {"See how it works (1:43)"}
@@ -36114,7 +36681,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__kkw1Y
+                        sty.text__kkw1Y
                       )}
                     >
                       {"Plans for every kind of business"}
@@ -36165,7 +36732,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wuH37
+                                    sty.text__wuH37
                                   )}
                                 >
                                   {"Simple Start"}
@@ -36196,7 +36763,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yUwl
+                                    sty.text__yUwl
                                   )}
                                 >
                                   {"Essentials"}
@@ -36207,7 +36774,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__tcA1Z
+                                  sty.text__tcA1Z
                                 )}
                               >
                                 {"Plus"}
@@ -36217,7 +36784,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___0Le2J
+                                  sty.text___0Le2J
                                 )}
                               >
                                 {"Advanced"}
@@ -36289,7 +36856,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__ogDjJ
+                                          sty.text__ogDjJ
                                         )}
                                       >
                                         {"Essentials"}
@@ -36300,7 +36867,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__mk9Li
+                                        sty.text__mk9Li
                                       )}
                                     >
                                       {
@@ -36331,7 +36898,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__vnUic
+                                            sty.text__vnUic
                                           )}
                                         >
                                           {"$40"}
@@ -36348,7 +36915,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___24DVy
+                                            sty.text___24DVy
                                           )}
                                         >
                                           {"20"}
@@ -36358,7 +36925,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__gGmwK
+                                            sty.text__gGmwK
                                           )}
                                         >
                                           {"$"}
@@ -36368,7 +36935,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__hE9Ha
+                                            sty.text__hE9Ha
                                           )}
                                         >
                                           {"/mo"}
@@ -36380,7 +36947,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__kLniS
+                                        sty.text__kLniS
                                       )}
                                     >
                                       {"For the first 3 months*"}
@@ -36407,7 +36974,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__xiq7Y
+                                              sty.text__xiq7Y
                                             )}
                                           >
                                             {"$"}
@@ -36433,7 +37000,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__qrkcO
+                                              sty.text__qrkcO
                                             )}
                                           >
                                             {"/mo"}
@@ -36444,7 +37011,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__ugoU8
+                                            sty.text__ugoU8
                                           )}
                                         >
                                           {"30 day free trial"}
@@ -36505,7 +37072,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__vbqp2
+                                        sty.text__vbqp2
                                       )}
                                     >
                                       {"Feature highlights"}
@@ -36516,7 +37083,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__cvf8H
+                                          sty.text__cvf8H
                                         )}
                                       >
                                         {"All Simple Start features and:"}
@@ -36562,7 +37129,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___1KxlS
+                                          sty.text___1KxlS
                                         )}
                                       >
                                         {"Pay bills all in one place"}
@@ -36617,7 +37184,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__mp8We
+                                          sty.text__mp8We
                                         )}
                                       >
                                         {"Track time for employees or clients"}
@@ -36672,7 +37239,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__m7BsM
+                                          sty.text__m7BsM
                                         )}
                                       >
                                         {
@@ -36729,7 +37296,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__xXgA6
+                                          sty.text__xXgA6
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -36785,7 +37352,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__jV5GK
+                                            sty.text__jV5GK
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -36841,7 +37408,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__uMdtZ
+                                            sty.text__uMdtZ
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -36913,7 +37480,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__jg3Fk
+                                          sty.text__jg3Fk
                                         )}
                                       >
                                         {"Simple Start"}
@@ -36967,7 +37534,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__ebm2
+                                              sty.text__ebm2
                                             )}
                                           >
                                             {"$25"}
@@ -36984,7 +37551,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__ekxgx
+                                              sty.text__ekxgx
                                             )}
                                           >
                                             {"12"}
@@ -36994,7 +37561,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__i9SCw
+                                              sty.text__i9SCw
                                             )}
                                           >
                                             {"$"}
@@ -37004,7 +37571,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__epfTb
+                                              sty.text__epfTb
                                             )}
                                           >
                                             {"/mo"}
@@ -37016,7 +37583,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___17Zt1
+                                          sty.text___17Zt1
                                         )}
                                       >
                                         {"For the first 3 months *"}
@@ -37044,7 +37611,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___1YlSr
+                                              sty.text___1YlSr
                                             )}
                                           >
                                             {"$"}
@@ -37070,7 +37637,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__iayH
+                                              sty.text__iayH
                                             )}
                                           >
                                             {"/mo"}
@@ -37081,7 +37648,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__xjUjU
+                                            sty.text__xjUjU
                                           )}
                                         >
                                           {"30 day free trial"}
@@ -37142,7 +37709,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__jvh5
+                                        sty.text__jvh5
                                       )}
                                     >
                                       {"Feature highlights"}
@@ -37153,7 +37720,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__uyb7K
+                                          sty.text__uyb7K
                                         )}
                                       >
                                         {"All Simple Start features and:"}
@@ -37199,7 +37766,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__zxdnS
+                                          sty.text__zxdnS
                                         )}
                                       >
                                         {"Pay bills all in one place"}
@@ -37254,7 +37821,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___2DN8B
+                                          sty.text___2DN8B
                                         )}
                                       >
                                         {"Track time for employees or clients"}
@@ -37309,7 +37876,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__z0QP
+                                          sty.text__z0QP
                                         )}
                                       >
                                         {
@@ -37366,7 +37933,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__sfoRs
+                                          sty.text__sfoRs
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -37422,7 +37989,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___81V2R
+                                            sty.text___81V2R
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -37478,7 +38045,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__ub6Cg
+                                            sty.text__ub6Cg
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -37550,7 +38117,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___8E2U2
+                                          sty.text___8E2U2
                                         )}
                                       >
                                         {"Essentials"}
@@ -37561,7 +38128,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__vYi4M
+                                        sty.text__vYi4M
                                       )}
                                     >
                                       {
@@ -37588,7 +38155,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__tGEy
+                                          sty.text__tGEy
                                         )}
                                       >
                                         {"$"}
@@ -37598,7 +38165,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__ebupr
+                                          sty.text__ebupr
                                         )}
                                       >
                                         {"20"}
@@ -37608,7 +38175,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__tgiKz
+                                          sty.text__tgiKz
                                         )}
                                       >
                                         {"/mo"}
@@ -37619,7 +38186,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__grkKw
+                                            sty.text__grkKw
                                           )}
                                         >
                                           {"/mo"}
@@ -37664,7 +38231,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox___3NXjr
+                                              sty.text___3NXjr
                                             )}
                                           >
                                             {"$"}
@@ -37690,7 +38257,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                             className={classNames(
                                               defaultcss.all,
                                               defaultcss.__wab_text,
-                                              sty.freeBox__dU0Fp
+                                              sty.text__dU0Fp
                                             )}
                                           >
                                             {"/mo"}
@@ -37701,7 +38268,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__ywMk
+                                            sty.text__ywMk
                                           )}
                                         >
                                           {"30 day free trial"}
@@ -37762,7 +38329,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__gskSg
+                                        sty.text__gskSg
                                       )}
                                     >
                                       {"Feature highlights"}
@@ -37773,7 +38340,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__djU
+                                          sty.text__djU
                                         )}
                                       >
                                         {"All Simple Start features and:"}
@@ -37819,7 +38386,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__z9Hv
+                                          sty.text__z9Hv
                                         )}
                                       >
                                         {"Pay bills all in one place"}
@@ -37874,7 +38441,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__gjb79
+                                          sty.text__gjb79
                                         )}
                                       >
                                         {"Track time for employees or clients"}
@@ -37931,7 +38498,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___7LBUc
+                                          sty.text___7LBUc
                                         )}
                                       >
                                         {
@@ -37990,7 +38557,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__sSm4
+                                          sty.text__sSm4
                                         )}
                                       >
                                         {"Give access to 3 users"}
@@ -38048,7 +38615,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__xzVSf
+                                            sty.text__xzVSf
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -38106,7 +38673,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___655J0
+                                            sty.text___655J0
                                           )}
                                         >
                                           {"Give access to 3 users"}
@@ -38227,7 +38794,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox___8ThRl
+                                sty.text___8ThRl
                               )}
                             >
                               {"See pricing details"}
@@ -38264,7 +38831,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__mLo2O
+                              sty.text__mLo2O
                             )}
                           >
                             {
@@ -38318,7 +38885,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__eNjZg
+                          sty.text__eNjZg
                         )}
                       >
                         {"Get paid with less back-and-forth"}
@@ -38328,7 +38895,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___3HaCz
+                          sty.text___3HaCz
                         )}
                       >
                         {
@@ -38364,7 +38931,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__a1Dd6
+                            sty.text__a1Dd6
                           )}
                         >
                           {"Just the way to get invoices paid"}
@@ -38374,7 +38941,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__op2XE
+                            sty.text__op2XE
                           )}
                         >
                           {
@@ -38410,7 +38977,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__pyh6Q
+                                sty.text__pyh6Q
                               )}
                             >
                               {"Learn about payments"}
@@ -38539,7 +39106,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__kKsU
+                                    sty.text__kKsU
                                   )}
                                 >
                                   {"Stay up to date, down to the last detail "}
@@ -38549,7 +39116,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__lgvJu
+                                    sty.text__lgvJu
                                   )}
                                 >
                                   {
@@ -38592,7 +39159,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__eMHkE
+                                          sty.text__eMHkE
                                         )}
                                       >
                                         {"Buy now"}
@@ -38611,7 +39178,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__mRq33
+                                      sty.text__mRq33
                                     )}
                                   >
                                     {"Explore accounting"}
@@ -38638,7 +39205,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__lJlF
+                                  sty.text__lJlF
                                 )}
                               >
                                 {"Product"}
@@ -38732,16 +39299,25 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               ? true
                                               : false
                                           ) ? (
-                                            <img
+                                            <p.PlasmicImg
                                               alt={""}
                                               className={classNames(
-                                                defaultcss.img,
                                                 sty.img__fwYDs
                                               )}
-                                              role={"img"}
-                                              src={
-                                                "/plasmic/new_figma_test/images/group1925.svg"
+                                              displayHeight={
+                                                "30.114px" as const
                                               }
+                                              displayMaxHeight={"none" as const}
+                                              displayMaxWidth={"none" as const}
+                                              displayMinHeight={"0" as const}
+                                              displayMinWidth={"0" as const}
+                                              displayWidth={"24.346px" as const}
+                                              src={{
+                                                src: "/plasmic/new_figma_test/images/group1925.svg",
+                                                fullWidth: 24.346,
+                                                fullHeight: 30.114,
+                                                aspectRatio: 0.823529
+                                              }}
                                             />
                                           ) : null}
                                         </div>
@@ -38754,7 +39330,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rjXUj
+                                    sty.text__rjXUj
                                   )}
                                 >
                                   {"Make invoices instantly payable"}
@@ -38764,7 +39340,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__cDzoE
+                                    sty.text__cDzoE
                                   )}
                                 >
                                   {
@@ -38807,7 +39383,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__oSyWh
+                                          sty.text__oSyWh
                                         )}
                                       >
                                         {"Buy now"}
@@ -38826,7 +39402,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__arOdt
+                                      sty.text__arOdt
                                     )}
                                   >
                                     {"Explore accounting"}
@@ -38853,7 +39429,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__nCJqh
+                                  sty.text__nCJqh
                                 )}
                               >
                                 {"Product"}
@@ -38912,7 +39488,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___2Mq1Q
+                                  sty.text___2Mq1Q
                                 )}
                               >
                                 {"DO MORE"}
@@ -38923,7 +39499,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__ngoli
+                                sty.text__ngoli
                               )}
                             >
                               {"QuickBooks Live Bookkeeping"}
@@ -38933,7 +39509,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__vJnHa
+                                sty.text__vJnHa
                               )}
                             >
                               {
@@ -38985,7 +39561,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__sxYo3
+                                      sty.text__sxYo3
                                     )}
                                   >
                                     {"Explore this product"}
@@ -39014,7 +39590,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ie1Ie
+                                    sty.text__ie1Ie
                                   )}
                                 >
                                   {"See how it works (1:31)"}
@@ -39078,16 +39654,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             ? true
                             : false
                         ) ? (
-                          <img
+                          <p.PlasmicImg
                             alt={""}
-                            className={classNames(
-                              defaultcss.img,
-                              sty.img___13CLd
-                            )}
-                            role={"img"}
-                            src={
-                              "/plasmic/new_figma_test/images/ellipse265.svg"
-                            }
+                            className={classNames(sty.img___13CLd)}
+                            displayHeight={"11px" as const}
+                            displayMaxHeight={"none" as const}
+                            displayMaxWidth={"none" as const}
+                            displayMinHeight={"0" as const}
+                            displayMinWidth={"0" as const}
+                            displayWidth={"561px" as const}
+                            src={{
+                              src: "/plasmic/new_figma_test/images/ellipse265.svg",
+                              fullWidth: 561,
+                              fullHeight: 11,
+                              aspectRatio: 51
+                            }}
                           />
                         ) : null}
 
@@ -39242,16 +39823,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__zLTn
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector145.svg"
-                                }
+                                className={classNames(sty.img__zLTn)}
+                                displayHeight={"11px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"286px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector145.svg",
+                                  fullWidth: 286,
+                                  fullHeight: 11,
+                                  aspectRatio: 26
+                                }}
                               />
                             ) : null}
                             {(
@@ -39259,16 +39845,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img__gycPg
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/group96.svg"
-                                }
+                                className={classNames(sty.img__gycPg)}
+                                displayHeight={"10.049px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"569.995px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/group96.svg",
+                                  fullWidth: 569.995,
+                                  fullHeight: 10.049,
+                                  aspectRatio: 51.818182
+                                }}
                               />
                             ) : null}
                             {(
@@ -39276,16 +39867,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 ? true
                                 : false
                             ) ? (
-                              <img
+                              <p.PlasmicImg
                                 alt={""}
-                                className={classNames(
-                                  defaultcss.img,
-                                  sty.img___2F59U
-                                )}
-                                role={"img"}
-                                src={
-                                  "/plasmic/new_figma_test/images/vector146.svg"
-                                }
+                                className={classNames(sty.img___2F59U)}
+                                displayHeight={"4px" as const}
+                                displayMaxHeight={"none" as const}
+                                displayMaxWidth={"none" as const}
+                                displayMinHeight={"0" as const}
+                                displayMinWidth={"0" as const}
+                                displayWidth={"570px" as const}
+                                src={{
+                                  src: "/plasmic/new_figma_test/images/vector146.svg",
+                                  fullWidth: 570,
+                                  fullHeight: 4,
+                                  aspectRatio: 142.5
+                                }}
                               />
                             ) : null}
                           </div>
@@ -39404,7 +40000,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__waOse
+                                    sty.text__waOse
                                   )}
                                 >
                                   {"20px gutter"}
@@ -39414,7 +40010,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__gI2I
+                                    sty.text__gI2I
                                   )}
                                 >
                                   {"65px~\ncol"}
@@ -39743,7 +40339,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__uwA3D
+                                    sty.text__uwA3D
                                   )}
                                 >
                                   {"My experts"}
@@ -39812,7 +40408,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___8NFA
+                                      sty.text___8NFA
                                     )}
                                   >
                                     {"C"}
@@ -39844,7 +40440,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__wGi3D
+                                      sty.text__wGi3D
                                     )}
                                   >
                                     {"Get things done"}
@@ -39922,7 +40518,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__bwmqq
+                                        sty.text__bwmqq
                                       )}
                                     >
                                       {"Privacy"}
@@ -40084,7 +40680,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__wgpHz
+                                            sty.text__wgpHz
                                           )}
                                         >
                                           {"LOGO"}
@@ -40095,7 +40691,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__akuir
+                                            sty.text__akuir
                                           )}
                                         >
                                           {"C"}
@@ -40110,16 +40706,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__nukvC
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/frame6.svg"
-                                          }
+                                          className={classNames(sty.img__nukvC)}
+                                          displayHeight={"11.372px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"8.38px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/frame6.svg",
+                                            fullWidth: 8.38,
+                                            fullHeight: 11.372,
+                                            aspectRatio: 0.75
+                                          }}
                                         />
                                       ) : null}
                                     </div>
@@ -40192,7 +40793,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__pyEgv
+                                            sty.text__pyEgv
                                           )}
                                         >
                                           {"PAYROLL"}
@@ -40230,7 +40831,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                               className={classNames(
                                                 defaultcss.all,
                                                 defaultcss.__wab_text,
-                                                sty.freeBox__qbf19
+                                                sty.text__qbf19
                                               )}
                                             >
                                               {"SAMPLE"}
@@ -40294,7 +40895,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__bwsBs
+                                            sty.text__bwsBs
                                           )}
                                         >
                                           {
@@ -40310,7 +40911,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___8U85Q
+                                    sty.text___8U85Q
                                   )}
                                 >
                                   {"$12K"}
@@ -40320,7 +40921,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__u1Iqg
+                                    sty.text__u1Iqg
                                   )}
                                 >
                                   {"Amount due for Payroll"}
@@ -40336,7 +40937,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__klfx
+                                      sty.text__klfx
                                     )}
                                   >
                                     {"15"}
@@ -40353,7 +40954,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__ue6Vm
+                                      sty.text__ue6Vm
                                     )}
                                   >
                                     {"Days before Payroll"}
@@ -40383,16 +40984,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__vjz3
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/elevation033.svg"
-                                    }
+                                    className={classNames(sty.img__vjz3)}
+                                    displayHeight={"117px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"118px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/elevation033.svg",
+                                      fullWidth: 118,
+                                      fullHeight: 117,
+                                      aspectRatio: 1.008547
+                                    }}
                                   />
                                 ) : null}
 
@@ -40400,7 +41006,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__rxfG6
+                                    sty.text__rxfG6
                                   )}
                                 >
                                   {"Bank accounts"}
@@ -40520,7 +41126,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__rUWkl
+                                          sty.text__rUWkl
                                         )}
                                       >
                                         {"Go to registers"}
@@ -40565,7 +41171,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__ikxGu
+                                          sty.text__ikxGu
                                         )}
                                       >
                                         {"Connect accounts"}
@@ -40597,7 +41203,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___6D3S
+                                      sty.text___6D3S
                                     )}
                                   >
                                     {"94 to review"}
@@ -40621,7 +41227,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__usOkY
+                                      sty.text__usOkY
                                     )}
                                   >
                                     {"in QuickBooks"}
@@ -40631,7 +41237,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__obnEe
+                                      sty.text__obnEe
                                     )}
                                   >
                                     {"$157.72"}
@@ -40641,7 +41247,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__vZ63
+                                      sty.text__vZ63
                                     )}
                                   >
                                     {"Bank balance"}
@@ -40651,7 +41257,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__rOlMd
+                                      sty.text__rOlMd
                                     )}
                                   >
                                     {"$-3,435.65"}
@@ -40661,7 +41267,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__mp7Ah
+                                      sty.text__mp7Ah
                                     )}
                                   >
                                     {"Updated moments ago"}
@@ -40692,7 +41298,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___4KuIk
+                                      sty.text___4KuIk
                                     )}
                                   >
                                     {"94 to review"}
@@ -40716,7 +41322,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__aQwO3
+                                      sty.text__aQwO3
                                     )}
                                   >
                                     {"in QuickBooks"}
@@ -40843,7 +41449,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___2Vxv
+                                    sty.text___2Vxv
                                   )}
                                 >
                                   {"EXPENSES"}
@@ -40865,7 +41471,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__alyTb
+                                        sty.text__alyTb
                                       )}
                                     >
                                       {"Last month"}
@@ -40910,7 +41516,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__fr3Nf
+                                        sty.text__fr3Nf
                                       )}
                                     >
                                       {"$14K"}
@@ -40927,7 +41533,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__tlyn
+                                        sty.text__tlyn
                                       )}
                                     >
                                       {"Business spending"}
@@ -40946,7 +41552,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___6Ixrp
+                                    sty.text___6Ixrp
                                   )}
                                 >
                                   {"$6,500"}
@@ -40956,7 +41562,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___6D0Wi
+                                    sty.text___6D0Wi
                                   )}
                                 >
                                   {"Rent & mortg.."}
@@ -41004,7 +41610,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__qtXnh
+                                    sty.text__qtXnh
                                   )}
                                 >
                                   {"$1,250"}
@@ -41014,7 +41620,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__a7RZw
+                                    sty.text__a7RZw
                                   )}
                                 >
                                   {"Meals & entert..."}
@@ -41062,7 +41668,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__fwigN
+                                    sty.text__fwigN
                                   )}
                                 >
                                   {"$5,250"}
@@ -41072,7 +41678,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__drSp
+                                    sty.text__drSp
                                   )}
                                 >
                                   {"Automotive"}
@@ -41114,7 +41720,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__z7Tv
+                                    sty.text__z7Tv
                                   )}
                                 >
                                   {"$1,000"}
@@ -41124,7 +41730,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__i242W
+                                    sty.text__i242W
                                   )}
                                 >
                                   {"Others"}
@@ -41165,16 +41771,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   ? true
                                   : false
                               ) ? (
-                                <img
+                                <p.PlasmicImg
                                   alt={""}
-                                  className={classNames(
-                                    defaultcss.img,
-                                    sty.img__kA0B3
-                                  )}
-                                  role={"img"}
-                                  src={
-                                    "/plasmic/new_figma_test/images/group54.svg"
-                                  }
+                                  className={classNames(sty.img__kA0B3)}
+                                  displayHeight={"47.885px" as const}
+                                  displayMaxHeight={"none" as const}
+                                  displayMaxWidth={"none" as const}
+                                  displayMinHeight={"0" as const}
+                                  displayMinWidth={"0" as const}
+                                  displayWidth={"48.178px" as const}
+                                  src={{
+                                    src: "/plasmic/new_figma_test/images/group54.svg",
+                                    fullWidth: 48.178,
+                                    fullHeight: 47.885,
+                                    aspectRatio: 1
+                                  }}
                                 />
                               ) : null}
                             </div>
@@ -41221,7 +41832,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__r8ExF
+                                        sty.text__r8ExF
                                       )}
                                     >
                                       {"PROFIT AND LOSS"}
@@ -41259,7 +41870,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox___2K0ZD
+                                            sty.text___2K0ZD
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -41285,7 +41896,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__yCbfv
+                                        sty.text__yCbfv
                                       )}
                                     >
                                       {"Last month"}
@@ -41318,7 +41929,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__lFUyz
+                                    sty.text__lFUyz
                                   )}
                                 >
                                   {"8 TO REVIEW"}
@@ -41339,16 +41950,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       ? true
                                       : false
                                   ) ? (
-                                    <img
+                                    <p.PlasmicImg
                                       alt={""}
-                                      className={classNames(
-                                        defaultcss.img,
-                                        sty.img__p1Kv4
-                                      )}
-                                      role={"img"}
-                                      src={
-                                        "/plasmic/new_figma_test/images/dasehdLines7.svg"
-                                      }
+                                      className={classNames(sty.img__p1Kv4)}
+                                      displayHeight={"8.978px" as const}
+                                      displayMaxHeight={"none" as const}
+                                      displayMaxWidth={"none" as const}
+                                      displayMinHeight={"0" as const}
+                                      displayMinWidth={"0" as const}
+                                      displayWidth={"43.962px" as const}
+                                      src={{
+                                        src: "/plasmic/new_figma_test/images/dasehdLines7.svg",
+                                        fullWidth: 43.962,
+                                        fullHeight: 8.978,
+                                        aspectRatio: 4.888889
+                                      }}
                                     />
                                   ) : null}
 
@@ -41388,16 +42004,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img___0Dp3H
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/dashedLines7.svg"
-                                    }
+                                    className={classNames(sty.img___0Dp3H)}
+                                    displayHeight={"8.994px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"33.017px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/dashedLines7.svg",
+                                      fullWidth: 33.017,
+                                      fullHeight: 8.994,
+                                      aspectRatio: 3.777778
+                                    }}
                                   />
                                 ) : null}
 
@@ -41421,7 +42042,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__bCAn
+                                    sty.text__bCAn
                                   )}
                                 >
                                   {"$22,000"}
@@ -41431,7 +42052,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__x03GY
+                                    sty.text__x03GY
                                   )}
                                 >
                                   {"Income"}
@@ -41448,7 +42069,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__hMeYn
+                                    sty.text__hMeYn
                                   )}
                                 >
                                   {"$14,000  "}
@@ -41458,7 +42079,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wFbs2
+                                    sty.text__wFbs2
                                   )}
                                 >
                                   {"Expenses"}
@@ -41487,7 +42108,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__myk6K
+                                        sty.text__myk6K
                                       )}
                                     >
                                       {"$8K"}
@@ -41504,7 +42125,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__dL15B
+                                        sty.text__dL15B
                                       )}
                                     >
                                       {"Net income for March"}
@@ -41551,7 +42172,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___5415K
+                                        sty.text___5415K
                                       )}
                                     >
                                       {"Money in"}
@@ -41572,13 +42193,17 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
                                           className={classNames(
-                                            defaultcss.img,
                                             sty.img___3U6UP
                                           )}
-                                          role={"img"}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/legendMarkersDot5.svg"
                                           }
@@ -41598,7 +42223,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__q3C
+                                      sty.text__q3C
                                     )}
                                   >
                                     {"Sales"}
@@ -41660,7 +42285,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__mqlpD
+                                        sty.text__mqlpD
                                       )}
                                     >
                                       {
@@ -41693,7 +42318,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__p9Xjp
+                                        sty.text__p9Xjp
                                       )}
                                     >
                                       {"SALES"}
@@ -41731,7 +42356,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__gjKg3
+                                            sty.text__gjKg3
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -41758,7 +42383,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__a7Ksa
+                                      sty.text__a7Ksa
                                     )}
                                   >
                                     {"This week"}
@@ -41802,7 +42427,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___9WgHh
+                                        sty.text___9WgHh
                                       )}
                                     >
                                       {"$3.5K"}
@@ -41819,7 +42444,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__fklIp
+                                        sty.text__fklIp
                                       )}
                                     >
                                       {"Total profit"}
@@ -41969,7 +42594,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__dzpv2
+                                      sty.text__dzpv2
                                     )}
                                   >
                                     {"SAT"}
@@ -41986,7 +42611,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__arVHo
+                                      sty.text__arVHo
                                     )}
                                   >
                                     {"FRI"}
@@ -42003,7 +42628,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__xBqJs
+                                      sty.text__xBqJs
                                     )}
                                   >
                                     {"THU"}
@@ -42020,7 +42645,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___91Dyu
+                                      sty.text___91Dyu
                                     )}
                                   >
                                     {"WED"}
@@ -42037,7 +42662,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__cHlGq
+                                      sty.text__cHlGq
                                     )}
                                   >
                                     {"TUE"}
@@ -42054,7 +42679,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__lurvv
+                                      sty.text__lurvv
                                     )}
                                   >
                                     {"MON"}
@@ -42071,7 +42696,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___1LWE
+                                      sty.text___1LWE
                                     )}
                                   >
                                     {"SUN"}
@@ -42132,16 +42757,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__se0Wr
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen2.svg"
-                                    }
+                                    className={classNames(sty.img__se0Wr)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen2.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42149,16 +42779,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__cwFee
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreenCopy.svg"
-                                    }
+                                    className={classNames(sty.img__cwFee)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreenCopy.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42166,16 +42801,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img___41Jyk
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreenCopy2.svg"
-                                    }
+                                    className={classNames(sty.img___41Jyk)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreenCopy2.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42183,16 +42823,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__ezMdI
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreen2.svg"
-                                    }
+                                    className={classNames(sty.img__ezMdI)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreen2.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42200,16 +42845,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__xhVhc
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreenCopy4.svg"
-                                    }
+                                    className={classNames(sty.img__xhVhc)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreenCopy4.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42217,16 +42867,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__r44Hv
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreenCopy5.svg"
-                                    }
+                                    className={classNames(sty.img__r44Hv)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreenCopy5.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                                 {(
@@ -42234,16 +42889,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__aYPhW
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/circleStrokeGreenCopy4.svg"
-                                    }
+                                    className={classNames(sty.img__aYPhW)}
+                                    displayHeight={"2.187px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"1.871px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/circleStrokeGreenCopy4.svg",
+                                      fullWidth: 1.871,
+                                      fullHeight: 2.187,
+                                      aspectRatio: 1
+                                    }}
                                   />
                                 ) : null}
                               </div>
@@ -42277,7 +42937,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__cFi8O
+                                        sty.text__cFi8O
                                       )}
                                     >
                                       {"$0K"}
@@ -42287,7 +42947,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__wEuTt
+                                        sty.text__wEuTt
                                       )}
                                     >
                                       {"$10K"}
@@ -42297,7 +42957,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__n3Iy3
+                                        sty.text__n3Iy3
                                       )}
                                     >
                                       {"$15K"}
@@ -42307,7 +42967,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__h3DIi
+                                        sty.text__h3DIi
                                       )}
                                     >
                                       {"$20K"}
@@ -42317,7 +42977,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__tXzEw
+                                        sty.text__tXzEw
                                       )}
                                     >
                                       {"$25K"}
@@ -42327,7 +42987,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__cgbfL
+                                        sty.text__cgbfL
                                       )}
                                     >
                                       {"$5K"}
@@ -42364,7 +43024,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__xblB
+                                    sty.text__xblB
                                   )}
                                 >
                                   {"TODAY"}
@@ -42410,7 +43070,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__bhUb
+                                      sty.text__bhUb
                                     )}
                                   >
                                     {"Last 30 days"}
@@ -42420,7 +43080,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__jUcLa
+                                      sty.text__jUcLa
                                     )}
                                   >
                                     {"$3,692.22 Paid"}
@@ -42430,7 +43090,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__dwr3H
+                                      sty.text__dwr3H
                                     )}
                                   >
                                     {"$2,062.52"}
@@ -42440,7 +43100,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__dyCsx
+                                      sty.text__dyCsx
                                     )}
                                   >
                                     {"Not deposited"}
@@ -42450,7 +43110,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__uvjv0
+                                      sty.text__uvjv0
                                     )}
                                   >
                                     {"$1,629.70"}
@@ -42460,7 +43120,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___0Sxjr
+                                      sty.text___0Sxjr
                                     )}
                                   >
                                     {"Deposited"}
@@ -42522,7 +43182,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__nYqfV
+                                      sty.text__nYqfV
                                     )}
                                   >
                                     {"$1,525.50"}
@@ -42532,7 +43192,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__pxIkR
+                                      sty.text__pxIkR
                                     )}
                                   >
                                     {"Overdue"}
@@ -42542,7 +43202,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__a5ROp
+                                      sty.text__a5ROp
                                     )}
                                   >
                                     {"$3,756.02"}
@@ -42552,7 +43212,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___9Zj
+                                      sty.text___9Zj
                                     )}
                                   >
                                     {"Not due yet"}
@@ -42605,7 +43265,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__fyN3M
+                                      sty.text__fyN3M
                                     )}
                                   >
                                     {"Last 365 days"}
@@ -42615,7 +43275,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__yDtw
+                                      sty.text__yDtw
                                     )}
                                   >
                                     {"$5,281.52 Unpaid"}
@@ -42645,7 +43305,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__hSZq
+                                        sty.text__hSZq
                                       )}
                                     >
                                       {"INVOICES"}
@@ -42683,7 +43343,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__wBx44
+                                            sty.text__wBx44
                                           )}
                                         >
                                           {"SAMPLE"}
@@ -42730,7 +43390,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__jO0Qr
+                                        sty.text__jO0Qr
                                       )}
                                     >
                                       {
@@ -42759,16 +43419,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     ? true
                                     : false
                                 ) ? (
-                                  <img
+                                  <p.PlasmicImg
                                     alt={""}
-                                    className={classNames(
-                                      defaultcss.img,
-                                      sty.img__knRg
-                                    )}
-                                    role={"img"}
-                                    src={
-                                      "/plasmic/new_figma_test/images/elevation034.svg"
-                                    }
+                                    className={classNames(sty.img__knRg)}
+                                    displayHeight={"117px" as const}
+                                    displayMaxHeight={"none" as const}
+                                    displayMaxWidth={"none" as const}
+                                    displayMinHeight={"0" as const}
+                                    displayMinWidth={"0" as const}
+                                    displayWidth={"119px" as const}
+                                    src={{
+                                      src: "/plasmic/new_figma_test/images/elevation034.svg",
+                                      fullWidth: 119,
+                                      fullHeight: 117,
+                                      aspectRatio: 1.017094
+                                    }}
                                   />
                                 ) : null}
 
@@ -42776,7 +43441,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__dzdvZ
+                                    sty.text__dzdvZ
                                   )}
                                 >
                                   {"CASH FLOW"}
@@ -42812,7 +43477,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__gdwFo
+                                          sty.text__gdwFo
                                         )}
                                       >
                                         {"Last quarter"}
@@ -42858,7 +43523,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__me81T
+                                        sty.text__me81T
                                       )}
                                     >
                                       {"Money out"}
@@ -42900,7 +43565,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox__z4PkY
+                                        sty.text__z4PkY
                                       )}
                                     >
                                       {"Money in"}
@@ -42921,13 +43586,15 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__lBjGn
-                                          )}
-                                          role={"img"}
+                                          className={classNames(sty.img__lBjGn)}
+                                          displayHeight={"0px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"0px" as const}
                                           src={
                                             "/plasmic/new_figma_test/images/legendMarkersDot5.svg"
                                           }
@@ -43489,7 +44156,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__jFgsQ
+                                            sty.text__jFgsQ
                                           )}
                                         >
                                           {"$0K"}
@@ -43499,7 +44166,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__bt7N
+                                            sty.text__bt7N
                                           )}
                                         >
                                           {"$10K"}
@@ -43509,7 +44176,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__eZjib
+                                            sty.text__eZjib
                                           )}
                                         >
                                           {"$15K"}
@@ -43519,7 +44186,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__rAz5D
+                                            sty.text__rAz5D
                                           )}
                                         >
                                           {"$20K"}
@@ -43529,7 +44196,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__efQ
+                                            sty.text__efQ
                                           )}
                                         >
                                           {"$25K"}
@@ -43539,7 +44206,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           className={classNames(
                                             defaultcss.all,
                                             defaultcss.__wab_text,
-                                            sty.freeBox__gdrJp
+                                            sty.text__gdrJp
                                           )}
                                         >
                                           {"$5K"}
@@ -43564,7 +44231,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__lu0Rm
+                                          sty.text__lu0Rm
                                         )}
                                       >
                                         {"MAY"}
@@ -43581,7 +44248,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__xKcJz
+                                          sty.text__xKcJz
                                         )}
                                       >
                                         {"APR"}
@@ -43598,7 +44265,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox___1KqGj
+                                          sty.text___1KqGj
                                         )}
                                       >
                                         {"MAR"}
@@ -43615,7 +44282,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                         className={classNames(
                                           defaultcss.all,
                                           defaultcss.__wab_text,
-                                          sty.freeBox__pSfpJ
+                                          sty.text__pSfpJ
                                         )}
                                       >
                                         {"FEB"}
@@ -43640,7 +44307,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__f761X
+                                    sty.text__f761X
                                   )}
                                 >
                                   {"$16K"}
@@ -43704,7 +44371,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                       className={classNames(
                                         defaultcss.all,
                                         defaultcss.__wab_text,
-                                        sty.freeBox___3SjQg
+                                        sty.text___3SjQg
                                       )}
                                     >
                                       {"New"}
@@ -43761,7 +44428,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__lX8L1
+                                    sty.text__lX8L1
                                   )}
                                 >
                                   {"Dashboard"}
@@ -43792,7 +44459,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__r7FTk
+                                    sty.text__r7FTk
                                   )}
                                 >
                                   {"Transactions"}
@@ -43876,7 +44543,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__yNpfY
+                                    sty.text__yNpfY
                                   )}
                                 >
                                   {"Sales"}
@@ -43960,7 +44627,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__itwGe
+                                    sty.text__itwGe
                                   )}
                                 >
                                   {"Expenses"}
@@ -44044,7 +44711,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__lTzGv
+                                    sty.text__lTzGv
                                   )}
                                 >
                                   {"Cash Flow"}
@@ -44128,7 +44795,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox___6ZcDr
+                                    sty.text___6ZcDr
                                   )}
                                 >
                                   {"Payroll"}
@@ -44212,7 +44879,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ah5Z
+                                    sty.text__ah5Z
                                   )}
                                 >
                                   {"Accounting"}
@@ -44296,7 +44963,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__wLFhC
+                                    sty.text__wLFhC
                                   )}
                                 >
                                   {"Mileage"}
@@ -44327,7 +44994,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tfpwm
+                                    sty.text__tfpwm
                                   )}
                                 >
                                   {"Apps"}
@@ -44358,7 +45025,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__k1Fyu
+                                    sty.text__k1Fyu
                                   )}
                                 >
                                   {"Live Bookkeeping"}
@@ -44389,7 +45056,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__iBw4A
+                                    sty.text__iBw4A
                                   )}
                                 >
                                   {"Taxes"}
@@ -44420,7 +45087,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__bQqBb
+                                    sty.text__bQqBb
                                   )}
                                 >
                                   {"Reports"}
@@ -44451,7 +45118,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__a3Gnl
+                                    sty.text__a3Gnl
                                   )}
                                 >
                                   {"Projects"}
@@ -44551,16 +45218,21 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                           ? true
                                           : false
                                       ) ? (
-                                        <img
+                                        <p.PlasmicImg
                                           alt={""}
-                                          className={classNames(
-                                            defaultcss.img,
-                                            sty.img__dE1Pe
-                                          )}
-                                          role={"img"}
-                                          src={
-                                            "/plasmic/new_figma_test/images/group62.svg"
-                                          }
+                                          className={classNames(sty.img__dE1Pe)}
+                                          displayHeight={"9.142px" as const}
+                                          displayMaxHeight={"none" as const}
+                                          displayMaxWidth={"none" as const}
+                                          displayMinHeight={"0" as const}
+                                          displayMinWidth={"0" as const}
+                                          displayWidth={"9.142px" as const}
+                                          src={{
+                                            src: "/plasmic/new_figma_test/images/group62.svg",
+                                            fullWidth: 9.142,
+                                            fullHeight: 9.142,
+                                            aspectRatio: 1
+                                          }}
                                         />
                                       ) : null}
                                       {(
@@ -44958,7 +45630,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__yzaaY
+                              sty.text__yzaaY
                             )}
                           >
                             {"More ways to learn\nabout invoicing"}
@@ -44968,7 +45640,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox__jDbR
+                              sty.text__jDbR
                             )}
                           >
                             {
@@ -45005,7 +45677,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__gupp0
+                                  sty.text__gupp0
                                 )}
                               >
                                 {"Visit blog"}
@@ -45119,7 +45791,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox___9ZGol
+                                      sty.text___9ZGol
                                     )}
                                   >
                                     {"ARTICLE"}
@@ -45130,7 +45802,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__tef0Y
+                                    sty.text__tef0Y
                                   )}
                                 >
                                   {
@@ -45167,7 +45839,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ohStd
+                                    sty.text__ohStd
                                   )}
                                 >
                                   {"Read more"}
@@ -45258,7 +45930,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                   className={classNames(
                                     defaultcss.all,
                                     defaultcss.__wab_text,
-                                    sty.freeBox__ptlIc
+                                    sty.text__ptlIc
                                   )}
                                 >
                                   {"ARTICLE"}
@@ -45269,7 +45941,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox___85Noq
+                                  sty.text___85Noq
                                 )}
                               >
                                 {
@@ -45281,7 +45953,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__iEiRt
+                                  sty.text__iEiRt
                                 )}
                               >
                                 {
@@ -45300,7 +45972,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__j7PgL
+                                  sty.text__j7PgL
                                 )}
                               >
                                 {"Read more"}
@@ -45443,7 +46115,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__d7L9A
+                                  sty.text__d7L9A
                                 )}
                               >
                                 {"Talk to sales"}
@@ -45453,7 +46125,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__jXiI
+                                  sty.text__jXiI
                                 )}
                               >
                                 {
@@ -45465,7 +46137,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__pGDy6
+                                  sty.text__pGDy6
                                 )}
                               >
                                 {
@@ -45536,7 +46208,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__xEiBp
+                                  sty.text__xEiBp
                                 )}
                               >
                                 {"Visit our support hub"}
@@ -45546,7 +46218,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                 className={classNames(
                                   defaultcss.all,
                                   defaultcss.__wab_text,
-                                  sty.freeBox__l3O1
+                                  sty.text__l3O1
                                 )}
                               >
                                 {
@@ -45590,7 +46262,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__nzsOu
+                                      sty.text__nzsOu
                                     )}
                                   >
                                     {"See resources"}
@@ -45642,7 +46314,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                                     className={classNames(
                                       defaultcss.all,
                                       defaultcss.__wab_text,
-                                      sty.freeBox__wXwQv
+                                      sty.text__wXwQv
                                     )}
                                   >
                                     {"Need help signing in?"}
@@ -45692,7 +46364,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox__qbwxU
+                          sty.text__qbwxU
                         )}
                       >
                         {"Run your business your way"}
@@ -45729,7 +46401,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__h9D2P
+                                sty.text__h9D2P
                               )}
                             >
                               {"Find your plan"}
@@ -45781,7 +46453,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox___6GlS
+                        sty.text___6GlS
                       )}
                     >
                       {"Important offers, pricing details and disclaimers"}
@@ -45810,7 +46482,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                       className={classNames(
                         defaultcss.all,
                         defaultcss.__wab_text,
-                        sty.freeBox__tcAr4
+                        sty.text__tcAr4
                       )}
                     >
                       {"Send progress invoices"}
@@ -45864,7 +46536,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                         className={classNames(
                           defaultcss.all,
                           defaultcss.__wab_text,
-                          sty.freeBox___1HNeA
+                          sty.text___1HNeA
                         )}
                       >
                         {"Explore the features"}
@@ -45888,7 +46560,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__r0Cj0
+                            sty.text__r0Cj0
                           )}
                         >
                           {"Split up payments"}
@@ -45898,7 +46570,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__kyBOf
+                            sty.text__kyBOf
                           )}
                         >
                           {
@@ -45912,7 +46584,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__atFy
+                            sty.text__atFy
                           )}
                         >
                           {"Learn about job costing"}
@@ -45937,7 +46609,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__mfpGj
+                            sty.text__mfpGj
                           )}
                         >
                           {"Let us do the math"}
@@ -45947,7 +46619,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__hdQ1
+                            sty.text__hdQ1
                           )}
                         >
                           {
@@ -45961,7 +46633,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__sGttF
+                            sty.text__sGttF
                           )}
                         >
                           {"Learn about tracking expenses"}
@@ -45986,7 +46658,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__hQqyh
+                            sty.text__hQqyh
                           )}
                         >
                           {"See what’s been paid"}
@@ -45996,7 +46668,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__vunz4
+                            sty.text__vunz4
                           )}
                         >
                           {
@@ -46010,7 +46682,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___1B9No
+                            sty.text___1B9No
                           )}
                         >
                           {"Learn about invoicing"}
@@ -46035,7 +46707,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox___8R174
+                            sty.text___8R174
                           )}
                         >
                           {"Everyone in the know"}
@@ -46045,7 +46717,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__qrdZ
+                            sty.text__qrdZ
                           )}
                         >
                           {
@@ -46059,7 +46731,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                           className={classNames(
                             defaultcss.all,
                             defaultcss.__wab_text,
-                            sty.freeBox__wzR1X
+                            sty.text__wzR1X
                           )}
                         >
                           {"Learn about invoicing"}
@@ -46086,7 +46758,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                               className={classNames(
                                 defaultcss.all,
                                 defaultcss.__wab_text,
-                                sty.freeBox__uPjGf
+                                sty.text__uPjGf
                               )}
                             >
                               {"Hide all features"}
@@ -46132,7 +46804,7 @@ function PlasmicInvoicingTest__RenderFunc(props: {
                             className={classNames(
                               defaultcss.all,
                               defaultcss.__wab_text,
-                              sty.freeBox___7I2Zq
+                              sty.text___7I2Zq
                             )}
                           >
                             {"See all features"}
@@ -46264,7 +46936,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -47847,7 +48518,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -48867,7 +49537,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -49886,7 +50555,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -51163,7 +51831,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -51237,7 +51904,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -51295,7 +51961,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -51400,7 +52065,6 @@ const PlasmicDescendants = {
     "ωMixinsColorGray01",
     "ωMixinsColorGray02",
     "optionalSpacerForOffset",
-    "text",
     "big",
     "small2",
     "art",
@@ -51475,7 +52139,6 @@ const PlasmicDescendants = {
   ωMixinsColorGray01: ["ωMixinsColorGray01", "ωMixinsColorGray02"],
   ωMixinsColorGray02: ["ωMixinsColorGray02"],
   optionalSpacerForOffset: ["optionalSpacerForOffset"],
-  text: ["text", "big", "small2"],
   big: ["big"],
   small2: ["small2"],
   art: [
@@ -63006,7 +63669,6 @@ type NodeDefaultElementType = {
   ωMixinsColorGray01: "div";
   ωMixinsColorGray02: "div";
   optionalSpacerForOffset: "div";
-  text: "div";
   big: "div";
   small2: "div";
   art: "div";
@@ -64668,7 +65330,6 @@ export const PlasmicInvoicingTest = Object.assign(
     ωMixinsColorGray01: makeNodeComponent("ωMixinsColorGray01"),
     ωMixinsColorGray02: makeNodeComponent("ωMixinsColorGray02"),
     optionalSpacerForOffset: makeNodeComponent("optionalSpacerForOffset"),
-    text: makeNodeComponent("text"),
     big: makeNodeComponent("big"),
     small2: makeNodeComponent("small2"),
     art: makeNodeComponent("art"),

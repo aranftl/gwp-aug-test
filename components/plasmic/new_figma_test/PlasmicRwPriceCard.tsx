@@ -141,7 +141,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
         {p.renderPlasmicSlot({
           defaultContents: "Simple Start",
           value: args.children,
-          className: classNames(sty.slotChildren)
+          className: classNames(sty.slotTargetChildren)
         })}
       </div>
 
@@ -154,7 +154,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
           defaultContents:
             "Start off on the right foot with basic bookkeeping tools.",
           value: args.slot,
-          className: classNames(sty.slotSlot)
+          className: classNames(sty.slotTargetSlot)
         })}
       </div>
 
@@ -172,7 +172,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             {p.renderPlasmicSlot({
               defaultContents: "12 ",
               value: args.wholePrice,
-              className: classNames(sty.slotWholePrice)
+              className: classNames(sty.slotTargetWholePrice)
             })}
           </div>
 
@@ -180,7 +180,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox___3Ih8O
+              sty.text___3Ih8O
             )}
           >
             {"$"}
@@ -190,7 +190,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox__xiVVy
+              sty.text__xiVVy
             )}
           >
             {"/mo"}
@@ -201,7 +201,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
           {p.renderPlasmicSlot({
             defaultContents: "For the first 3 months then $25 /mo*",
             value: args.duration,
-            className: classNames(sty.slotDuration)
+            className: classNames(sty.slotTargetDuration)
           })}
         </div>
       </div>
@@ -221,7 +221,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
           data-plasmic-name={"tertiaryLink"}
           data-plasmic-override={overrides.tertiaryLink}
           className={classNames(
-            defaultcss.all,
+            defaultcss.a,
             defaultcss.__wab_text,
             sty.tertiaryLink
           )}
@@ -242,7 +242,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
         className={classNames(
           defaultcss.all,
           defaultcss.__wab_text,
-          sty.freeBox__d0LrT
+          sty.text__d0LrT
         )}
       >
         {"Feature highlights"}
@@ -264,7 +264,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox__n5ZV
+              sty.text__n5ZV
             )}
           >
             {"Send invoices and accept Payments"}
@@ -285,7 +285,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox__x5G92
+              sty.text__x5G92
             )}
           >
             {"Send invoices and accept Payments"}
@@ -306,7 +306,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox__pzaUi
+              sty.text__pzaUi
             )}
           >
             {"Send invoices and accept Payments"}
@@ -327,7 +327,7 @@ function PlasmicRwPriceCard__RenderFunc(props: {
             className={classNames(
               defaultcss.all,
               defaultcss.__wab_text,
-              sty.freeBox__pLisO
+              sty.text__pLisO
             )}
           >
             {"Send invoices and accept Payments"}

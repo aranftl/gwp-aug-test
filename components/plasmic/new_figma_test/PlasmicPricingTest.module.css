@@ -31,7 +31,13 @@
   width: calc(100% + 20px);
 }
 .freeBox > :global(.__wab_flex-container) > *,
-.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.freeBox > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.freeBox > :global(.__wab_flex-container) > picture > img,
+.freeBox
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 20px;
 }
 @media (min-width: 0px) and (max-width: 375px) {
@@ -75,7 +81,13 @@
   width: calc(100% + 8%);
 }
 .controller > :global(.__wab_flex-container) > *,
-.controller > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.controller > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.controller > :global(.__wab_flex-container) > picture > img,
+.controller
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 8%;
 }
 @media (min-width: 0px) and (max-width: 375px) {
